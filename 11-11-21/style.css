@@ -1,0 +1,53 @@
+main:hover h2{
+    color: green;
+    font-size:30px;
+}
+main p {
+    color: brown;
+    text-align: center;
+}
+p::selection{
+background-color: orange;
+}
+main  {
+    text-align: center;
+    color: hotpink;
+}
+
+
+.uvitani {
+    font-size: large;
+}
+
+.zarovnani {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+p.zarovnani::first-letter {
+    font-size: 125%;
+    color: red;
+}
+
+p i:first-child {
+    background-color: seagreen;
+}
+
+#odsazeni {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: bold;
+}
+
+a {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+img {
+    height: 720;
+    width: 480px;
+    display: block;
+    margin-left: 37%;
+}
