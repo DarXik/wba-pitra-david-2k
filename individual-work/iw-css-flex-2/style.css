@@ -1,0 +1,67 @@
+.bg {
+    background-image: url("background-img.jpg");
+    background-position: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    background-color:  rgba(38, 32, 62, 0.8);
+}
+
+.flex-items {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    width: 80vw;
+}
+
+.flex-items2 {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: normal;
+    justify-content: space-around;
+    
+    
+  }
+  
+  .flex-items-middle {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    background-color: white;
+    border: white solid 1px;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 300px;
+  }
