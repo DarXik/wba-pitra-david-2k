@@ -1,38 +1,77 @@
+html {
+    width: 100%;
+}
+
 .bg {
     background-image: url("background-img.jpg");
     background-position: center;
+    object-fit: cover;
+}
+/* 
+.bg img{
+    opacity: 0.5;
+} */
+
+.top-bar {
+    background-color: rgba(38, 32, 62, 0.8);
+    width: 100vw;
 }
 
-.flex-container {
+.flex-top-bar {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: stretch;
     align-content: stretch;
-    background-color:  rgba(38, 32, 62, 0.8);
+    width: 80%;
 }
 
-.flex-items {
+.flex-logo {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
     align-self: auto;
     order: 0;
+    width: 25%;
 }
 
-.flex-container2 {
+.flex-nav {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 50%;
+}
+
+.flex-nav p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.flex-search {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 25%;
+}
+
+.navigation-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    width: 80vw;
+    align-items: center;
+    align-content: center;
 }
 
-.flex-items2 {
+.navigation {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
@@ -48,11 +87,9 @@
     align-items: center;
     align-content: normal;
     justify-content: space-around;
-    
-    
-  }
-  
-  .flex-items-middle {
+}
+
+.flex-items-middle {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
@@ -64,4 +101,8 @@
     border-radius: 25px;
     padding: 10px;
     margin: 300px;
-  }
+}
+
+.flex-items-middle h1 {
+    font-size: 2rem;
+}
