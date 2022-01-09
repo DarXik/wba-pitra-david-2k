@@ -107,7 +107,7 @@ ul li a:hover {
 }
 .navigation-items button:hover {
    background-color: beige;
-   box-shadow: 0px 0px 5px beige;
+   box-shadow: 0px 0px 15px beige;
    color: #07253d;
    transition-duration: 0.65s;
    opacity: 1;
@@ -136,10 +136,12 @@ ul li a:hover {
    color: beige;
 }
 .section-item:nth-child(1) {
-   /* background-color: #171717;
+   background-color: #171717;
+   background-color: #171717;
    border: #07253d 1px solid;
    border-radius: 30px;
-   box-shadow: 0px 0px 10px #07253d; */
+   box-shadow: 0px 0px 25px #07253d; 
+   display: inline-block;
    margin-top: 15em;
    margin-right: 30%;
    margin-bottom: 5%;
@@ -149,11 +151,27 @@ ul li a:hover {
    padding-bottom: 0px;
    padding-left: 30px;
 }
+.section-item:nth-child(1)::before{
+  
+}
+.section-item:nth-child(1):hover::before{
+   border: #141313 solid 1px;
+   background: #141313;
+   box-shadow: 20px 20px 0px #07253d;
+   transition-duration: 0.5s;
+}
+.section-item:nth-child(1):hover{
+   border: #141313 solid 1px;
+   background: #141313;
+   box-shadow: 0px 0px 25px #07253d;
+   transition-duration: 0.5s;
+}
 .section-item:nth-child(2) {
-   /* background-color: #171717;
+   background-color: #171717;
    border: #07253d 1px solid;
    border-radius: 30px;
-   box-shadow: 0px 0px 10px #07253d; */
+   box-shadow: 0px 0px 25px #07253d; 
+   display: inline-block;
    margin-right: 5%;
    margin-bottom: 0%;
    margin-left: 30%;
@@ -162,29 +180,31 @@ ul li a:hover {
    padding-left: 30px;
 }
 .section-item:nth-child(3){
+   
    background-color: #171717;   
    border: #07253d 1px solid;
    border-radius: 30px;
-   box-shadow: 0px 0px 10px #07253d;
-   /* box-sizing: border-box; */
-   margin-top:6em;
-   margin-right: 25%;
+   box-shadow: 0px 0px 25px #07253d;
+   display: inline-block;
+   /* box-sizing: border-box;  */
+   margin-top:15em;
+   margin-right: 1%;
    margin-bottom: 0%;
-   margin-left: 15%;
+   margin-left: 57%;
    padding-top: 15px;
    padding-right: 30px;
    padding-bottom: 15px;
    padding-left: 30px;
 }
-.section-item:hover {
+/* .section-item:hover {
    border: #141313 solid 1px;
    background: #141313;
-   box-shadow: 30px 30px 0px #07253d;
-   transition-duration: 0.5s;  
-}
-.section-item:hover::after {
+   box-shadow: 20px 20px 0px #07253d;
+   transition-duration: 0.5s;     
+} */
+/* .section-item:hover::after {
    transition-duration: 0.5;
-}
+} */
 
 .stripes-container {}
 
