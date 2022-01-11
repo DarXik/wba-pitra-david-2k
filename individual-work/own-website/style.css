@@ -9,11 +9,10 @@ section {
 }
 
 #bg {
-   background-color: #171717;
-   /* margin-right: 5%;
-   margin-left: 5%; */
+   /* background-color: #171717;   
    height: 100vh;
-   background-image: repeating-linear-gradient(90deg, #141313, #141313 3px, #171717 3px, #171717 200px);
+   background-image: repeating-linear-gradient(90deg, #141313, #141313 3px, #171717 3px, #171717 200px); */
+   background-image: url("bg1.jpg");
 }
 
 .navigation-menu {
@@ -203,7 +202,7 @@ ul li a:hover {
    display: inline-block;
    /* box-sizing: border-box;  */
    margin-right: 1%;
-   margin-bottom: 5%;
+   margin-bottom: 4%;
    margin-left: 45%;
    padding-top: 20px;
    padding-right: 30px;
