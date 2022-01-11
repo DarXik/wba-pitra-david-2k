@@ -1,15 +1,16 @@
 :root {
-   background-color: #171717;
    /* font-size: 16px; */
    font-family: 'Quicksand', sans-serif;
 }
-#bg {
-   margin-right: 5%;
-   margin-left: 5%;
-   min-height: 100vh;
-   background-image: repeating-linear-gradient(90deg, #141313, #141313 3px, #171717 3px, #171717 390px);  
+#bg {   
+   background-color: #171717;
+   /* margin-right: 5%;
+   margin-left: 5%; */
+   height: 100vh;
+   background-image: repeating-linear-gradient(90deg, #141313, #141313 3px, #171717 3px, #171717 200px);  
 }
 .navigation-menu {
+   position: sticky;
    display: flex;
    align-items: center;
    justify-content: space-evenly;
@@ -143,7 +144,7 @@ ul li a:hover {
    margin-right: 30%;
    margin-bottom: 5%;
    margin-left: 5%;
-   padding: 25px;
+   padding: 20px;
    padding-right: 30px;
    padding-bottom: 20px;
    padding-left: 30px;
@@ -170,9 +171,9 @@ ul li a:hover {
    box-shadow: 0px 0px 25px #07253d; 
    display: inline-block;
    margin-right: 5%;
-   margin-bottom: 0%;
+   margin-bottom: 5%;
    margin-left: 30%;
-   padding: 30px;
+   padding: 20px;
    padding-right: 30px;
    padding-left: 30px;
 }
@@ -184,13 +185,12 @@ ul li a:hover {
    box-shadow: 0px 0px 25px #07253d;
    display: inline-block;
    /* box-sizing: border-box;  */
-   margin-top:150px;
    margin-right: 1%;
-   margin-bottom: 0%;
-   margin-left: 57%;
-   padding-top: 15px;
+   margin-bottom: 9%;
+   margin-left: 45%;
+   padding-top: 20px;
    padding-right: 30px;
-   padding-bottom: 15px;
+   padding-bottom: 20px;
    padding-left: 30px;
 }
  .section-item:hover {
@@ -203,13 +203,16 @@ ul li a:hover {
    transition-duration: 0.5;
 } */
 
-.stripes-container {}
-
-.stripes-item:nth-child(1) {
-   /* border-left: solid red 3px;
-   height: 150px;
-   margin-left: 5%; */
-   min-height: 100vh;
-   background-image: repeating-linear-gradient(90deg, red, red 3px, #171717 3px, #171717 600px);
+.section-content img{
+   margin: 7%;
+   margin-top: 0%;
+   margin-left: 10%;
+   height:  500px;
+   width: 500px;
 }
-.stripes-item:nth-child(2) {}
+.section-item,img:hover{
+   transition-duration: 0.7s;
+   -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+}

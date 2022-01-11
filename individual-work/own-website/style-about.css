@@ -83,6 +83,7 @@
    /* margin-bottom: 5%; */
    margin-left: 20%;
    padding: 30px;
+   padding-top: 20px;
 }
 .section-item:hover {
   border: #141313 solid 1px;
