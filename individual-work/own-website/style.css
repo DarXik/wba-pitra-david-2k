@@ -19,7 +19,7 @@ section {
 }
 
 #bg {
-     
+
    height: 100vh;
    background-image: repeating-linear-gradient(90deg, #141313, #141313 3px, #171717 3px, #171717 200px);
    background-image: url("bg1.jpg");
@@ -46,20 +46,17 @@ section {
 .navigation-items button {
    font-size: 1.5rem;
    color: beige;
-   background-color: #141313;
+   background-color: #171717;
    border: none;
-   /* border: #07253d solid 3px; */
    border-radius: 3px;
    text-align: center;
    text-decoration: none;
    /* aby nebyl odkaz podtržen */
    display: inline-block;
    padding: 12px 23px 12px 23px;
-   /* opacity: 0.9; */
    position: relative;
    cursor: pointer;
    transition: all 0.9s;
-
 }
 
 .navigation-items button::after {
@@ -78,7 +75,6 @@ section {
    height: 11px;
    position: absolute;
    transition: 0.9s;
-   
 }
 
 .navigation-items button:after {
@@ -86,7 +82,7 @@ section {
    left: -1px;
    border-top: beige 4px solid;
    border-left: beige 4px solid;
-  /*  box-shadow: 0px 0px 25px ; */ 
+   /*  box-shadow: 0px 0px 25px ; */
 }
 
 .navigation-items button:before {
@@ -95,24 +91,23 @@ section {
    border-bottom: beige 4px solid;
    border-right: beige 4px solid;
    /* box-shadow: 0px 0px 25px ;  */
-}
-
-/* .navigation-items button:hover {
+   /* .navigation-items button:hover {
    border-top-right-radius: 30px;
    border-bottom-left-radius: 30px;
 } */
+}
 
 .navigation-items button:hover:before {
    width: 110%;
    /* jak daleko co pojede */
    height: 115%;
-   box-shadow: 0px 0px 25px ;
+   box-shadow: 0px 0px 15px;
 }
 
 .navigation-items button:hover:after {
    width: 110%;
    height: 115%;
-   box-shadow: 0px 0px 25px ;
+   box-shadow: 0px 0px 15px;
 }
 
 
@@ -135,26 +130,19 @@ section {
    color: beige;
 }
 
-.section-item:nth-child(1) {
-   background-color: #171717;
-   /* border: #07253d 1px solid; */
-   border-radius: 30px;
-   box-shadow: 0px 0px 5px #e40303;
-   display: inline-block;
-   margin: 150px 30% 5% 5%;
-   padding: 20px 30px 20px 30px;
-}
+
 
 .section-item:nth-child(2) {
    background-color: #171717;
    /* border: #07253d 1px solid; */
    border-radius: 30px;
-   box-shadow: 0px 0px 5px #ff8c00;
+   box-shadow: 0px 0px 5px #07253d;
    display: inline-block;
    margin: 0% 5% 5% 30%;
    padding: 20px 30px 30px 20px;
    padding-right: 30px;
    padding-left: 30px;
+   transition: 0.9s;
 }
 
 .section-item:nth-child(3) {
@@ -162,33 +150,44 @@ section {
    background-color: #171717;
    /* border: #07253d 1px solid; */
    border-radius: 30px;
-   box-shadow: 0px 0px 5px #ffed00;
+   box-shadow: 0px 0px 5px #07253d;
    display: inline-block;
    margin: 0% 1% 4% 45%;
    padding: 20px 30px 20px 30px;
+   transition: 0.9s;
 }
 
 .section-item:nth-child(4) {
    background-color: #171717;
    /* border: #07253d 1px solid; */
    border-radius: 30px;
-   box-shadow: 0px 0px 5px #750787;
+   box-shadow: 0px 0px 5px #07253d;
    display: inline-block;
    margin: 0% 30% 10% 15%;
+   padding: 20px 30px 20px 30px;
+   transition: 0.9s;
+}
+
+.section-item:nth-child(1) {
+   background-color: #171717;
+   box-shadow: 0px 0px 3px #07253d;
+   border-radius: 30px;
+   transition: 0.9s;
+   display: inline-block;
+   margin: 150px 30% 5% 5%;
    padding: 20px 30px 20px 30px;
 }
 
 .section-item:hover {
    background-color: #141313;
    box-shadow: 0px 0px 30px;
-   /* color: #07253d; */
+   border: none;
    transition-duration: 0.65s;
    opacity: 1;
    -webkit-transform: scale(1.1);
    -ms-transform: scale(1.1);
    transform: scale(1.1);
 }
-
 .photo-section {
    display: flex;
    justify-content: space-evenly;
@@ -198,17 +197,27 @@ section {
    margin: 0% 7% 7% 5%;
    height: 450px;
    width: 450px;
+   transition-duration: 0.5s;
+
 }
 
 .photo-section-item:nth-child(2) {
    margin: 8% 5% 10% 12%;
    height: 400px;
    width: 400px;
-}
+   transition-duration: 0.5s;
 
-.photo-section-item, img:hover {
-   transition-duration: 0.7s;
+}
+.photo-section-item img{
    -webkit-transform: scale(1.2);
    -ms-transform: scale(1.2);
    transform: scale(1.2);
+}
+
+.photo-section-item:hover {
+   transition-duration: 0.5s;
+   -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   
 }
