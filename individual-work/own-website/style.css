@@ -1,33 +1,23 @@
-:root {
-   font-family: 'Quicksand', sans-serif;
-}
-
 html, body {
    scroll-behavior: smooth;
    -ms-overflow-style: none;
    scrollbar-width: none;
-
+   font-family: 'Quicksand', sans-serif;
 }
-#bg {
-
-   /* height: 100vh;
-   background-image: repeating-linear-gradient(90deg, #141313, #141313 3px, #171717 3px, #171717 200px);
-   background-image: url("bg1.jpg"); */
-} 
 
 html::-webkit-scrollbar, body::-webkit-scrollbar {
    display: none;
 }
 
-section {
-   margin: 0% 5% 0% 5%;
-}
-
 body {
    background: #171717;
    background-image: linear-gradient(90deg, #141313 3px, transparent 0), linear-gradient(#141313 3px, transparent 0);
-   background-size: 100px 100px;
-}  
+   background-size: 150px 150px;
+}
+
+section {
+   margin: 0% 5% 0% 5%;
+}
 
 .navigation-menu {
    display: flex;
@@ -54,7 +44,6 @@ body {
    padding: 12px 23px 12px 23px;
    position: relative;
    cursor: pointer;
-   transition: all 0.9s;
 }
 
 .navigation-items button::after {
@@ -64,7 +53,7 @@ body {
    /* velikost borderu horního před hoverem */
    height: 11px;
    position: absolute;
-   transition: 0.9s;
+   transition: 0.7s;
 }
 
 .navigation-items button::before {
@@ -72,11 +61,12 @@ body {
    width: 11px;
    height: 11px;
    position: absolute;
-   transition: 0.9s;
+   transition: 0.7s;
 }
 
 .navigation-items button::after {
    top: -1px;
+   /* umístění mini-borderu před hoverem vůči elementu */
    left: -1px;
    border-top: beige 4px solid;
    border-left: beige 4px solid;
@@ -102,69 +92,56 @@ body {
    box-shadow: 0px 0px 15px;
 }
 
-.section-content {}
-
-.section-content p {
-   font-size: 1rem;
+.section-content p, h1, h2 {
    color: beige;
+}
+
+.section-content span {
+   color: #551a8b;
+   font-weight: 900;
+   font-size: 2rem;
+}
+.section-content p {
+   padding-top: 10px;
+   font-size: 1rem;
 }
 
 .section-content h1 {
-   padding-bottom: 10px;
    font-size: 2rem;
-   color: beige;
 }
 
 .section-content h2 {
-   font-size: 1.5rem;
-   color: beige;
+   font-size: 2rem;
+}
+
+.section-item {
+   display: inline-block;
+   transition: 0.9s;
+   /* border: #07253d 1px solid; */
+   /*  box-shadow: 0px 0px 7px #07253d; */
+   box-shadow: 0px 0px 5px beige;
+   border-radius: 15px;
+   background-color: #171717;
 }
 
 .section-item:nth-child(1) {
-   background-color: #171717;
-   /*  box-shadow: 0px 0px 7px #07253d; */
-   box-shadow: 0px 0px 5px beige;
-   border-radius: 30px;
-   transition: 0.9s;
-   display: inline-block;
-   margin: 150px 30% 5% 5%;
+   margin: 130px 30% 5% 5%;
    padding: 20px 30px 20px 30px;
 }
 
 .section-item:nth-child(2) {
-   background-color: #171717;
-   /* border: #07253d 1px solid; */
-   border-radius: 30px;
-   box-shadow: 0px 0px 5px beige;
-   display: inline-block;
    margin: 0% 5% 5% 30%;
-   padding: 20px 30px 30px 20px;
-   padding-right: 30px;
-   padding-left: 30px;
-   transition: 0.9s;
+   padding: 20px 30px 30px 30px;
 }
 
 .section-item:nth-child(3) {
-
-   background-color: #171717;
-   /* border: #07253d 1px solid; */
-   border-radius: 30px;
-   box-shadow: 0px 0px 5px beige;
-   display: inline-block;
-   margin: 0% 1% 4% 45%;
+   margin: 0% 1% 3% 60%;
    padding: 20px 30px 20px 30px;
-   transition: 0.9s;
 }
 
 .section-item:nth-child(4) {
-   background-color: #171717;
-   /* border: #07253d 1px solid; */
-   border-radius: 30px;
-   box-shadow: 0px 0px 5px beige;
-   display: inline-block;
    margin: 0% 30% 10% 15%;
-   padding: 20px 30px 20px 30px;
-   transition: 0.9s;
+   padding: 20px 25px 20px 30px;
 }
 
 .section-item:hover {
@@ -182,12 +159,16 @@ body {
    justify-content: space-evenly;
 }
 
+.rounding {
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px beige;
+}
+
 .photo-section-item:nth-child(1) {
    margin: 0% 7% 7% 5%;
    height: 450px;
    width: 450px;
    transition-duration: 0.5s;
-
 }
 
 .photo-section-item:nth-child(2) {
@@ -195,7 +176,6 @@ body {
    height: 400px;
    width: 400px;
    transition-duration: 0.5s;
-
 }
 
 .photo-section-item img {
@@ -209,10 +189,4 @@ body {
    -webkit-transform: scale(1.2);
    -ms-transform: scale(1.2);
    transform: scale(1.2);
-
-}
-
-.rounding {
-   border-radius: 10px;
-   box-shadow: 0px 0px 10px beige;
 }
