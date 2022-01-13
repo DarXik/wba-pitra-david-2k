@@ -2,48 +2,69 @@
    /* font-size: 16px; */
    font-family: 'Quicksand', sans-serif;
 }
+
+html, body {
+   scroll-behavior: smooth;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+   display: none;
+}
+
 section {
    margin: 0% 5% 0% 5%;
 }
+
 #bg {
-   /* background-color: #171717;   
+     
    height: 100vh;
-   background-image: repeating-linear-gradient(90deg, #141313, #141313 3px, #171717 3px, #171717 200px); */
+   background-image: repeating-linear-gradient(90deg, #141313, #141313 3px, #171717 3px, #171717 200px);
    background-image: url("bg1.jpg");
 }
+
 .navigation-menu {
    display: flex;
    align-items: center;
-   justify-content: space-evenly;   
+   justify-content: space-evenly;
    margin: 0% 34% 1% 34%;
+   background-color: #171717;
+
 }
+
 .navigation-items {
-   
+   /*    background-color: #171717;*/
    /* border: #07253d solid 3px; */
    /* border-radius: 30px; */
    background-color: #171717;
-   box-shadow: 0px 0px 5px #07253d;
+   /* box-shadow: 0px 0px 5px #07253d; */
    margin-top: 2vh;
 }
+
 .navigation-items button {
    font-size: 1.5rem;
-   color: rgb(223, 223, 36);
-   
+   color: beige;
+   background-color: #141313;
+   border: none;
    /* border: #07253d solid 3px; */
-   /* border-radius: 30px; */
+   border-radius: 3px;
    text-align: center;
-   text-decoration: none; /* aby nebyl odkaz podtržen */
+   text-decoration: none;
+   /* aby nebyl odkaz podtržen */
    display: inline-block;
-   /* box-shadow: 0px 0px 10px #07253d; */
    padding: 12px 23px 12px 23px;
    /* opacity: 0.9; */
    position: relative;
    cursor: pointer;
    transition: all 0.9s;
-   
+
 }
+
 .navigation-items button::after {
-   content: ""; /* musí zde být, aby byl následující obsah */
+   content: "";
+   /* musí zde být, aby byl následující obsah */
    width: 11px;
    /* velikost borderu horního před hoverem */
    height: 11px;
@@ -57,20 +78,23 @@ section {
    height: 11px;
    position: absolute;
    transition: 0.9s;
+   
 }
 
 .navigation-items button:after {
    top: -1px;
    left: -1px;
-   border-top: rgb(199, 24, 190) 4px solid;
-   border-left: rgb(109, 18, 101) 4px solid;
+   border-top: beige 4px solid;
+   border-left: beige 4px solid;
+  /*  box-shadow: 0px 0px 25px ; */ 
 }
 
 .navigation-items button:before {
    bottom: -1px;
    right: -1px;
-   border-bottom: rgb(231, 8, 8) 4px solid;
-   border-right: rgb(187, 187, 20) 4px solid;
+   border-bottom: beige 4px solid;
+   border-right: beige 4px solid;
+   /* box-shadow: 0px 0px 25px ;  */
 }
 
 /* .navigation-items button:hover {
@@ -79,14 +103,20 @@ section {
 } */
 
 .navigation-items button:hover:before {
-   width: 110%; /* jak daleko co pojede */
+   width: 110%;
+   /* jak daleko co pojede */
    height: 115%;
+   box-shadow: 0px 0px 25px ;
 }
 
 .navigation-items button:hover:after {
    width: 110%;
    height: 115%;
+   box-shadow: 0px 0px 25px ;
 }
+
+
+
 .section-content {}
 
 .section-content p {
@@ -114,6 +144,7 @@ section {
    margin: 150px 30% 5% 5%;
    padding: 20px 30px 20px 30px;
 }
+
 .section-item:nth-child(2) {
    background-color: #171717;
    /* border: #07253d 1px solid; */
@@ -149,7 +180,7 @@ section {
 
 .section-item:hover {
    background-color: #141313;
-   box-shadow: 0px 0px 30px ;
+   box-shadow: 0px 0px 30px;
    /* color: #07253d; */
    transition-duration: 0.65s;
    opacity: 1;
