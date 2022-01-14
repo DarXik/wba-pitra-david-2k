@@ -10,12 +10,12 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 body {
-   /* background: #171717;
+   background: #171717;
    background-image: linear-gradient(90deg, #141313 3px, transparent 0), linear-gradient(#141313 3px, transparent 0);
-   background-size: 200px 200px; */
-   background-image: url("leaf.jpg");
-   background-image: repeating-linear-gradient(90deg, #141313 600px, transparent 0.5);
-   
+   background-size: 200px 200px;
+   /* background-image: url("leaf.jpg");
+   background-image: repeating-linear-gradient(90deg, #141313 600px, transparent 0.5); */
+
 }
 
 section {
@@ -37,9 +37,9 @@ section {
 .navigation-items button {
    font-size: 1.5rem;
    color: beige;
-   background-color: rgba(32, 53, 34, 0.5);
-   border: none; 
-   box-shadow: 0px 0px 1px;
+   background-color: rgba(32, 53, 34, 0);
+   border: none;
+   box-shadow: 0px 0px 10px rgba(32, 53, 34, 1);
    border-radius: 3px;
    text-align: center;
    text-decoration: none;
@@ -57,7 +57,7 @@ section {
    /* velikost borderu horního před hoverem */
    height: 11px;
    position: absolute;
-   transition: 0.7s;
+   transition: 0.5s;
 }
 
 .navigation-items button::before {
@@ -65,7 +65,7 @@ section {
    width: 11px;
    height: 11px;
    position: absolute;
-   transition: 0.7s;
+   transition: 0.5s;
 }
 
 .navigation-items button::after {
@@ -96,28 +96,31 @@ section {
    box-shadow: 0px 0px 15px;
 }
 
-.section-content p, h1, h2 {
+section p, h1, h2 {
    color: beige;
 }
 
-.colorize{
-   color: #203522;
+.colorize {
+   color: #2f4b32;
    font-weight: 900;
    font-size: 2rem;
 }
-.colorize2{
-   color: #203522;
+
+.colorize2 {
+   color: #406643;
    font-size: 1.5rem;
 }
-.section-content p {
+
+section p {
    padding-top: 10px;
    font-size: 1rem;
 }
-.section-content h1 {
+
+section h1 {
    font-size: 2rem;
 }
 
-.section-content h2 {
+section h2 {
    font-size: 1.5rem;
 }
 
@@ -135,7 +138,7 @@ section {
    margin: 110px 30% 5% 10%;
    padding: 20px 30px 20px 30px;
    background-color: #141313;
-   box-shadow: 0px 0px 50px;
+   box-shadow: 0px 0px 40px;
    border: none;
    transition-duration: 0.75s;
    -webkit-transform: scale(1.1);
@@ -147,7 +150,7 @@ section {
    margin: 0% 5% 5% 30%;
    padding: 20px 30px 30px 30px;
    background-color: #141313;
-   box-shadow: 0px 0px 50px;
+   box-shadow: 0px 0px 40px;
    border: none;
    transition-duration: 0.75s;
    -webkit-transform: scale(1.1);
@@ -159,7 +162,7 @@ section {
    margin: 0% 1% 3% 60%;
    padding: 20px 30px 20px 30px;
    background-color: #141313;
-   box-shadow: 0px 0px 50px;
+   box-shadow: 0px 0px 40px;
    border: none;
    transition-duration: 0.75s;
    -webkit-transform: scale(1.1);
@@ -168,10 +171,10 @@ section {
 }
 
 .section-item:nth-child(4) {
-   margin: 0% 30% 10% 15%;
+   margin: 0% 30% 0% 15%;
    padding: 20px 25px 20px 30px;
    background-color: #141313;
-   box-shadow: 0px 0px 50px;
+   box-shadow: 0px 0px 40px;
    border: none;
    transition-duration: 0.75s;
    -webkit-transform: scale(1.1);
@@ -189,39 +192,53 @@ section {
    transform: scale(1.1);
 } */
 
-.photo-section {
+.photo {
+   margin-top: 10%;
+}
+
+.photo img {
+   border-radius: 10px;
+   box-shadow: 0px 0px 15px beige;
+   transition-duration: 0.4s;
+}
+
+.photo-first {
    display: flex;
    justify-content: space-evenly;
 }
 
-.rounding {
-   border-radius: 10px;
-   box-shadow: 0px 0px 10px beige;
+.photo-second {
+   display: flex;
+   justify-content: space-evenly;
 }
 
-.photo-section-item:nth-child(1) {
-   margin: 0% 7% 7% 5%;
-   height: 450px;
-   width: 450px;
-   transition-duration: 0.5s;
+img.image1:nth-child(1) {
+   margin: 0% 7% 0% 0%;
+   height: 35%;
+   width: 35%;
 }
 
-.photo-section-item:nth-child(2) {
-   margin: 8% 5% 10% 12%;
-   height: 400px;
-   width: 400px;
-   transition-duration: 0.5s;
+img.image1:nth-child(2) {
+   margin: 8% 0% 4% 7%;
+   height: 20%;
+   width: 20%;
 }
 
-.photo-section-item img {
-   -webkit-transform: scale(1.2);
-   -ms-transform: scale(1.2);
-   transform: scale(1.2);
+img.image2:nth-child(1) {
+   margin: 0% 5% 10% 12%;
+   height: 40%;
+   width: 40%;
 }
 
-.photo-section-item:hover {
-   transition-duration: 0.5s;
-   -webkit-transform: scale(1.2);
-   -ms-transform: scale(1.2);
-   transform: scale(1.2);
+img.image2:nth-child(2) {
+   margin: 4% 5% 10% 12%;
+   height: 35%;
+   width: 35%;
+}
+
+.photo img:hover {
+   /* transition-duration: 0.4s; */
+   -webkit-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
 }
