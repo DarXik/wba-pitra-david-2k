@@ -159,8 +159,8 @@ body {
 .box-8{grid-area: H}
 .box-9{grid-area: I} 
 .section-main img {   
-    width: 1fr;
-    height: 1fr;
+    width: auto;
+    height: auto;
 }
 
 /* .section-sub-item:nth-child(1) {
