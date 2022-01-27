@@ -20,30 +20,56 @@ body {
     background-size: 10px 10px; */
 }
 
-.home-main {
-    background-color: rgb(250, 248, 246);
+.nav-bar-main {
+    /* background-color: rgba(199, 194, 188, 0.205); */
     display: flex;
     justify-content: right;
-    /* x */
+    position: relative;
+    z-index: 5;
 }
 
-.home-main-photo {
-    width: 10vw;
-    height: 10vh;
-    scale: 0.3;
-
-}
-
-.home-sub-main {
+.nav-bar-sub-main {
+    position: relative;
+    z-index: 7;
     display: flex;
     justify-content: space-around;
     /* margin-left: 75vw;*/
     margin-left: 1.5vw;
+    margin-right: 5vh;
     padding: 1%;
     background-color: rgba(0, 0, 0, 0);
 }
+.line-divider-main{
+    display: flex;
+    justify-content: right;
+}
 
-.home-sub-main button {
+.line-divider{
+    width: 27vw;
+    border-radius: none;
+    box-shadow: 40px 40px 40px rgb(153, 4, 4);
+    border: black 1px solid; 
+    margin: 0vh 6vw 0vh 60%;
+ }
+
+.nav-bar-main-photo {
+    position: absolute;
+    z-index: 10;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 5vh;
+}
+
+.nav-bar-sub-main-photo img {
+    height: auto;
+    width: 50%;
+    margin-top: 7%;
+    margin-left: 4%;
+    z-index: 12;
+    position: relative;    
+}
+
+.nav-bar-sub-main button {
     text-decoration: none;
     font-size: 1.3rem;
     margin: 2%;
@@ -57,22 +83,14 @@ body {
     cursor: pointer;
     position: relative;
     transition-duration: 0.5s;
-    opacity: 0.7;
     text-align: center;
     display: inline-flex;
+    color: rgb(4, 4, 4);
     background-color: rgba(0, 0, 0, 0);
-    border: rgba(0, 0, 0, 0);
-    box-shadow: rgba(0, 0, 0, 0);
+    border: rgb(4, 4, 4);
 }
 
-/* .navigation-items button {
-    border: none;
-    box-shadow: 0px 0px 10px rgba(32, 53, 34, 1);
-    border-radius: 3px;
-    padding: 12px 23px 12px 23px;
- } */
-
-.home-sub-main button::after {
+.nav-bar-sub-main button::after {
     content: "";
     /* musí zde být, aby byl následující obsah */
     width: 11px;
@@ -83,7 +101,7 @@ body {
     cursor: pointer;
 }
 
-.home-sub-main button::before {
+.nav-bar-sub-main button::before {
     content: "";
     width: 11px;
     height: 11px;
@@ -92,48 +110,57 @@ body {
     cursor: pointer;
 }
 
-.home-sub-main button::after {
+.nav-bar-sub-main button::after {
     top: -1px;
     /* umístění mini-borderu před hoverem vůči elementu */
     left: -1px;
-    border-top: rgb(0, 0, 0) 4px solid;
-    border-left: rgb(0, 0, 0) 4px solid;
+    border-top: rgb(4, 4, 4) 2px solid;
+    border-left: rgb(4, 4, 4) 2px solid;
     cursor: pointer;
 }
 
-.home-sub-main button::before {
+.nav-bar-sub-main button::before {
     bottom: -1px;
     right: -1px;
-    border-bottom: rgb(0, 0, 0) 4px solid;
-    border-right: rgb(0, 0, 0) 4px solid;
+    border-bottom: rgb(4, 4, 4) 2px solid;
+    border-right: rgb(4, 4, 4) 2px solid;
     cursor: pointer;
 }
 
-.home-sub-main button:hover::before {
+.nav-bar-sub-main button:hover::before {
     width: 110%;
     /* jak daleko co pojede */
-    height: 115%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1); 
+    height: 125%;
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 1); */
     cursor: pointer;
 }
 
-.home-sub-main button:hover::after {
+.nav-bar-sub-main button:hover::after {
     width: 110%;
-    height: 115%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    height: 125%;
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 1); */
     cursor: pointer;
 }
 
-[class^="box-"] {
+/* [class^="box-"] {
     display: grid;
-    
+} */
+.content-main {
+    position: relative;
+    margin: 0vh 5vw 0vh 5vw;
+    height: auto;
+    z-index: 1;
 }
 
-.section-main {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    display: grid;
+.content-sub-main img {
+    border-radius: 5px;
+    scale: .8;
+    width: auto;
     height: auto;
+    box-shadow: 0px 0px 40px rgb(121, 119, 119);
+}
+
+.content-sub-main {
     /* gap: 5%;
     place-self: stretch/center;
     grid-template: 1fr 1fr/ 1fr 1fr 1fr;
@@ -142,91 +169,72 @@ body {
     grid-template-rows: 400px 400px;
     justify-content: space-around;
     align-items: space-around; */
-    
+    margin-top: 4vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 2% 2%;
     grid-template-areas:
-        "A A A A  A A A A  B B B B  C C C C"
-        "D D D D  D D D D  B B B B  E E E E"
-        "F F F F  G G G G  H H H H  I I I I"; 
+        "A A A A  B B B B"
+        "C C C C  D D D D"
+        "E E E E  F F F F"
+        "G G G G  H H H H"
+        "I I I I  J J J J";
 }
 
-.box-1 {grid-area: A;}
-.box-2 { grid-area: B;}
-.box-3 {grid-area: C;}
-.box-4 {grid-area: D}
-.box-5{grid-area:E}
-.box-6{grid-area:F}
-.box-7{grid-area:G}
-.box-8{grid-area: H}
-.box-9{grid-area: I} 
-.section-main img {   
-    width: auto;
-    height: auto;
+.box-1 {
+    grid-area: A;
 }
 
-/* .section-sub-item:nth-child(1) {
-    border: rgb(207, 207, 207, 0) 1px solid;
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    margin: 5%;
-    ;
-    font-size: 1rem;
+.box-2 {
+    grid-area: B;
 }
 
-.section-sub-item:nth-child(2) {
-    border: rgb(207, 207, 207, 0) 1px solid;
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    margin: 5%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
+.box-3 {
+    grid-area: C;
 }
 
-.section-sub-item:nth-child(3) {
-    border: rgb(207, 207, 207, 0) 1px solid;
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    margin: 5%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
+.box-4 {
+    grid-area: D
 }
 
-.section-sub-item:nth-child(4) {
-    border: rgb(207, 207, 207, 0) 1px solid;
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    margin: 5%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
+.box-5 {
+    grid-area: E
 }
- */
-/* .section-main img {
-    padding: 1%;
-    border-radius: 10px;
-} */
+
+.box-6 {
+    grid-area: F
+}
+
+.box-7 {
+    grid-area: G
+}
+
+.box-8 {
+    grid-area: H
+}
+
+.box-9 {
+    grid-area: I
+}
+
+.box-10 {
+    grid-area: J;
+}
 
 .footer-main {
-    opacity: 0.7;
-    background-color: rgb(250, 248, 246);
+    z-index: 1;
+    background-color: rgba(199, 194, 188, 0.205);
+    font-weight: 600;
+    font-size: 1rem;
     display: flex;
-    position: relative;
     justify-content: center;
-    padding-top: 1vh;
-    padding-right: 10vw;
-    padding-bottom: 1vh;
-    padding-left: 10vw;
+    position: relative;
+    opacity: .8;
+    padding: 1%;
 }
 
-.footer-main-item {}
+.footer-sub-main {}
 
 /* 
 
