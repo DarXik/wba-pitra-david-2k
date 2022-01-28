@@ -211,7 +211,7 @@ body {
     justify-content: center;
     padding: 2vh 3vw 2vh 3vw;
     border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 25px 30px -5px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
 }
 
@@ -273,7 +273,9 @@ body {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
 } */
-.footer-sub-main {}
+.footer-sub-main {
+    
+}
 
 /* 
 

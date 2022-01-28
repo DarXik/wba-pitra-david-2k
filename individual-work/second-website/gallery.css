@@ -1,12 +1,5 @@
 :root {
-    /* font-family: 'Dongle', sans-serif; */
     font-family: 'Chakra Petch', sans-serif;
-    /* font-family: 'Architects Daughter', cursive; */
-    /* font-family: 'Patrick Hand', cursive; */
-    /* font-family: 'Baloo Bhaijaan 2', cursive */
-    /* font-family: 'Dongle', sans-serif; */
-    /* font-family: 'Supermercado One', cursive; */
-    /* font-family: 'Supermercado One', cursive; */
 }
 
 html, body {
@@ -21,12 +14,9 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 body {
     background-color: #ffffff;
-    /* background-image: linear-gradient(90deg, rgba(155, 153, 153, 0.3)1px, transparent 0), linear-gradient(rgba(155, 153, 153, 0.3) 1px, transparent 0);
-    background-size: 10px 10px; */
 }
 
 .nav-bar-main {
-    /* background-color: rgba(199, 194, 188, 0.205); */
     display: flex;
     justify-content: right;
     position: relative;
@@ -160,7 +150,7 @@ body {
 } */
 .content-main {
     position: relative;
-    margin: 0vh 5vw 0vh 5vw;
+    margin: 10vh 5vw 30vh 5vw;
     height: auto;
     z-index: 1;
 }
@@ -168,21 +158,13 @@ body {
 .content-sub-main img {
     border-radius: 2px;
     border-radius: none;
-    scale: .8;
+    scale: .85;
     width: auto;
     height: auto;
     box-shadow: 0px 10px 25px 0px rgb(121, 119, 119, 0.7);
 }
 
 .content-sub-main {
-    /* gap: 5%;
-    place-self: stretch/center;
-    grid-template: 1fr 1fr/ 1fr 1fr 1fr;
-    gap: 5% 15%; */
-    /* grid-template-columns: 400px 400px;
-    grid-template-rows: 400px 400px;
-    justify-content: space-around;
-    align-items: space-around; */
     margin-top: 4vh;
     margin-bottom: 10vh;
     display: grid;
@@ -191,11 +173,11 @@ body {
     gap: 2% 2%;
     grid-template-areas:
         "A A A A  B B B B"
-        "D D D D  C C C C"
-        "D D D D  E E E E"
+        "C C C C  D D D D"
+        "E E E E  F F F F"
         "G G G G  H H H H"
         "I I I I  J J J J"
-        "F F F F  F F F F";
+        "K K K K  L L L L";
 }
 
 .box-1 {
@@ -250,102 +232,6 @@ body {
     padding: 1%;
     /* f */
 }
+.footer-sub-main {
 
-/* @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-} */
-.footer-sub-main {}
-
-/* 
-
-@media only screen and (max-width: 160px) {
-    .home-main {
-        background-color: #e6b441;
-        padding-top: 1vh;
-        padding-right: 5vw;
-        padding-bottom: 1vh;
-        padding-left: 5vw;
-    }
-    .home-sub-main {
-        display: inline-block;
-        justify-content: space-evenly;    
-    }
-
-    .footer-main-item {
-        font-size: 0.7rem;
-    }
-
-    .home-main-item button {
-        font-size: 0.7rem;
-    }
 }
-@media only screen and (max-width: 319px) {
-    .home-main {
-        background-color: #d4697b;
-    }
-
-    .footer-main-item {
-        font-size: 0.7rem;
-    }
-
-    .home-main-item button {
-        font-size: 0.7rem;
-    }
-}
-
-@media only screen and (min-width: 320px) {
-    .home-main {
-        background-color: #9569b9;
-        /* padding-top: 1vh;
-        padding-right: 15vw;
-        padding-bottom: 1vh;
-        padding-left: 0vw; */
-/*    }
-
-    .footer-main-item {
-        font-size: 1rem;
-    }
-
-    .home-main-item button {
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (min-width: 480px) {
-
-    .home-main {
-        background-color: #44e274;
-        padding-top: 1vh;
-        padding-right: 20vw;
-        padding-bottom: 1vh;
-        padding-left: 20vw;
-    }
-
-    .home-main-item button {
-        font-size: 1.3rem;
-    }
-
-    .footer-main-item {
-        font-size: 1.3rem;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .home-main {
-        background-color: #4469e2;
-    }
-
-    .home-main-item button {
-        font-size: 1.3rem;
-    }
-
-    .footer-main-item {
-        font-size: 1.3rem;
-    }
-
-} */
