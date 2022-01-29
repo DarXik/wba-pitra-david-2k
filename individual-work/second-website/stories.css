@@ -152,7 +152,7 @@ body {
 } */
 .content-main {
     position: relative;
-    margin: 10vh 5vw 30vh 5vw;
+    margin: 10vh 0vw auto 0vw;
     height: auto;
     z-index: 1;
 }
@@ -160,80 +160,75 @@ body {
 .content-sub-main img {
     border-radius: 2px;
     border-radius: none;
-    scale: .65;
     width: auto;
     height: auto;
     box-shadow: 0px 10px 25px 0px rgb(121, 119, 119, 0.7);
     transition-duration: 0.3s;
 }
-.content-sub-main img:hover{
-    transition-duration: 0.3s;
-    transform: scale(120%);
+
+.content-sub-main img:hover {
+    
 }
 
-.content-sub-main {    
-    margin-top: 0vh;
-    margin-bottom: 10vh;
+.content-sub-main {
+    margin-top: 10vh;
+    margin-right: 10vw;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
     display: grid;
     align-items: center;
     justify-items: center;
     gap: 0% 0%;
+    /* 
     grid-template-columns: repeat(2,1fr);    
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    grid-template-areas:
+        "A A A A  B B B B"
+        "C C C C  D D D D";
 }
 
 .box-1 {
-   
+    grid-area: A;
+    margin-left: 5vw;
+    scale: .75;
 }
 
-.box-2 {  
-    padding: 2vh 3vw 2vh 3vw;
+.box-2 {
+    grid-area: B;
+    margin-left: -5vw;
+    padding: 3vh 3vw 3vh 3vw;
     border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow:  60px -10px 40px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 60px -20px 40px -10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     font-size: 0.9vw;
-    padding-left: 2vw;
-    padding-bottom: 1vh; 
-    
 }
 
 .box-3 {
-    padding: 2vh 3vw 2vh 3vw;
+    grid-area: C;
+    padding: 3vh 3vw 3vh 3vw;
     border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow:  -30px 50px 40px -15px rgba(0, 0, 0, 0.1);
+    box-shadow: -30px 50px 40px -15px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     font-size: 0.9vw;
-    padding-left: 2vw;
-    padding-bottom: 1vh; 
 }
 
 .box-4 {
-    
+    grid-area: D;
+    margin-left: 5vw;
+    scale: .9;
 }
 
-.box-5 {
-    
-}
+.box-5 {}
 
-.box-6 {
-   
-}
+.box-6 {}
 
-.box-7 {
-    
-}
+.box-7 {}
 
-.box-8 {
-   
-}
+.box-8 {}
 
-.box-9 {
-   
-}
+.box-9 {}
 
-.box-10 {
-   
-}
+.box-10 {}
 
 .footer-main {
     z-index: 1;
