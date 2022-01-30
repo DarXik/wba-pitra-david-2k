@@ -61,8 +61,8 @@ body {
 }
 
 .nav-bar-sub-main-photo img {
-    height: auto;
-    width: 50%;
+    max-height: auto;
+    max-width: 50%;
     margin-top: 7%;
     margin-left: 4%;
     z-index: 12;
@@ -87,12 +87,11 @@ body {
     display: inline-flex;
     color: rgb(4, 4, 4);
     background-color: rgba(0, 0, 0, 0);
-    border: rgb(4, 4, 4);
+    border: rgb(4, 4, 4);    
 }
 
 .nav-bar-sub-main button::after {
-    content: "";
-    /* musí zde být, aby byl následující obsah */
+    content: "";/* musí zde být, aby byl následující obsah */
     width: 11px;
     /* velikost borderu horního před hoverem */
     height: 11px;
@@ -145,6 +144,7 @@ body {
 .nav-bar-sub-main button:hover {
     /* transform: scale(110%); */
     box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.1);
+    /* letter-spacing: 0.05vw; */
 }
 
 /* [class^="box-"] {
@@ -154,7 +154,7 @@ body {
     position: relative;
     margin: 10vh 0vw auto 0vw;
     height: auto;
-    z-index: 1;
+    z-index: 1; 
 }
 
 .content-sub-main img {
@@ -162,12 +162,7 @@ body {
     border-radius: none;
     width: auto;
     height: auto;
-    box-shadow: 0px 10px 25px 0px rgb(121, 119, 119, 0.7);
-    transition-duration: 0.3s;
-}
-
-.content-sub-main img:hover {
-    
+    box-shadow: 0px 10px 25px 0px rgb(121, 119, 119, 0.7); 
 }
 
 .content-sub-main {
@@ -189,9 +184,10 @@ body {
 
 .box-1 {
     grid-area: A;
+    scale: 0.65;
     margin-left: 5vw;
-    scale: .75;
 }
+
 
 .box-2 {
     grid-area: B;
@@ -201,6 +197,7 @@ body {
     box-shadow: 60px -20px 40px -10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     font-size: 0.9vw;
+    
 }
 
 .box-3 {
