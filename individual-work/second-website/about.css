@@ -14,9 +14,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 body {
     background-color: #ffffff;
-    /* background-image: linear-gradient(90deg, rgba(155, 153, 153, 0.3)1px, transparent 0), linear-gradient(rgba(155, 153, 153, 0.3) 1px, transparent 0);
-    background-size: 150px 150px;  */
-    max-height: 100vh;
+    /* background-image: linear-gradient(90deg, rgba(155, 153, 153, 0.3)1px, transparent 0);
+    background-size: 50vw;  */ 
 }
 
 .nav-bar-main {
@@ -93,9 +92,7 @@ body {
 
 .nav-bar-sub-main button::after {
     content: "";
-    /* musí zde být, aby byl následující obsah */
     width: 11px;
-    /* velikost borderu horního před hoverem */
     height: 11px;
     position: absolute;
     transition: 0.4s;
@@ -113,7 +110,6 @@ body {
 
 .nav-bar-sub-main button::after {
     top: -1px;
-    /* umístění mini-borderu před hoverem vůči elementu */
     left: -1px;
     border-top: rgb(4, 4, 4) 2px solid;
     border-left: rgb(4, 4, 4) 2px solid;
@@ -130,38 +126,30 @@ body {
 
 .nav-bar-sub-main button:hover::before {
     width: 110%;
-    /* jak daleko co pojede */
     height: 125%;
-    /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
     cursor: pointer;
 }
 
 .nav-bar-sub-main button:hover::after {
     width: 110%;
     height: 125%;
-    /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
     cursor: pointer;
 }
 
 .nav-bar-sub-main button:hover {
-    /* transform: scale(110%); */
     box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.1);
-    /* letter-spacing: 0.05vw; */
 }
-
-/* [class^="box-"] {
-    display: grid;
-} */
-section .content-main{
-    background-image: url(background-about-1.jpg);
+#first-grid{
+    background-image: url(background-about-2.jpg);
     background-position: center;
     background-size: cover; 
-    height: 75vh;
+    height: 65vh;
+    margin-bottom: 10vh;
 }
 .content-main {
     position: relative;
-    margin: 10vh 0vw auto 0vw;
-    height: auto;
+    margin: 10vh 0vw 0vh 0vw;
+    height: 65vh;
     z-index: 1;  
     
 }
@@ -170,12 +158,11 @@ section .content-main{
    
     margin-top: 10vh;
     margin-right: 3vw;
-    margin-bottom: 5vh;
+    margin-bottom: 0vh;
     margin-left: 3vw;
     display: grid;
-    gap: 15vh 0%;
+    gap: 12vh 0%;
     grid-template-areas:
-        "A A A A"
         "A A A A"
         "B B B B";
 }
@@ -183,8 +170,7 @@ section .content-main{
 .box-1 {
     grid-area: A;
     justify-self: center;
-    margin-top: 4vh;
-    
+    margin-top: 5vh;    
     max-width: 55vw;
     padding: 3vh 3vw 3vh 3vw;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -206,6 +192,14 @@ section .content-main{
     font-size: 0.9vw;
 }
 
+/* #second-grid{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-image: url(background-about-1.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 75vh;
+}
 .content-main-second {
     position: relative;
     margin: 0;
@@ -213,21 +207,13 @@ section .content-main{
     z-index: 1; 
 }
 
-.content-sub-main-second {   
-    margin-right: 3vw;
-    margin-bottom: 0vh;
-    margin-left: 3vw;
-    display: grid;
-    gap: 0vh 0%;
-    grid-template-areas:
-        "A A A A"
-        "B B B B";
+.content-sub-main-second {  
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .box2-1 {
-    grid-area: A;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    justify-self: center;
+    margin-top: 20vh;
     max-width: 60vw;
     padding: 3vh 3vw 3vh 3vw;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -235,7 +221,7 @@ section .content-main{
     box-shadow: -30px 40px 45px -10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     font-size: 0.9vw;
-}
+} */
 
 .footer-main {
     z-index: 1;
@@ -247,7 +233,5 @@ section .content-main{
     position: relative;
     opacity: .8;
     padding: 1%;
-    /* f */
+    height: fit-content;   
 }
-
-.footer-sub-main {}
