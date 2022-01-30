@@ -257,7 +257,7 @@ body {
     z-index: 1;
     background-color: rgba(199, 194, 188, 0.205);
     font-weight: 600;
-    font-size: 0.7vw;;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     position: relative;

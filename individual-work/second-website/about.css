@@ -16,6 +16,7 @@ body {
     background-color: #ffffff;
     /* background-image: linear-gradient(90deg, rgba(155, 153, 153, 0.3)1px, transparent 0), linear-gradient(rgba(155, 153, 153, 0.3) 1px, transparent 0);
     background-size: 150px 150px;  */
+    max-height: 100vh;
 }
 
 .nav-bar-main {
@@ -151,63 +152,90 @@ body {
 /* [class^="box-"] {
     display: grid;
 } */
+section .content-main{
+    background-image: url(background-about-1.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 75vh;
+}
 .content-main {
     position: relative;
     margin: 10vh 0vw auto 0vw;
     height: auto;
-    z-index: 1;
-}
-
-.content-sub-main img {
-    border-radius: 2px;
-    border-radius: none;
-    width: auto;
-    height: auto;
-    box-shadow: 0px 10px 25px 0px rgb(121, 119, 119, 0.7);
+    z-index: 1;  
+    
 }
 
 .content-sub-main {
+   
     margin-top: 10vh;
-    margin-right: 10vw;
+    margin-right: 3vw;
     margin-bottom: 5vh;
-    margin-left: 10vw;
+    margin-left: 3vw;
     display: grid;
-    align-items: center;
-    justify-items: center;
-    gap: 0% 0%;
-    /* 
-    grid-template-columns: repeat(2,1fr);    
-    grid-template-rows: repeat(2, 1fr); */
+    gap: 15vh 0%;
     grid-template-areas:
-        "A A A A  B B B B"
-        "C C C C  D D D D";
+        "A A A A"
+        "A A A A"
+        "B B B B";
 }
 
 .box-1 {
+    grid-area: A;
+    justify-self: center;
+    margin-top: 4vh;
+    
+    max-width: 55vw;
+    padding: 3vh 3vw 3vh 3vw;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: -30px 50px 40px -15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 2px;
+    font-size: 0.9vw;
 }
-
 
 .box-2 {
-
+    grid-area: B;    
+    justify-self: center;
+    max-width: 65vw;
+    padding: 3vh 3vw 3vh 3vw;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: white;
+    box-shadow: -10px -30px 40px -15px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    font-size: 0.9vw;
 }
 
-.box-3 {
+.content-main-second {
+    position: relative;
+    margin: 0;
+    height: auto;
+    z-index: 1; 
 }
 
-.box-4 {
+.content-sub-main-second {   
+    margin-right: 3vw;
+    margin-bottom: 0vh;
+    margin-left: 3vw;
+    display: grid;
+    gap: 0vh 0%;
+    grid-template-areas:
+        "A A A A"
+        "B B B B";
 }
-
-.box-5 {}
-
-.box-6 {}
-
-.box-7 {}
-
-.box-8 {}
-
-.box-9 {}
-
-.box-10 {}
+.box2-1 {
+    grid-area: A;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    justify-self: center;
+    max-width: 60vw;
+    padding: 3vh 3vw 3vh 3vw;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: white;
+    box-shadow: -30px 40px 45px -10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    font-size: 0.9vw;
+}
 
 .footer-main {
     z-index: 1;
