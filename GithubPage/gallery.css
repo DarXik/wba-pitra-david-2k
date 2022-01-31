@@ -1,0 +1,248 @@
+:root {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #ffffff;
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 0);
+    background-size: 100px 300px;  */
+}
+
+.nav-bar-main {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    z-index: 5;
+}
+
+.nav-bar-sub-main {
+    position: relative;
+    z-index: 8;
+    display: flex;
+    justify-content: space-around;
+    /* margin-left: 75vw;*/
+    margin-left: 1.5vw;
+    margin-right: 5vh;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.line-divider-main {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+.line-divider {
+    width: 27vw;
+    border-radius: none;
+    box-shadow: 0px 15px 12px -10px rgba(0, 0, 0, 0.58);
+    border-bottom: black 1px solid;
+    margin: -3vh 6vw 0vh 60%;
+}
+
+.nav-bar-main-photo {
+    position: absolute;
+    z-index: 10;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 5vh;
+}
+
+.nav-bar-sub-main-photo img {
+    max-height: auto;
+    max-width: 50%;
+    margin-top: 7%;
+    margin-left: 4%;
+    z-index: 12;
+    position: relative;
+}
+
+.nav-bar-sub-main button {
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 2%;
+    margin-right: 1.5vw;
+    padding-top: .5vh;
+    padding-right: .9vh;
+    padding-bottom: .5vh;
+    padding-left: .9vh;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.4s;
+    text-align: center;
+    display: inline-flex;
+    color: rgb(4, 4, 4);
+    background-color: rgba(0, 0, 0, 0);
+    border: rgb(4, 4, 4);
+}
+
+.nav-bar-sub-main button::after {
+    content: "";
+    /* musí zde být, aby byl následující obsah */
+    width: 11px;
+    /* velikost borderu horního před hoverem */
+    height: 11px;
+    position: absolute;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.nav-bar-sub-main button::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.nav-bar-sub-main button::after {
+    top: -1px;
+    /* umístění mini-borderu před hoverem vůči elementu */
+    left: -1px;
+    border-top: rgb(4, 4, 4) 2px solid;
+    border-left: rgb(4, 4, 4) 2px solid;
+    cursor: pointer;
+}
+
+.nav-bar-sub-main button::before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: rgb(4, 4, 4) 2px solid;
+    border-right: rgb(4, 4, 4) 2px solid;
+    cursor: pointer;
+}
+
+.nav-bar-sub-main button:hover::before {
+    width: 110%;
+    /* jak daleko co pojede */
+    height: 125%;
+    /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
+    cursor: pointer;
+}
+
+.nav-bar-sub-main button:hover::after {
+    width: 110%;
+    height: 125%;
+    /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
+    cursor: pointer;
+}
+
+.nav-bar-sub-main button:hover {
+    /* transform: scale(110%); */
+    box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* [class^="box-"] {
+    display: grid;
+} */
+.content-main {
+    position: relative;
+    margin: 10vh 5vw 30vh 5vw;
+    height: auto;
+    z-index: 1;
+}
+
+.content-sub-main img {
+    border-radius: 2px;
+    border-radius: none;
+    scale: .85;
+    max-width: 100%;
+    max-height: auto;
+    box-shadow: 0px 10px 25px 0px rgb(121, 119, 119, 0.7);
+    transition-duration: .3s;
+    cursor: context-menu;
+}
+
+.content-sub-main img:hover {
+    box-shadow: 0px 0px 45px 10px rgb(121, 119, 119, 0.5);
+    transition-duration: .3;
+    transform: scale(115%);
+    cursor: context-menu;
+}
+
+.content-sub-main {
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 2% 2%;
+    cursor: context-menu;
+    grid-template-areas:
+        "A A A A  B B B B"
+        "C C C C  D D D D"
+        "E E E E  F F F F"
+        "G G G G  H H H H"
+        "I I I I  J J J J"
+        "K K K K  L L L L";
+}
+
+.box-1 {
+    grid-area: A;
+}
+
+.box-2 {
+    grid-area: B;
+}
+
+.box-3 {
+    grid-area: C;
+}
+
+.box-4 {
+    grid-area: D
+}
+
+.box-5 {
+    grid-area: E
+}
+
+.box-6 {
+    grid-area: F
+}
+
+.box-7 {
+    grid-area: G
+}
+
+.box-8 {
+    grid-area: H
+}
+
+.box-9 {
+    grid-area: I
+}
+
+.box-10 {
+    grid-area: J;
+}
+
+.footer-main {
+    z-index: 1;
+    background-color: rgba(199, 194, 188, 0.205);
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    opacity: .8;
+    padding: 1%;
+    /* f */
+}
+
+.footer-sub-main {}
