@@ -235,3 +235,174 @@ body {
     padding: 1%;
     height: fit-content;   
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait){
+    body{
+        background-color: red;
+    }
+    .nav-bar-main {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 5;
+    }
+    
+    .nav-bar-sub-main {
+        position: relative;
+        z-index: 8;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1%;
+        background-color: rgba(0, 245, 90, 0.959);
+    }
+    
+    .line-divider-main {
+        z-index: 5;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .line-divider {
+        width: 60vw;
+        border-radius: none;
+        box-shadow: 0px 15px 12px -10px rgba(0, 0, 0, 0.58);
+        border-bottom: black 1px solid;
+        margin: -3vh 0vw 0vh 0vw;
+    }   
+    
+    .nav-bar-sub-main button {
+        scale: .7;
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding-top: .5vh;
+        padding-right: .9vh;
+        padding-bottom: .5vh;
+        padding-left: .9vh;
+        width: fit-content;
+        height: auto;
+        cursor: pointer;
+        position: relative;
+        transition-duration: 0.4s;
+        text-align: center;
+        display: inline-flex;
+        color: rgb(4, 4, 4);
+        background-color: rgba(0, 0, 0, 0);
+        border: rgb(4, 4, 4);
+    }
+    
+    .nav-bar-sub-main button::after {
+        content: "";
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    
+    .nav-bar-sub-main button::before {
+        content: "";
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    
+    .nav-bar-sub-main button::after {
+        top: -1px;
+        left: -1px;
+        border-top: rgb(4, 4, 4) 2px solid;
+        border-left: rgb(4, 4, 4) 2px solid;
+        cursor: pointer;
+    }
+    
+    .nav-bar-sub-main button::before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: rgb(4, 4, 4) 2px solid;
+        border-right: rgb(4, 4, 4) 2px solid;
+        cursor: pointer;
+    }
+    
+    .nav-bar-sub-main button:hover::before {
+        width: 110%;
+        height: 125%;
+        cursor: pointer;
+    }
+    
+    .nav-bar-sub-main button:hover::after {
+        width: 110%;
+        height: 125%;
+        cursor: pointer;
+    }
+    
+    .nav-bar-sub-main button:hover {
+        box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.1);
+    }
+    #first-grid{
+        background-image: url(background-about-2.jpg);
+        background-position: center;
+        background-size: cover; 
+        height: 65vh;
+        margin-top: -5vh;
+        margin-bottom: 10vh;
+    }
+    .content-main {
+        position: relative;
+        margin: 10vh 0vw 0vh 0vw;
+        height: 65vh;
+        z-index: 1;  
+        
+    }
+    
+    .content-sub-main {
+       
+        margin-top: 10vh;
+        margin-right: 3vw;
+        margin-bottom: 0vh;
+        margin-left: 3vw;
+        display: grid;
+        gap: 12vh 0%;
+        grid-template-areas:
+            "A A A A"
+            "B B B B";
+    }
+    
+    .box-1 {
+        grid-area: A;
+        justify-self: center;
+        margin-top: 5vh;    
+        max-width: 55vw;
+        padding: 3vh 3vw 3vh 3vw;
+        border: 1px solid rgba(0, 0, 0, 0);
+        box-shadow: -30px 50px 40px -15px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 2px;
+        font-size: 0.9vw;
+    }
+    
+    .box-2 {
+        grid-area: B;    
+        justify-self: center;
+        max-width: 65vw;
+        padding: 3vh 3vw 3vh 3vw;
+        border: 1px solid rgba(0, 0, 0, 0);
+        background-color: white;
+        box-shadow: -10px -30px 40px -15px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        font-size: 0.9vw;
+    }    
+    
+    .footer-main {
+        z-index: 1;
+        background-color: rgba(199, 194, 188, 0.205);
+        font-weight: 600;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        opacity: .8;
+        padding: 1%;
+        height: fit-content;   
+    }
+}
