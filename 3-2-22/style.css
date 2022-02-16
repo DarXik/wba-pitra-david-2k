@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    justify-content: center;
+    margin: 5%;
+    gap: 3% 3%;
+    text-align: center;
+    grid-template-areas:
+        "A A A A   B B B B  C C C C"
+        "A A A A  D D D D  E E E E"
+        "F F F F  G G G G  G G G G";
+}
+
+div[class^="box-"] {
+    background-color: red;
+    border: 2px rgb(112, 5, 5) solid;
+}
+
+.box-1 {
+    grid-area: A;
+}
+
+.box-2 {
+    grid-area: B;
+}
+
+.box-3 {
+    grid-area: C;
+}
+
+.box-4 {
+    grid-area: D;
+}
+
+.box-5 {
+    grid-area: E;
+}
+
+.box-6 {
+    grid-area: F;
+}
+
+.box-7 {
+    grid-area: G;
+}
