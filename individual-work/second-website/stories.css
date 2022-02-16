@@ -187,7 +187,36 @@ body {
     scale: 0.65;
     margin-left: 5vw;
 }
-
+/* .box-2 {
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    color: white;
+    position: relative;
+    letter-spacing: 1px;
+}
+   
+.box-2:hover::before {
+    top: 0;
+    left: 0;
+}
+.box-2::before {
+    content: 'is simply dummy';
+    position: absolute;
+    top: -14%;
+    left: 7%;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s ease-in-out;
+    font-weight: bold;
+} */
 
 .box-2 {
     grid-area: B;
