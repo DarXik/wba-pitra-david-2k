@@ -8,6 +8,7 @@ body {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    background-color: $main-content-bg;
 }
 
 html::-webkit-scrollbar,
