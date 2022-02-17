@@ -3,7 +3,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 8vh;
-  background-color: rebeccapurple;
+  background-color: white;
 }
 
 .nav-bar .nav-bar-item:nth-child(1) {
@@ -39,7 +39,66 @@
 }
 
 .main-content {
-  background-color: #f2f2f2;
+  background-color: #dad5d5be;
+}
+
+.main-content .sub-main-content {
+  margin: 0vh 11vw 0% 11vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content .sub-main-item:nth-child(1) {
+  font-family: "Abel", sans-serif;
+  font-weight: 600;
+  margin: 5vh 10vw 0 10vw;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.main-content .sub-main-item:nth-child(2) {
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 3vh;
+  letter-spacing: 2px;
+}
+
+.main-content .sub-main-item:nth-child(3) {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 3vh;
+  text-align: center;
+}
+
+.main-content .button {
+  margin-top: 5vh;
+}
+
+.main-content .button button {
+  font-size: 1rem;
+  padding-top: 1.2vh;
+  padding-right: 7.2vw;
+  padding-bottom: 1.2vh;
+  padding-left: 7.2vw;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: white;
+  border-radius: 25px;
+  background-color: #594adb;
+  border: rgba(0, 0, 0, 0);
 }
 
 html,
