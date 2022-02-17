@@ -1,0 +1,16 @@
+@import "var";
+@import "header";
+@import "content";
+@import "footer";
+
+html,
+body {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
