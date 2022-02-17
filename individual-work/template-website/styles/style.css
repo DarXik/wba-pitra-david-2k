@@ -46,15 +46,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .main-content .sub-main-item:nth-child(1) {
@@ -100,8 +100,8 @@
   border: none;
   color: #fff;
   outline: none;
-  background: -webkit-gradient(linear, left top, right top, from(#e40303), color-stop(#ff8c00), color-stop(#ffed00), color-stop(#008026), color-stop(#004dff), to(#750787));
-  background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+  background: -webkit-gradient(linear, left top, right top, from(#594adb));
+  background: linear-gradient(90deg, #594adb);
   background-size: 300%;
   border-radius: 30px;
   z-index: 1;
@@ -111,10 +111,10 @@
 
 .main-content .button button:hover {
   -webkit-animation: ani 8s linear infinite;
-          animation: ani 8s linear infinite;
+  animation: ani 8s linear infinite;
   border: none;
   -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
+  transform: translateY(-7px);
 }
 
 @-webkit-keyframes ani {
@@ -143,9 +143,8 @@
   right: -5px;
   bottom: -5px;
   z-index: -1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e40303), color-stop(#ff8c00), color-stop(#ffed00), color-stop(#008026), color-stop(#004dff), to(#750787));
-  background: linear-gradient(to bottom, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
-  /* 90deg */
+  background: -webkit-gradient(linear, left top, right top, from(#594adb));
+  background: linear-gradient(90deg, #594adb);
   background-size: 400%;
   border-radius: 35px;
   -webkit-transition: 1s;
@@ -154,11 +153,11 @@
 
 .main-content .button button:hover::before {
   -webkit-filter: blur(20px);
-          filter: blur(20px);
+  filter: blur(20px);
 }
 
 .main-content .button button:active {
-  background: linear-gradient(32deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+  background: linear-gradient(32deg, #594adb);
 }
 
 .main-content .grid {
@@ -185,13 +184,13 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: white;
   margin: 8% 12% 12% 12%;
   border-radius: 2px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .main-content .grid .sub-grid .A img {
@@ -210,13 +209,13 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: white;
   margin: 8% 12% 12% 12%;
   border-radius: 2px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .main-content .grid .sub-grid .B img {
@@ -235,13 +234,13 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: white;
   margin: 8% 12% 12% 12%;
   border-radius: 2px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .main-content .grid .sub-grid .C img {
@@ -260,13 +259,13 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: white;
   margin: 8% 12% 12% 12%;
   border-radius: 2px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .main-content .grid .sub-grid .D img {
@@ -277,6 +276,10 @@
   padding: 15px;
   background-color: #ee3f47;
   border-radius: 50px;
+}
+
+.footer-main {
+  background-color: #333333;
 }
 
 html,
