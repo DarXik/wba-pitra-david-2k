@@ -1,3 +1,5 @@
+$trans: rgba(0, 0, 0, 0);
+
 :root {
     font-family: "Chakra Petch", sans-serif;
 }
@@ -57,19 +59,20 @@ body {
     justify-content: right;
     position: relative;
     z-index: 5;
+
+    .nav-bar-sub-main {
+        position: relative;
+        z-index: 8;
+        display: flex;
+        justify-content: space-around;
+        /* margin-left: 75vw;*/
+        margin-left: 1.5vw;
+        margin-right: 6vh;
+        padding: 1%;
+        background-color: rgba(0, 0, 0, 0);
+    }
 }
 
-.nav-bar-sub-main {
-    position: relative;
-    z-index: 8;
-    display: flex;
-    justify-content: space-around;
-    /* margin-left: 75vw;*/
-    margin-left: 1.5vw;
-    margin-right: 6vh;
-    padding: 1%;
-    background-color: rgba(0, 0, 0, 0);
-}
 .nav-bar-sub-main button {
     text-decoration: none;
     font-size: 1.3rem;
@@ -152,111 +155,110 @@ body {
     margin: 10vh 0vw 0vh 0vw;
     height: 65vh;
     z-index: 1;
+    .content-sub-main {
+        margin-top: 10vh;
+        margin-right: 3vw;
+        margin-bottom: 0vh;
+        margin-left: 3vw;
+        display: grid;
+        gap: 12vh 0%;
+        grid-template-areas:
+            "A A A A"
+            "B B B B";
+    }
+    
+    .box-1 {
+        grid-area: A;
+        justify-self: center;
+        margin-top: 5vh;
+        max-width: 55vw;
+        padding: 3vh 3vw 3vh 3vw;
+        border: 1px solid rgba(0, 0, 0, 0);
+        box-shadow: -30px 50px 40px -15px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 2px;
+        font-size: 0.9vw;
+        padding: 0.8em 1.8em;
+        border: 2px solid $trans;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        transition: 0.3s;
+        z-index: 1;
+        font-family: inherit;
+        color: $trans;
+    }
+    
+    .box-1::before {
+        content: "";
+        width: 0;
+        height: 300%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: #17c3b2;
+        transition: 0.5s ease;
+        display: block;
+        z-index: -1;
+    }
+    
+    .box-1:hover::before {
+        width: 105%;
+    }
+    
+    .box-1:hover {
+        color: #111;
+    }
+    
+    .box-2 {
+        grid-area: B;
+        justify-self: center;
+        max-width: 65vw;
+        padding: 3vh 3vw 3vh 3vw;
+        border: 1px solid $trans;
+        background-color: white;
+        box-shadow: -10px -30px 40px -15px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        font-size: 0.9vw;
+    }
+    
+    /* #second-grid{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        background-image: url(background-about-1.jpg);
+        background-position: center;
+        background-size: cover; 
+        height: 75vh;
+    }
+    .content-main-second {
+        position: relative;
+        margin: 0;
+        height: auto;
+        z-index: 1; 
+    }
+    
+    .content-sub-main-second {  
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .box2-1 {
+        margin-top: 20vh;
+        max-width: 60vw;
+        padding: 3vh 3vw 3vh 3vw;
+        border: 1px solid rgba(0, 0, 0, 0);
+        background-color: white;
+        box-shadow: -30px 40px 45px -10px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        font-size: 0.9vw;
+    } */
+    
 }
 
-.content-sub-main {
-    margin-top: 10vh;
-    margin-right: 3vw;
-    margin-bottom: 0vh;
-    margin-left: 3vw;
-    display: grid;
-    gap: 12vh 0%;
-    grid-template-areas:
-        "A A A A"
-        "B B B B";
-}
-
-.box-1 {
-    grid-area: A;
-    justify-self: center;
-    margin-top: 5vh;
-    max-width: 55vw;
-    padding: 3vh 3vw 3vh 3vw;
-    border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow: -30px 50px 40px -15px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    border-radius: 2px;
-    font-size: 0.9vw;
-}
-.box-1 {
-    padding: 0.8em 1.8em;
-    border: 2px solid #17c3b2;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    transition: 0.3s;
-    z-index: 1;
-    font-family: inherit;
-    color: #17c3b2;
-}
-
-.box-1::before {
-    content: "";
-    width: 0;
-    height: 300%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background: #17c3b2;
-    transition: 0.5s ease;
-    display: block;
-    z-index: -1;
-}
-
-.box-1:hover::before {
-    width: 105%;
-}
-
-.box-1:hover {
-    color: #111;
-}
-
-.box-2 {
-    grid-area: B;
-    justify-self: center;
-    max-width: 65vw;
-    padding: 3vh 3vw 3vh 3vw;
-    border: 1px solid rgba(0, 0, 0, 0);
-    background-color: white;
-    box-shadow: -10px -30px 40px -15px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    font-size: 0.9vw;
-}
-
-/* #second-grid{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    background-image: url(background-about-1.jpg);
-    background-position: center;
-    background-size: cover; 
-    height: 75vh;
-}
-.content-main-second {
-    position: relative;
-    margin: 0;
-    height: auto;
-    z-index: 1; 
-}
-
-.content-sub-main-second {  
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.box2-1 {
-    margin-top: 20vh;
-    max-width: 60vw;
-    padding: 3vh 3vw 3vh 3vw;
-    border: 1px solid rgba(0, 0, 0, 0);
-    background-color: white;
-    box-shadow: -30px 40px 45px -10px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    font-size: 0.9vw;
-} */
 
 .footer-main {
     z-index: 1;
@@ -321,7 +323,7 @@ body {
         text-align: center;
         display: inline-flex;
         color: rgb(4, 4, 4);
-        background-color: rgba(0, 0, 0, 0);
+        background-color: $trans;
         border: rgb(4, 4, 4);
     }
 
@@ -419,7 +421,7 @@ body {
         justify-self: center;
         max-width: 65vw;
         padding: 3vh 3vw 3vh 3vw;
-        border: 1px solid rgba(0, 0, 0, 0);
+        border: 1px solid $trans;
         background-color: white;
         box-shadow: -10px -30px 40px -15px rgba(0, 0, 0, 0.1);
         border-radius: 2px;
