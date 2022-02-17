@@ -1,0 +1,25 @@
+.nav-bar {
+    display: flex;
+    height: 8vh;
+    background-color: rebeccapurple;
+    .nav-bar-item:nth-child(1) {
+        display: flex;
+        align-self: center;
+        img {
+            padding: 20%;
+            margin-left: 15%;
+            display: flex;
+            align-self: center;
+        }
+    }
+    .nav-bar-item:nth-child(2) {
+        display: flex;
+        align-self: center;
+        justify-self: right;
+        padding: 20%;
+
+        p {
+            margin-right: 15%;
+        }
+    }
+}
