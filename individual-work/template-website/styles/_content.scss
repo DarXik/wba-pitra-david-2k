@@ -6,15 +6,15 @@
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     .sub-main-item:nth-child(1) {
         font-family: $abel;
@@ -54,11 +54,8 @@
             border: none;
             color: #fff;
             outline: none;
-           
             background: -webkit-gradient(linear, left top, right top, from(#594adb));
-           
             background: -o-linear-gradient(left, #594adb);
-           
             background: linear-gradient(90deg, #594adb);
             background-size: 300%;
             border-radius: 30px;
@@ -70,11 +67,11 @@
 
         button:hover {
             -webkit-animation: ani 8s linear infinite;
-                    animation: ani 8s linear infinite;
+            animation: ani 8s linear infinite;
             border: none;
             -webkit-transform: translateY(-7px);
-                -ms-transform: translateY(-7px);
-                    transform: translateY(-7px);
+            -ms-transform: translateY(-7px);
+            transform: translateY(-7px);
         }
 
         @-webkit-keyframes ani {
@@ -105,12 +102,9 @@
             right: -5px;
             bottom: -5px;
             z-index: -1;
-           
             background: -webkit-gradient(linear, left top, right top, from(#594adb));
-           
             background: -o-linear-gradient(left, #594adb);
-           
-            background: linear-gradient(90deg, #594adb); 
+            background: linear-gradient(90deg, #594adb);
             background-size: 400%;
             border-radius: 35px;
             -webkit-transition: 1s;
@@ -120,13 +114,11 @@
 
         button:hover::before {
             -webkit-filter: blur(20px);
-                    filter: blur(20px);
+            filter: blur(20px);
         }
 
         button:active {
-           
             background: -o-linear-gradient(58deg, #594adb);
-           
             background: linear-gradient(32deg, #594adb);
         }
     }
@@ -141,7 +133,7 @@
             }
             p {
                 margin: 3% 8% 8% 8%;
-                font-size: .9rem;
+                font-size: 0.9rem;
                 font-family: $comfortaa;
             }
 
@@ -151,13 +143,13 @@
                 display: flex;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
                 background-color: white;
                 margin: $box-centralization;
                 border-radius: $box-radius;
                 -webkit-box-shadow: $box-shadowing;
-                        box-shadow: $box-shadowing;
+                box-shadow: $box-shadowing;
                 img {
                     margin: $icon-centralization;
                     max-width: -webkit-fit-content;
@@ -174,13 +166,13 @@
                 display: flex;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
                 background-color: white;
                 margin: $box-centralization;
                 border-radius: $box-radius;
                 -webkit-box-shadow: $box-shadowing;
-                        box-shadow: $box-shadowing;
+                box-shadow: $box-shadowing;
                 img {
                     margin: $icon-centralization;
                     max-width: -webkit-fit-content;
@@ -197,13 +189,13 @@
                 display: flex;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
                 background-color: white;
                 margin: $box-centralization;
                 border-radius: $box-radius;
                 -webkit-box-shadow: $box-shadowing;
-                        box-shadow: $box-shadowing;
+                box-shadow: $box-shadowing;
                 img {
                     margin: $icon-centralization;
                     max-width: -webkit-fit-content;
@@ -220,13 +212,13 @@
                 display: flex;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
                 background-color: white;
                 margin: $box-centralization;
                 border-radius: $box-radius;
                 -webkit-box-shadow: $box-shadowing;
-                        box-shadow: $box-shadowing;
+                box-shadow: $box-shadowing;
                 img {
                     margin: $icon-centralization;
                     max-width: -webkit-fit-content;

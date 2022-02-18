@@ -12,7 +12,8 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .nav-bar .nav-bar-item:nth-child(1) img {
@@ -22,7 +23,8 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .nav-bar .nav-bar-item:nth-child(2) {
@@ -30,7 +32,9 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: right;
   justify-self: right;
   padding: 20%;
 }

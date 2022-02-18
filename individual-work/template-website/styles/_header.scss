@@ -1,21 +1,36 @@
 .nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 9vh;
     background-color: white;
     .nav-bar-item:nth-child(1) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
         img {
             padding: 20%;
             margin-left: 15%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-self: center;
+            -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+                align-self: center;
         }
     }
     .nav-bar-item:nth-child(2) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-self: center;
-        justify-self: right;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        -ms-grid-column-align: right;
+            justify-self: right;
         padding: 20%;
 
         p {
