@@ -3,7 +3,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 11vh;
+  height: 9vh;
   background-color: white;
 }
 
@@ -162,7 +162,6 @@
 
 .main-content .grid {
   background-color: #d9d9d9;
-  border: red 1px solid;
 }
 
 .main-content .grid .sub-grid h1 {
@@ -189,8 +188,8 @@
   background-color: white;
   margin: 8% 12% 12% 12%;
   border-radius: 2px;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 .main-content .grid .sub-grid .A img {
@@ -214,8 +213,8 @@
   background-color: white;
   margin: 8% 12% 12% 12%;
   border-radius: 2px;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 .main-content .grid .sub-grid .B img {
@@ -239,8 +238,8 @@
   background-color: white;
   margin: 8% 12% 12% 12%;
   border-radius: 2px;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 .main-content .grid .sub-grid .C img {
@@ -264,8 +263,8 @@
   background-color: white;
   margin: 8% 12% 12% 12%;
   border-radius: 2px;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 .main-content .grid .sub-grid .D img {
@@ -280,6 +279,39 @@
 
 .footer-main {
   background-color: #333333;
+  height: 25vh;
+}
+
+.footer-main .sub-footer-main {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 5% 10% 5% 10%;
+  height: 25vh;
+}
+
+.footer-main .sub-footer-main .footer-item:nth-child(1) {
+  text-align: center;
+  font-size: .9rem;
+}
+
+.footer-main .sub-footer-main .footer-item:nth-child(2) {
+  font-size: .75rem;
+  text-align: center;
+}
+
+.footer-main .sub-footer-main .footer-item:nth-child(2) span {
+  text-decoration: underline;
 }
 
 html,

@@ -1,6 +1,24 @@
 .footer-main {
     background-color: #333333;
+    height: 25vh;
     .sub-footer-main{
-        
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between; 
+        padding: 5% 10% 5% 10%; 
+        height: 25vh;
+        .footer-item:nth-child(1){
+            text-align: center;  
+            font-size: .9rem;
+        }
+        .footer-item:nth-child(2){
+            font-size: .75rem;
+            text-align: center;
+            span{
+                text-decoration: underline;
+            }
+        }
     }
 }
