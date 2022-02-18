@@ -1,6 +1,6 @@
+
 .main-content {
     .sub-main-content {
-        background-color: $main-content-bg;
         margin: 7vh 11vw 0vh 11vw;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -40,11 +40,11 @@
         margin-top: 6vh;
         margin-bottom: 4vh;
         button {
-            font-size: 0.9rem;
+            font-size: 1.1rem;
             padding-top: 1.3vh;
-            padding-right: 2rem;
+            padding-right: 2.2rem;
             padding-bottom: 1.3vh;
-            padding-left: 2rem;
+            padding-left: 2.2rem;
             letter-spacing: 1px;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 600;
@@ -54,9 +54,9 @@
             border: none;
             color: #fff;
             outline: none;
-            background: -webkit-gradient(linear, left top, right top, from(#594adb));
-            background: -o-linear-gradient(left, #594adb);
-            background: linear-gradient(90deg, #594adb);
+            background: -webkit-gradient(linear, left top, right top, from($button-clr));
+            background: -o-linear-gradient(left, $button-clr);
+            background: linear-gradient(90deg, $button-clr);
             background-size: 300%;
             border-radius: 30px;
             z-index: 1;
@@ -102,9 +102,9 @@
             right: -5px;
             bottom: -5px;
             z-index: -1;
-            background: -webkit-gradient(linear, left top, right top, from(#594adb));
-            background: -o-linear-gradient(left, #594adb);
-            background: linear-gradient(90deg, #594adb);
+            background: -webkit-gradient(linear, left top, right top, from($button-clr));
+            background: -o-linear-gradient(left, $button-clr);
+            background: linear-gradient(90deg, $button-clr);
             background-size: 400%;
             border-radius: 35px;
             -webkit-transition: 1s;
@@ -118,23 +118,29 @@
         }
 
         button:active {
-            background: -o-linear-gradient(58deg, #594adb);
-            background: linear-gradient(32deg, #594adb);
+            background: -o-linear-gradient(58deg, $button-clr);
+            background: linear-gradient(32deg, $button-clr);
         }
     }
     .grid {
-        background-color: $grid-bg;
+        #3 {
+            z-index: 9;
+            position: relative;
+            background-color: red;            
+        }
+        
         .sub-grid {
             h1 {
-                margin: 3% 8% 0% 8%;
-                font-size: 1.3rem;
+                margin: 3vh 8vw 0vh 8vw;
+                font-size: 1.7rem;
                 font-style: italic;
                 font-family: $condensed;
             }
             p {
-                margin: 3% 8% 8% 8%;
-                font-size: 0.9rem;
+                margin: 3vh 8vw 8vh 8vw;
+                font-size: 1rem;
                 font-family: $comfortaa;
+                color: #808080;
             }
 
             .A {
