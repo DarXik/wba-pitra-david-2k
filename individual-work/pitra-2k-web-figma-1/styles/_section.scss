@@ -1,6 +1,38 @@
-.content-container{
+.content-container {
+    .welcome-banner {
+        background-color: #7c7474;
+        display: flex;
+        flex-direction: column;
+        /* justify-items: center; */
+        align-items: center;
+        margin: 3em 2em 3em 2em;
 
-    .welcome-banner{
-        
+        h1 {
+            color: $general-text-color;
+            margin: 1em;
+        }
+        p {
+            margin: 1em;
+            color: $general-text-color;
+            text-align: center;
+        }
+        button {
+            margin: 1em;
+            padding: 0 1.4em 0 1.4em;
+            background-color: #a19b98;
+            border: #a19b98 1px solid;
+            font-size: 0.9rem;
+            box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+        }
+    }
+    .offers-section {
+        .offers-section-heading {
+        }
+        .offer-section-1 {
+            display: flex;
+            flex-direction: row;
+            .sub-offer-section-1 {
+            }
+        }
     }
 }
