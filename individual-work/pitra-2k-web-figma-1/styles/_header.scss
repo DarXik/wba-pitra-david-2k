@@ -1,3 +1,45 @@
-.nav{
-    background-color: #CBC1B1;    
+
+
+.nav-bar {
+    background-color: #cbc1b1;
+    .nav-bar-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin: 0 1em 0 1em;
+        .nav-button {
+            .line-container {
+                width: 60px;
+                display: block;
+                margin: 50px auto;;
+                padding: 8px 10px;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+            }
+
+            .line-container div {
+                height: 4px !important;
+                background: rgb(29, 28, 28);
+                margin: 7px 0px 7px 0px;
+                border-radius: 25px;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                .one {
+                    width: 35px;
+                }
+                .two {
+                    width: 35px;
+                }
+
+                .three {
+                    width: 35px;
+                }
+                /* 
+                .line-containerr:hover div {
+                width: 60px;
+            }   */
+            }
+        }
+    }
 }
