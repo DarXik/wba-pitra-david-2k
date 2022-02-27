@@ -14,7 +14,6 @@
         p {
             margin: 1em;
             color: $general-text-color;
-            text-align: center;
         }
         button {
             margin: 1em;
@@ -29,9 +28,35 @@
         .offers-section-heading {
         }
         .offer-section-1 {
-            display: flex;
-            flex-direction: row;
+            /* background: url(/wba-pitra-david-2k/individual-work/pitra-2k-web-figma-1/images/offer1.jpg);
+            background-repeat: no-repeat; */
+            img{
+                width:300px;
+                height: fit-content;
+            }
+            @include offers-flex-settings;
             .sub-offer-section-1 {
+                @include sub-offers-flex-and-text-settings;
+            }
+        }
+        .offer-section-2 {
+            img{
+                width:300px;
+                height: fit-content;
+            }
+            @include offers-flex-settings;
+            .sub-offer-section-2 {
+                @include sub-offers-flex-and-text-settings;
+            }
+        }
+        .offer-section-3 {
+            img{
+                width:300px;
+                height: fit-content;
+            }
+            @include offers-flex-settings;
+            .sub-offer-section-3 {
+                @include sub-offers-flex-and-text-settings;
             }
         }
     }
