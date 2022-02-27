@@ -63,6 +63,10 @@ body {
   width: 30px;
 }
 
+.content-container {
+  margin: 3em 2em 3em 2em;
+}
+
 .content-container .welcome-banner {
   background-color: #7c7474;
   display: -webkit-box;
@@ -76,7 +80,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 3em 2em 3em 2em;
 }
 
 .content-container .welcome-banner h1 {
@@ -91,7 +94,7 @@ body {
 
 .content-container .welcome-banner button {
   margin: 1em;
-  padding: 0 1.4em 0 1.4em;
+  padding: 1% 1.5em 1% 1.5em;
   background-color: #a19b98;
   border: #a19b98 1px solid;
   font-size: 0.9rem;
@@ -102,6 +105,7 @@ body {
 .content-container .offers-section .offer-section-1 {
   /* background: url(/wba-pitra-david-2k/individual-work/pitra-2k-web-figma-1/images/offer1.jpg);
             background-repeat: no-repeat; */
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +113,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 3em;
 }
 
 .content-container .offers-section .offer-section-1 img {
@@ -130,20 +133,20 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 3%;
 }
 
 .content-container .offers-section .offer-section-1 .sub-offer-section-1 h3 {
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
 }
 
 .content-container .offers-section .offer-section-1 .sub-offer-section-1 p {
-  font-size: .6rem;
+  font-size: 0.6rem;
   color: #777774;
 }
 
 .content-container .offers-section .offer-section-2 {
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +154,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 3em;
 }
 
 .content-container .offers-section .offer-section-2 img {
@@ -172,20 +174,20 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 3%;
 }
 
 .content-container .offers-section .offer-section-2 .sub-offer-section-2 h3 {
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
 }
 
 .content-container .offers-section .offer-section-2 .sub-offer-section-2 p {
-  font-size: .6rem;
+  font-size: 0.6rem;
   color: #777774;
 }
 
 .content-container .offers-section .offer-section-3 {
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +195,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 3em;
 }
 
 .content-container .offers-section .offer-section-3 img {
@@ -214,16 +215,15 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 3%;
 }
 
 .content-container .offers-section .offer-section-3 .sub-offer-section-3 h3 {
-  font-size: .75rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
 }
 
 .content-container .offers-section .offer-section-3 .sub-offer-section-3 p {
-  font-size: .6rem;
+  font-size: 0.6rem;
   color: #777774;
 }
 /*# sourceMappingURL=styles.css.map */

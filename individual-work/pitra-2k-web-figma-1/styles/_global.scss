@@ -2,25 +2,22 @@
 $nav-bar-line-width: 30px;
 $general-text-color: #f8f7ec;
 
-
 /* MIXINS */
-@mixin offers-flex-settings{
+@mixin offers-flex-settings {
     display: flex;
     flex-direction: row;
-    margin: 3em;
 }
-@mixin sub-offers-flex-and-text-settings{
+@mixin sub-offers-flex-and-text-settings {
     display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                margin: 3%;
-                h3{
-                    font-size: .75rem;
-                    letter-spacing: 1px;
-                }
-                p{
-                   
-                    font-size: .6rem;
-                    color: #777774;
-                }
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    h3 {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+    p {
+        font-size: 0.6rem;
+        color: #777774;
+    }
 }

@@ -1,11 +1,12 @@
 .content-container {
+    margin: 3em 2em 3em 2em;
     .welcome-banner {
         background-color: #7c7474;
         display: flex;
         flex-direction: column;
         /* justify-items: center; */
         align-items: center;
-        margin: 3em 2em 3em 2em;
+        
 
         h1 {
             color: $general-text-color;
@@ -17,7 +18,7 @@
         }
         button {
             margin: 1em;
-            padding: 0 1.4em 0 1.4em;
+            padding: 1% 1.5em 1% 1.5em;
             background-color: #a19b98;
             border: #a19b98 1px solid;
             font-size: 0.9rem;
@@ -34,6 +35,7 @@
                 width:300px;
                 height: fit-content;
             }
+            margin-top: 5vh;
             @include offers-flex-settings;
             .sub-offer-section-1 {
                 @include sub-offers-flex-and-text-settings;
@@ -44,6 +46,7 @@
                 width:300px;
                 height: fit-content;
             }
+            margin-top: 5vh;
             @include offers-flex-settings;
             .sub-offer-section-2 {
                 @include sub-offers-flex-and-text-settings;
@@ -54,6 +57,7 @@
                 width:300px;
                 height: fit-content;
             }
+            margin-top: 5vh;
             @include offers-flex-settings;
             .sub-offer-section-3 {
                 @include sub-offers-flex-and-text-settings;
