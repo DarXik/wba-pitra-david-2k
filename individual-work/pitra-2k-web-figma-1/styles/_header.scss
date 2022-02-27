@@ -1,18 +1,24 @@
+.helo {
+    position: absolute;
+    z-index: 8;
+}
 
-
-.nav-bar {
+.nav-bar-container {
     background-color: #cbc1b1;
-    .nav-bar-content {
+    position: relative;
+    z-index: 9;
+    .nav-bar-sub-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 80px;
-        margin: 0 1em 0 1em;
+        margin: 0 1.6em 0 1.6em;
+
         .nav-button {
             .line-container {
                 width: 60px;
                 display: block;
-                margin: 50px auto;;
+                margin: 50px auto;
                 padding: 8px 10px;
                 transition: all 0.5s;
                 -webkit-transition: all 0.5s;
@@ -22,18 +28,18 @@
                 height: 4px !important;
                 background: rgb(29, 28, 28);
                 margin: 7px 0px 7px 0px;
-                border-radius: 25px;
+                border-radius: 45px;
                 transition: all 0.5s;
                 -webkit-transition: all 0.5s;
                 .one {
-                    width: 35px;
+                    width: $nav-bar-line-width;
                 }
                 .two {
-                    width: 35px;
+                    width: $nav-bar-line-width;
                 }
 
                 .three {
-                    width: 35px;
+                    width: $nav-bar-line-width;
                 }
                 /* 
                 .line-containerr:hover div {

@@ -1,8 +1,15 @@
-.nav-bar {
-  background-color: #cbc1b1;
+.helo {
+  position: absolute;
+  z-index: 8;
 }
 
-.nav-bar .nav-bar-content {
+.nav-bar-container {
+  background-color: #cbc1b1;
+  position: relative;
+  z-index: 9;
+}
+
+.nav-bar-container .nav-bar-sub-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,10 +20,10 @@
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
-  margin: 0 1em 0 1em;
+  margin: 0 1.6em 0 1.6em;
 }
 
-.nav-bar .nav-bar-content .nav-button .line-container {
+.nav-bar-container .nav-bar-sub-container .nav-button .line-container {
   width: 60px;
   display: block;
   margin: 50px auto;
@@ -25,11 +32,11 @@
   -webkit-transition: all 0.5s;
 }
 
-.nav-bar .nav-bar-content .nav-button .line-container div {
+.nav-bar-container .nav-bar-sub-container .nav-button .line-container div {
   height: 4px !important;
   background: #1d1c1c;
   margin: 7px 0px 7px 0px;
-  border-radius: 25px;
+  border-radius: 45px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   /* 
@@ -38,15 +45,15 @@
             }   */
 }
 
-.nav-bar .nav-bar-content .nav-button .line-container div .one {
-  width: 35px;
+.nav-bar-container .nav-bar-sub-container .nav-button .line-container div .one {
+  width: 30px;
 }
 
-.nav-bar .nav-bar-content .nav-button .line-container div .two {
-  width: 35px;
+.nav-bar-container .nav-bar-sub-container .nav-button .line-container div .two {
+  width: 30px;
 }
 
-.nav-bar .nav-bar-content .nav-button .line-container div .three {
-  width: 35px;
+.nav-bar-container .nav-bar-sub-container .nav-button .line-container div .three {
+  width: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
