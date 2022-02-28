@@ -2,17 +2,23 @@
   display: flex;
   flex-direction: row;
 }
+@mixin contact-section-informations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 @mixin sub-offers-flex-and-text-settings {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: .8em;
+  padding: 0.8em;
   h3 {
     font-size: 0.85rem;
     letter-spacing: 1px;
   }
   p {
-    margin-top: .6em;
+    margin-top: 0.6em;
     font-size: 0.6rem;
     color: #777774;
   }
