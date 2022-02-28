@@ -3,13 +3,12 @@
     display: flex;
     justify-content: center;
     margin: 0 5vw 0 5vw;
-    width: 70vw;
     .sub-section-content-container {
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
-        align-items: space-between;
-        /* width: fit-content; */
+        align-items: space-evenly;
+        width: 60vw;
         .section-content-item:nth-child(1) {
             @include contact-section-informations;
         }
