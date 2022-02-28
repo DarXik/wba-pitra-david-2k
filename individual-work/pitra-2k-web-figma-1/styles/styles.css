@@ -1,4 +1,4 @@
-html {
+body {
   /* font-family: 'Lato', sans-serif; */
   /* font-family: 'Smooch Sans', sans-serif; */
   font-family: 'Hubballi', cursive;
@@ -88,12 +88,12 @@ html {
 }
 
 .content-container .welcome-banner p {
-  margin: 1em;
+  margin: 0 .6em .5em .6em;
   color: #f8f7ec;
 }
 
 .content-container .welcome-banner button {
-  margin: 1em;
+  margin: 1.1em;
   padding: 1% 1.5em 1% 1.5em;
   background-color: #a19b98;
   border: #a19b98 1px solid;
@@ -102,10 +102,15 @@ html {
           box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
 }
 
+.content-container .offers-section .offers-section-heading {
+  /* border: 1px red solid; */
+  margin-top: 2.3em;
+}
+
 .content-container .offers-section .offer-section-1 {
   /* background: url(/wba-pitra-david-2k/individual-work/pitra-2k-web-figma-1/images/offer1.jpg);
             background-repeat: no-repeat; */
-  margin-top: 5vh;
+  margin-top: 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,23 +135,25 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .8em;
 }
 
 .content-container .offers-section .offer-section-1 .sub-offer-section-1 h3 {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   letter-spacing: 1px;
 }
 
 .content-container .offers-section .offer-section-1 .sub-offer-section-1 p {
+  margin-top: .6em;
   font-size: 0.6rem;
   color: #777774;
 }
 
 .content-container .offers-section .offer-section-2 {
-  margin-top: 5vh;
+  margin-top: 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,23 +178,25 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .8em;
 }
 
 .content-container .offers-section .offer-section-2 .sub-offer-section-2 h3 {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   letter-spacing: 1px;
 }
 
 .content-container .offers-section .offer-section-2 .sub-offer-section-2 p {
+  margin-top: .6em;
   font-size: 0.6rem;
   color: #777774;
 }
 
 .content-container .offers-section .offer-section-3 {
-  margin-top: 5vh;
+  margin-top: 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,22 +221,59 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .8em;
 }
 
 .content-container .offers-section .offer-section-3 .sub-offer-section-3 h3 {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   letter-spacing: 1px;
 }
 
 .content-container .offers-section .offer-section-3 .sub-offer-section-3 p {
+  margin-top: .6em;
   font-size: 0.6rem;
   color: #777774;
 }
 
+.content-container .registration-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.3em;
+}
+
+.content-container .registration-button button {
+  padding: 1% 1.5em 1% 1.5em;
+  background-color: #a19b98;
+  border: #a19b98 1px solid;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+  color: #f8f7ec;
+}
+
 .footer-container {
   background-color: #cbc1b1;
+}
+
+.footer-container .footer-information {
+  padding: 1em 0 1em 0;
+  /*  border: red 1px solid; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */
