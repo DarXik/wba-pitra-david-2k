@@ -3,6 +3,8 @@ body{
 }
 
 
-@import "global";
+@import "var";
+@import "mixin";
 @import "header";
 @import "section";
+@import "footer";

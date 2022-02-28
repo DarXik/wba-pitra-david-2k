@@ -1,0 +1,18 @@
+@mixin offers-flex-settings {
+  display: flex;
+  flex-direction: row;
+}
+@mixin sub-offers-flex-and-text-settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  h3 {
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+  }
+  p {
+      font-size: 0.6rem;
+      color: #777774;
+  }
+}
