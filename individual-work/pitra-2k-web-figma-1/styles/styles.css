@@ -1,9 +1,9 @@
-body {
-  font-family: 'Lato', sans-serif;
+html {
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Smooch Sans', sans-serif; */
+  font-family: 'Hubballi', cursive;
 }
 
-/* VARIABLES */
-/* MIXINS */
 .helo {
   position: absolute;
   z-index: 8;
@@ -225,5 +225,9 @@ body {
 .content-container .offers-section .offer-section-3 .sub-offer-section-3 p {
   font-size: 0.6rem;
   color: #777774;
+}
+
+.footer-container {
+  background-color: #cbc1b1;
 }
 /*# sourceMappingURL=styles.css.map */

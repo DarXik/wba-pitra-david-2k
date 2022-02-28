@@ -4,7 +4,7 @@
 }
 
 .nav-bar-container {
-    background-color: #cbc1b1;
+    background-color: $header-and-footer-background-color;
     position: relative;
     z-index: 9;
     .nav-bar-sub-container {
@@ -37,7 +37,6 @@
                 .two {
                     width: $nav-bar-line-width;
                 }
-
                 .three {
                     width: $nav-bar-line-width;
                 }
