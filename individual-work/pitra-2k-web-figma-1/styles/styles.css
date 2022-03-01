@@ -90,7 +90,7 @@ body {
 }
 
 .content-container .welcome-banner p {
-  margin: 0 .6em .5em .6em;
+  margin: 0 0.6em 0.5em 0.6em;
   color: #f8f7ec;
 }
 
@@ -110,8 +110,6 @@ body {
 }
 
 .content-container .offers-section .offer-section-1 {
-  /* background: url(/wba-pitra-david-2k/individual-work/pitra-2k-web-figma-1/images/offer1.jpg);
-            background-repeat: no-repeat; */
   margin-top: 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,12 +314,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   /* dát text doleva */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-content-container .sub-section-content-container .section-content-item:nth-child(2) {
@@ -332,12 +330,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   /* dát text doleva */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-content-container .sub-section-content-container .section-content-item:nth-child(3) {
@@ -348,12 +346,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   /* dát text doleva */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-content-container .sub-section-content-container .section-content-item:nth-child(4) {
@@ -364,12 +362,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   /* dát text doleva */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-content-container .sub-section-content-container .section-content-item:nth-child(5) {
@@ -380,12 +378,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   /* dát text doleva */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-content-container .sub-section-content-container .section-content-item:nth-child(6) {
@@ -396,11 +394,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   /* dát text doleva */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */

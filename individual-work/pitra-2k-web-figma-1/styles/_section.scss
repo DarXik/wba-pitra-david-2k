@@ -6,14 +6,13 @@
         flex-direction: column;
         /* justify-items: center; */
         align-items: center;
-        
 
         h1 {
             color: $general-text-color;
             margin: 1em;
         }
         p {
-            margin: 0 .6em .5em .6em;
+            margin: 0 0.6em 0.5em 0.6em;
             color: $general-text-color;
         }
         button {
@@ -27,10 +26,8 @@
             margin-top: 2.3em;
         }
         .offer-section-1 {
-            /* background: url(/wba-pitra-david-2k/individual-work/pitra-2k-web-figma-1/images/offer1.jpg);
-            background-repeat: no-repeat; */
-            img{
-                width:300px;
+            img {
+                width: 300px;
                 height: fit-content;
             }
             margin-top: $sub-offers-section-text-top-padding;
@@ -40,8 +37,8 @@
             }
         }
         .offer-section-2 {
-            img{
-                width:300px;
+            img {
+                width: 300px;
                 height: fit-content;
             }
             margin-top: $sub-offers-section-text-top-padding;
@@ -51,8 +48,8 @@
             }
         }
         .offer-section-3 {
-            img{
-                width:300px;
+            img {
+                width: 300px;
                 height: fit-content;
             }
             margin-top: $sub-offers-section-text-top-padding;
@@ -62,13 +59,7 @@
             }
         }
     }
-    .registration-button{
-        display: flex;
-        justify-content: center;
-        margin-top: 2.3em;
-        button{
-            @include registratin-button;  
-            color: $general-text-color;  
-        }
+    .registration-button {
+        @include registration-button;
     }
 }
