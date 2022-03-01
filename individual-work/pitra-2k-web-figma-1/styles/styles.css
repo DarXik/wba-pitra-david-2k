@@ -1,10 +1,4 @@
 @charset "UTF-8";
-body {
-  /* font-family: 'Lato', sans-serif; */
-  /* font-family: 'Smooch Sans', sans-serif; */
-  font-family: "Hubballi", cursive;
-}
-
 /* .helo {
     position: absolute;
     z-index: 8;
@@ -95,7 +89,13 @@ body {
 
 .content-container .welcome-banner button {
   margin: 1.1em;
-  /* @include registration-button-mixin; */
+  padding: 1% 1.5em 1% 1.5em;
+  background-color: #a19b98;
+  border: #a19b98 1px solid;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+  color: #efeee9;
 }
 
 .content-container .offers-section .offers-section-heading {
@@ -232,7 +232,7 @@ body {
   color: #777774;
 }
 
-.content-container .offers-section .registration-button {
+.registration-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,14 +242,14 @@ body {
   margin-top: 2.3em;
 }
 
-.content-container .offers-section .registration-button button {
+.registration-button button {
   padding: 1% 1.5em 1% 1.5em;
   background-color: #a19b98;
   border: #a19b98 1px solid;
   font-size: 0.9rem;
   -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
-  color: red;
+  color: #efeee9;
 }
 
 .footer-container {
@@ -259,7 +259,6 @@ body {
 
 .footer-container .footer-information {
   padding: 1em 0 1em 0;
-  /*  border: red 1px solid; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,5 +393,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body {
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Smooch Sans', sans-serif; */
+  font-family: "Hubballi", cursive;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,3 @@
-body {
-    /* font-family: 'Lato', sans-serif; */
-    /* font-family: 'Smooch Sans', sans-serif; */
-    font-family: "Hubballi", cursive;
-}
-
 @import "var";
 @import "mixin";
 @import "header";
@@ -11,3 +5,9 @@ body {
 @import "footer";
 @import "information-section-module";
 @import "contact-section-module";
+body {
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Smooch Sans', sans-serif; */
+    font-family: "Hubballi", cursive;
+}
+

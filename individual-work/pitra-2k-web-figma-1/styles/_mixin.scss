@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: row;
 }
+
 @mixin contact-section-informations {
   display: flex;
   flex-direction: row;
   justify-content: space-around; /* dát text doleva */
   align-items: center;
 }
+
 @mixin sub-offers-flex-and-text-settings {
   display: flex;
   flex-direction: column;
@@ -23,16 +25,12 @@
     color: #777774;
   }
 }
+
 @mixin registration-button-mixin {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.3em;
-  button {
-    padding: 1% 1.5em 1% 1.5em;
-    background-color: #a19b98;
-    border: #a19b98 1px solid;
-    font-size: 0.9rem;
-    box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
-    color: red;
-  }
+  padding: 1% 1.5em 1% 1.5em;
+  background-color: #a19b98;
+  border: #a19b98 1px solid;
+  font-size: 0.9rem;
+  box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+  color: $general-text-colorr;
 }

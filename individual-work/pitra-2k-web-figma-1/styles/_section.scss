@@ -17,7 +17,7 @@
         }
         button {
             margin: 1.1em;
-            /* @include registration-button-mixin; */
+            @include registration-button-mixin;
         }
     }
     .offers-section {
@@ -58,18 +58,18 @@
                 @include sub-offers-flex-and-text-settings;
             }
         }
-        .registration-button {
-            display: flex;
-            justify-content: center;
-            margin-top: 2.3em;
-            button {
-                padding: 1% 1.5em 1% 1.5em;
-                background-color: #a19b98;
-                border: #a19b98 1px solid;
-                font-size: 0.9rem;
-                box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
-                color: red;
-            }
-        }
+    }
+}
+.registration-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.3em;
+    button {
+        padding: 1% 1.5em 1% 1.5em;
+        background-color: #a19b98;
+        border: #a19b98 1px solid;
+        font-size: 0.9rem;
+        box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+        color: $general-background-color;
     }
 }
