@@ -1,0 +1,31 @@
+.section-content-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin: 0 5vw 0 5vw;
+    .sub-section-content-container {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-evenly;
+      align-items: space-evenly;
+      width: 60vw;
+      .section-content-item:nth-child(1) {
+        @include contact-section-informations;
+      }
+      .section-content-item:nth-child(2) {
+        @include contact-section-informations;
+      }
+      .section-content-item:nth-child(3) {
+        @include contact-section-informations;
+      }
+      .section-content-item:nth-child(4) {
+        @include contact-section-informations;
+      }
+      .section-content-item:nth-child(5) {
+        @include contact-section-informations;
+      }
+      .section-content-item:nth-child(6) {
+        @include contact-section-informations;
+      }
+    }
+  }

@@ -58,8 +58,8 @@
                 @include sub-offers-flex-and-text-settings;
             }
         }
-    }
-    .registration-button {
-        @include registration-button;
+        .registration-button {
+            @include registration-button;
+        }
     }
 }

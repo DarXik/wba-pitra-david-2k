@@ -1,7 +1,7 @@
-body{
+body {
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Smooch Sans', sans-serif; */
-    font-family: 'Hubballi', cursive;       
+    font-family: "Hubballi", cursive;
 }
 
 @import "var";
@@ -9,4 +9,5 @@ body{
 @import "header";
 @import "section";
 @import "footer";
-@include information-section-module;
+@import "information-section-module";
+@import "contact-section-module";
