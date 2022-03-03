@@ -104,6 +104,19 @@ body {
   color: #f8f7ec;
 }
 
+.content-container .offers-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .content-container .offers-section .offers-section-heading {
   /* border: 1px red solid; */
   margin-top: 2.3em;
@@ -142,7 +155,7 @@ body {
 }
 
 .content-container .offers-section .offer-section-1 .sub-offer-section-1 h3 {
-  font-size: 0.85rem;
+  font-size: .8rem;
   letter-spacing: 1px;
 }
 
@@ -185,7 +198,7 @@ body {
 }
 
 .content-container .offers-section .offer-section-2 .sub-offer-section-2 h3 {
-  font-size: 0.85rem;
+  font-size: .8rem;
   letter-spacing: 1px;
 }
 
@@ -228,7 +241,7 @@ body {
 }
 
 .content-container .offers-section .offer-section-3 .sub-offer-section-3 h3 {
-  font-size: 0.85rem;
+  font-size: .8rem;
   letter-spacing: 1px;
 }
 
@@ -300,6 +313,9 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* align-items: space-evenly; */
   width: 60vw;
 }
