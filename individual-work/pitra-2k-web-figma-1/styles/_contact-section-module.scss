@@ -1,11 +1,21 @@
 .contact-content-container {
-    border: 1px red solid;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    /* 
+    justify-content: center;
+    align-items: center; */
+    height: 80vh;
     .contact-content-sub-container {
-        border: 1px blue solid;
+        height: 75vh;
         display: flex;
         flex-direction: column;
-        align-items: space-between;
+        align-items: center;
+        margin: 0vh 2vw 0vh 2vw;
+        justify-content: space-evenly;  
+       .contact-content-sub-item:nth-child(6){
+          padding-bottom: 12vh;
+          border: 1px red solid;
+       }      
     }
 }
