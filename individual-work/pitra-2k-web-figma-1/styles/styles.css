@@ -33,7 +33,7 @@ body {
 .nav-bar-container .nav-bar-sub-container .nav-button .line-container {
   width: 60px;
   display: block;
-  margin: 50px auto;
+  /* proužek pod headerem */
   padding: 8px 10px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -306,6 +306,8 @@ body {
 
 .section-content-container .sub-section-content-container img {
   margin-right: 6vw;
+  -webkit-filter: drop-shadow(0px 0px 8px black);
+          filter: drop-shadow(0px 0px 8px black);
 }
 
 .section-content-container .sub-section-content-container .section-content-item:nth-child(1) {
