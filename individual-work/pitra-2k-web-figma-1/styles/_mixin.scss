@@ -6,7 +6,7 @@
 @mixin contact-section-informations {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; /* dát text doleva */
+  /* justify-content: space-around; */ /* dát text doleva */
   align-items: center;
 }
 
@@ -32,5 +32,5 @@
   border: #a19b98 1px solid;
   font-size: 0.9rem;
   box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
-  color: $general-text-colorr;
+  color: $general-text-color;
 }
