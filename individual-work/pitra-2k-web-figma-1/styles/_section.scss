@@ -25,8 +25,11 @@
         align-items: center;
         flex-direction: column;
         .offers-section-heading {
-            /* border: 1px red solid; */
+            border: 1px red solid; 
+            display: flex;
+            flex-wrap: nowrap;
             margin-top: 2.3em;
+            font-size: 1rem;
         }
         .offer-section-1 {
             img {

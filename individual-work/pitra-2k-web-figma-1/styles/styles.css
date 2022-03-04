@@ -5,10 +5,6 @@ body {
   font-family: "Hubballi", cursive;
 }
 
-/* .helo {
-    position: absolute;
-    z-index: 8;
-} */
 .nav-bar-container {
   background-color: #cbc1b1;
   position: relative;
@@ -118,8 +114,14 @@ body {
 }
 
 .content-container .offers-section .offers-section-heading {
-  /* border: 1px red solid; */
+  border: 1px red solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-top: 2.3em;
+  font-size: 1rem;
 }
 
 .content-container .offers-section .offer-section-1 {
@@ -155,13 +157,13 @@ body {
 }
 
 .content-container .offers-section .offer-section-1 .sub-offer-section-1 h3 {
-  font-size: 4vw;
+  font-size: .8rem;
   letter-spacing: 1px;
 }
 
 .content-container .offers-section .offer-section-1 .sub-offer-section-1 p {
   margin-top: 0.6em;
-  font-size: 3vw;
+  font-size: .6rem;
   color: #777774;
 }
 
@@ -198,13 +200,13 @@ body {
 }
 
 .content-container .offers-section .offer-section-2 .sub-offer-section-2 h3 {
-  font-size: 4vw;
+  font-size: .8rem;
   letter-spacing: 1px;
 }
 
 .content-container .offers-section .offer-section-2 .sub-offer-section-2 p {
   margin-top: 0.6em;
-  font-size: 3vw;
+  font-size: .6rem;
   color: #777774;
 }
 
@@ -241,13 +243,13 @@ body {
 }
 
 .content-container .offers-section .offer-section-3 .sub-offer-section-3 h3 {
-  font-size: 4vw;
+  font-size: .8rem;
   letter-spacing: 1px;
 }
 
 .content-container .offers-section .offer-section-3 .sub-offer-section-3 p {
   margin-top: 0.6em;
-  font-size: 3vw;
+  font-size: .6rem;
   color: #777774;
 }
 
@@ -273,7 +275,7 @@ body {
 
 .footer-container {
   background-color: #cbc1b1;
-  max-height: 10vh;
+  height: 10vh;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -433,7 +435,7 @@ body {
   /* 
     justify-content: center;
     align-items: center; */
-  max-height: 80vh;
+  height: 80vh;
 }
 
 .contact-content-container .contact-content-sub-container {
@@ -448,14 +450,44 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0vh 2vw 0vh 2vw;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  margin: 7vh 3vw 7vh 3vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-content-container .contact-content-sub-container input {
+  background-color: #cdcac7;
+  border: 1px solid #cdcac7;
+}
+
+.contact-content-container .contact-content-sub-container .contact-content-sub-item:nth-child(2) {
+  margin-top: 5vh;
+  /* dodělat mezery mezi inputy */
 }
 
 .contact-content-container .contact-content-sub-container .contact-content-sub-item:nth-child(6) {
-  padding-bottom: 12vh;
-  border: 1px red solid;
+  border: 1px #0026ff solid;
+  height: 12vh;
+}
+
+.contact-content-container .registration-button-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.3em;
+}
+
+.contact-content-container .registration-button-contact button {
+  padding: 1% 1.5em 1% 1.5em;
+  background-color: #a19b98;
+  border: #a19b98 1px solid;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+  color: #efeee9;
 }
 /*# sourceMappingURL=styles.css.map */
