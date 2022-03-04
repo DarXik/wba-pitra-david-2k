@@ -7,9 +7,10 @@ body {
 
 .nav-bar-container {
   background-color: #cbc1b1;
-  position: relative;
-  z-index: 9;
-  max-height: 10vh;
+  /* position: relative;
+    z-index: 9; */
+  height: 10vh;
+  /* malý kousek pod - max-height */
 }
 
 .nav-bar-container .nav-bar-sub-container {
@@ -450,7 +451,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 7vh 3vw 7vh 3vw;
+  margin: 7vh 3vw 6vh 3vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -462,13 +463,16 @@ body {
 }
 
 .contact-content-container .contact-content-sub-container .contact-content-sub-item:nth-child(2) {
-  margin-top: 5vh;
+  margin-top: 1vh;
   /* dodělat mezery mezi inputy */
 }
 
 .contact-content-container .contact-content-sub-container .contact-content-sub-item:nth-child(6) {
   border: 1px #0026ff solid;
-  height: 12vh;
+}
+
+.contact-content-container .contact-content-sub-container .contact-content-sub-item:nth-child(6) input {
+  height: 15vh;
 }
 
 .contact-content-container .registration-button-contact {

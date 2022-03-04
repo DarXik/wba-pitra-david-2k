@@ -1,8 +1,8 @@
 .nav-bar-container {
     background-color: $header-and-footer-background-color;
-    position: relative;
-    z-index: 9;
-    max-height: 10vh;
+    /* position: relative;
+    z-index: 9; */
+    height: 10vh; /* malý kousek pod - max-height */
     .nav-bar-sub-container {
         display: flex;
         justify-content: space-between;
@@ -43,4 +43,12 @@
             }
         }
     }
+}
+
+@media only screen and (min-width: 1600px) and (min-height: 720px){
+    
+    .nav-bar-container{
+        
+    }
+
 }
