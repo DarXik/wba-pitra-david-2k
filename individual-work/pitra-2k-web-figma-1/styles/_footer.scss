@@ -1,6 +1,9 @@
 .footer-container{
     background-color: $header-and-footer-background-color;
-    height: 10vh;
+    max-height: 10vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     .footer-information{
         padding: 1em 0 1em 0;
         display: flex;
