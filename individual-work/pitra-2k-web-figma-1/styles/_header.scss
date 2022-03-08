@@ -1,4 +1,7 @@
-.nav-bar-container {    
+.nav-bar-container {
+    button {
+        display: none;
+    }
     /* position: relative;
     z-index: 9; */
     height: 8vh; /* malý kousek pod - max-height */
@@ -17,7 +20,7 @@
             .line-container {
                 width: 60px;
                 display: block;
-               /* proužek pod headerem */
+                /* proužek pod headerem */
                 padding: 8px 10px;
                 transition: all 0.5s;
                 -webkit-transition: all 0.5s;
@@ -48,10 +51,11 @@
     }
 }
 
-@media only screen and (min-width: 1600px) and (min-height: 720px){
-    
-   .nav-bar-container{
-       height: 10vh;
-   }
-
+@media only screen and (min-width: 1600px) and (min-height: 720px) and (orientation: landscape) {
+    .nav-bar-container {
+        height: 10vh;
+    }
+    button {
+        background-color: rgba(0, 0, 0, 0);
+    }
 }
