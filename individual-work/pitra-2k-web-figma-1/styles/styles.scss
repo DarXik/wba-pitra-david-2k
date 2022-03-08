@@ -1,7 +1,18 @@
+html,
 body {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #efeee9; 
+    z-index: 1;
+    font-family: "Hubballi", cursive;
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Smooch Sans', sans-serif; */
-    font-family: "Hubballi", cursive;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
 }
 
 @import "var";
