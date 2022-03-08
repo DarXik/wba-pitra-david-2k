@@ -25,7 +25,7 @@
         align-items: center;
         flex-direction: column;
         .offers-section-heading {
-            border: 1px red solid; 
+            border: 1px red solid;
             display: flex;
             flex-wrap: nowrap;
             margin-top: 2.3em;
@@ -77,5 +77,30 @@
         font-size: 0.9rem;
         box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
         color: $general-background-color;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (min-height: 720px) {
+    .content-container {
+        margin: 0;
+        .welcome-banner-container {
+            border: 1px blue solid;
+            background-image: url("/wba-pitra-david-2k/individual-work/pitra-2k-web-figma-1/images/index-welcome-beach.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 60vh;
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            align-items: flex-end;
+            .welcome-banner{    
+                width: 20vw;
+                height: auto;
+                background-color: rgba(0, 0, 0, .5);
+                margin: 0 1em 1em 0;
+                border-radius: 2px;
+            }
+        }
     }
 }
