@@ -14,9 +14,9 @@
         font-weight: 600;
         padding: 8px;
         border-radius: 2px;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         &:hover {
-            transition-duration: .3s;
+            transition-duration: 0.3s;
             background-color: rgba(0, 0, 0, 0.2);
         }
     }
@@ -31,13 +31,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 3% 0 3%;
-        .button-contaier {
-            /* display: none; */
-            position: relative;
-            z-index: 8;
-            .buttons {
-            }
-        }
+
         .nav-button {
             position: relative;
             z-index: 9;
@@ -72,18 +66,30 @@
             }   */
             }
         }
+        .buttons-contaier {
+            /* display: none; */
+            position: relative;
+            z-index: 8;
+
+            .buttons {
+                
+            }
+        }
     }
 }
 
 @media only screen and (min-width: 1600px) and (min-height: 720px) and (orientation: landscape) {
     .nav-bar-container {
         height: 10vh;
-        .nav-bar-sub-container{
-            
+        .nav-bar-sub-container {
             .nav-button {
                 display: none;
             }
         }
-       
+        .buttons-contaier {
+            display: flex;
+            .buttons {
+            }
+        }
     }
 }

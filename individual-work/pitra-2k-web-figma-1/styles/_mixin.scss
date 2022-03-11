@@ -28,8 +28,8 @@
 
 @mixin registration-button-mixin {
   padding: 1% 1.5em 1% 1.5em;
-  background-color: #a19b98;
-  border: #a19b98 1px solid;
+  background-color: $button-bg-color;
+  border: $button-bg-color 1px solid;
   font-size: 0.9rem;
   box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
   color: $general-text-color;
