@@ -34,6 +34,24 @@ body::-webkit-scrollbar {
           justify-content: center;
 }
 
+.nav-bar-container button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 2px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.nav-bar-container button:hover {
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .nav-bar-container .nav-bar-sub-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,7 +62,7 @@ body::-webkit-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 1.6em 0 1.6em;
+  margin: 0 3% 0 3%;
 }
 
 .nav-bar-container .nav-bar-sub-container .nav-icon img {
@@ -56,11 +74,6 @@ body::-webkit-scrollbar {
   /* display: none; */
   position: relative;
   z-index: 8;
-}
-
-.nav-bar-container .nav-bar-sub-container .button-contaier .buttons button {
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid red;
 }
 
 .nav-bar-container .nav-bar-sub-container .nav-button {
@@ -106,11 +119,8 @@ body::-webkit-scrollbar {
   .nav-bar-container {
     height: 10vh;
   }
-  .nav-bar-container .nav-button {
+  .nav-bar-container .nav-bar-sub-container .nav-button {
     display: none;
-  }
-  button {
-    background-color: black;
   }
 }
 
