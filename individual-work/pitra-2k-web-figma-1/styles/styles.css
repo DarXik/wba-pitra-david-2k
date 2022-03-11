@@ -58,6 +58,11 @@ body::-webkit-scrollbar {
   z-index: 8;
 }
 
+.nav-bar-container .nav-bar-sub-container .button-contaier .buttons button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid red;
+}
+
 .nav-bar-container .nav-bar-sub-container .nav-button {
   position: relative;
   z-index: 9;
