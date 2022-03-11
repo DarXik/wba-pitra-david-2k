@@ -34,10 +34,6 @@ body::-webkit-scrollbar {
           justify-content: center;
 }
 
-.nav-bar-container button {
-  display: none;
-}
-
 .nav-bar-container .nav-bar-sub-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,8 +44,23 @@ body::-webkit-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
   margin: 0 1.6em 0 1.6em;
+}
+
+.nav-bar-container .nav-bar-sub-container .nav-icon img {
+  min-width: 100%;
+  height: 90%;
+}
+
+.nav-bar-container .nav-bar-sub-container .button-contaier {
+  /* display: none; */
+  position: relative;
+  z-index: 8;
+}
+
+.nav-bar-container .nav-bar-sub-container .nav-button {
+  position: relative;
+  z-index: 9;
 }
 
 .nav-bar-container .nav-bar-sub-container .nav-button .line-container {
@@ -90,8 +101,11 @@ body::-webkit-scrollbar {
   .nav-bar-container {
     height: 10vh;
   }
+  .nav-bar-container .nav-button {
+    display: none;
+  }
   button {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: black;
   }
 }
 
