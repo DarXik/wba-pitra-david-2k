@@ -14,9 +14,10 @@
         font-weight: 600;
         padding: 8px;
         border-radius: 2px;
-        transition-duration: 0.3s;
+        transition-duration:$transition-duration-buttons;
+        cursor: pointer;
         &:hover {
-            transition-duration: 0.3s;
+            transition-duration:$transition-duration-buttons;
             background-color: rgba(0, 0, 0, 0.2);
         }
     }
@@ -40,8 +41,8 @@
                 display: block;
                 /* proužek pod headerem */
                 padding: 8px 10px;
-                transition: all 0.5s;
-                -webkit-transition: all 0.5s;
+                /* transition: all 0.5s;
+                -webkit-transition: all 0.5s; */
             }
 
             .line-container div {
@@ -49,8 +50,8 @@
                 background: rgb(29, 28, 28);
                 margin: 7px 0px 7px 0px;
                 border-radius: 45px;
-                transition: all 0.5s;
-                -webkit-transition: all 0.5s;
+                /* transition: all 0.5s;
+                -webkit-transition: all 0.5s; */
                 .one {
                     width: $nav-bar-line-width;
                 }

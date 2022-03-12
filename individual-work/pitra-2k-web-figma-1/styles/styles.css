@@ -44,6 +44,7 @@ body::-webkit-scrollbar {
   border-radius: 2px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .nav-bar-container button:hover {
@@ -80,8 +81,8 @@ body::-webkit-scrollbar {
   display: block;
   /* proužek pod headerem */
   padding: 8px 10px;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  /* transition: all 0.5s;
+                -webkit-transition: all 0.5s; */
 }
 
 .nav-bar-container .nav-bar-sub-container .nav-button .line-container div {
@@ -89,8 +90,8 @@ body::-webkit-scrollbar {
   background: #1d1c1c;
   margin: 7px 0px 7px 0px;
   border-radius: 45px;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  /* transition: all 0.5s;
+                -webkit-transition: all 0.5s; */
   /* 
                 .line-containerr:hover div {
                 width: 60px;
@@ -167,6 +168,7 @@ body::-webkit-scrollbar {
   -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
   color: #f8f7ec;
+  cursor: pointer;
 }
 
 .content-container .offers-section {
@@ -333,13 +335,20 @@ body::-webkit-scrollbar {
 }
 
 .registration-button button {
+  /* padding: 1% 1.5em 1% 1.5em;
+        background-color: $button-bg-color;
+        border: $button-bg-color 1px solid;
+        font-size: 0.9rem;
+        box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
+        color: $general-background-color; */
   padding: 1% 1.5em 1% 1.5em;
   background-color: #7c7474;
   border: #7c7474 1px solid;
   font-size: 0.9rem;
   -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
-  color: #efeee9;
+  color: #f8f7ec;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1600px) and (min-height: 720px) {
@@ -378,11 +387,18 @@ body::-webkit-scrollbar {
     font-size: 300%;
   }
   .content-container .welcome-banner-container .welcome-banner p {
-    margin: 0.2em .8em .2em .8em;
+    margin: 0.2em 0.8em 0.2em 0.8em;
     font-size: 140%;
   }
   .content-container .welcome-banner-container .welcome-banner button {
     font-size: 130%;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  .content-container .welcome-banner-container .welcome-banner button:hover {
+    scale: 110%;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
   }
   .content-container .offers-section .offers-section-heading {
     font-size: 3em;
@@ -460,6 +476,13 @@ body::-webkit-scrollbar {
   }
   .content-container .registration-button button {
     font-size: 130%;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  .content-container .registration-button button:hover {
+    scale: 110%;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
   }
 }
 
@@ -753,6 +776,7 @@ footer .footer-information {
   -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
   color: #efeee9;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1600px) and (min-height: 720px) {
@@ -768,6 +792,13 @@ footer .footer-information {
   }
   .contact-content-container .registration-button-contact button {
     font-size: 1.3rem;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  .contact-content-container .registration-button-contact button:hover {
+    scale: 110%;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
   }
   .contact-content-container .contact-content-sub-sub-container {
     width: 35vw;

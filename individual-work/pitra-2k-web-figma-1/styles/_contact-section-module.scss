@@ -40,6 +40,7 @@
             font-size: 0.9rem;
             box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
             color: $general-background-color;
+            cursor: pointer;
         }
     }
 }
@@ -54,6 +55,12 @@
             margin-bottom: 5em; 
             button {
                 font-size: 1.3rem;
+                transition-duration: $transition-duration-buttons;
+
+            }
+            button:hover {
+                scale: 110%;
+                transition-duration: $transition-duration-buttons;
             }
         }
         .contact-content-sub-sub-container {
