@@ -823,32 +823,27 @@ footer .footer-information {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    border: 1px solid red;
   }
   .contact-content-container .contact-content-sub-sub-container .contact-content-sub-item:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: 1 / 1 / 1 / 1;
     margin-top: 0;
-    border: 1px solid blue;
   }
   .contact-content-container .contact-content-sub-sub-container .contact-content-sub-item:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: 1 / 2 / 1 / 2;
-    border: 1px solid blue;
   }
   .contact-content-container .contact-content-sub-sub-container .contact-content-sub-item:nth-child(3) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: 2 / 1 / 2 / 1;
-    border: 1px solid blue;
   }
   .contact-content-container .contact-content-sub-sub-container .contact-content-sub-item:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: 2 / 2 / 2 / 2;
-    border: 1px solid blue;
   }
   .contact-content-container .contact-content-sub-sub-container .contact-content-sub-item:nth-child(5) {
     -ms-grid-row: 3;

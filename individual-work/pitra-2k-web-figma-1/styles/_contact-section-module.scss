@@ -52,11 +52,10 @@
         }
         .registration-button-contact {
             margin-top: 2em;
-            margin-bottom: 5em; 
+            margin-bottom: 5em;
             button {
                 font-size: 1.3rem;
                 transition-duration: $transition-duration-buttons;
-
             }
             button:hover {
                 scale: 110%;
@@ -77,24 +76,19 @@
             column-gap: 1vw;
             input {
                 width: max-content;
-                border: 1px solid red;
             }
             .contact-content-sub-item:nth-child(1) {
                 grid-area: 1 / 1 / 1 / 1;
                 margin-top: 0;
-                border: 1px solid blue;
             }
             .contact-content-sub-item:nth-child(2) {
                 grid-area: 1 / 2 / 1 / 2;
-                border: 1px solid blue;
             }
             .contact-content-sub-item:nth-child(3) {
                 grid-area: 2 / 1 / 2 / 1;
-                border: 1px solid blue;
             }
             .contact-content-sub-item:nth-child(4) {
                 grid-area: 2 / 2 / 2 / 2;
-                border: 1px solid blue;
             }
             .contact-content-sub-item:nth-child(5) {
                 grid-area: 3 / 1 / span 6 / span 2;
