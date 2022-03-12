@@ -700,21 +700,25 @@ footer .footer-information {
 }
 
 .contact-content-container .contact-content-sub-container {
-  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 7vh 3vw 6vh 3vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.contact-content-container .contact-content-sub-container .contact-content-sub-sub-container {
+  /*height: 40vh;
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; */
+  margin: 3em 0 3em 0;
 }
 
 .contact-content-container .contact-content-sub-container input {
@@ -755,9 +759,15 @@ footer .footer-information {
   .contact-content-container {
     height: 80vh;
   }
+  .contact-content-container h1 {
+    font-size: 2.5rem;
+  }
   .contact-content-container .registration-button-contact {
     margin-top: 2em;
-    margin-bottom: 10vh;
+    margin-bottom: 5em;
+  }
+  .contact-content-container .registration-button-contact button {
+    font-size: 1.3rem;
   }
   .contact-content-container .contact-content-sub-sub-container {
     width: 35vw;

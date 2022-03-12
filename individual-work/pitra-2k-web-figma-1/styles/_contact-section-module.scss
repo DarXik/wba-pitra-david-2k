@@ -4,14 +4,17 @@
     justify-content: center;
     height: 84vh;
     .contact-content-sub-container {
-        .contact-content-sub-sub-container {
-        }
-        height: 75vh;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        margin: 7vh 3vw 6vh 3vw;
-        justify-content: space-between;
+        flex-direction: column;
+        .contact-content-sub-sub-container {
+            /*height: 40vh;
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; */
+            margin: 3em 0 3em 0;
+        }
 
         input {
             background-color: #cdcac7;
@@ -43,9 +46,15 @@
 @media only screen and (min-width: 1600px) and (min-height: 720px) {
     .contact-content-container {
         height: 80vh;
+        h1 {
+            font-size: 2.5rem;
+        }
         .registration-button-contact {
             margin-top: 2em;
-            margin-bottom: 10vh;
+            margin-bottom: 5em; 
+            button {
+                font-size: 1.3rem;
+            }
         }
         .contact-content-sub-sub-container {
             width: 35vw;
