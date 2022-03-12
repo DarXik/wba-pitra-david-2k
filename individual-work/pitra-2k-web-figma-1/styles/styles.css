@@ -351,7 +351,7 @@ body::-webkit-scrollbar {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 85vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
