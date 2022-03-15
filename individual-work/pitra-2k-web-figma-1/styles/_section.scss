@@ -77,64 +77,13 @@
         font-size: 0.9rem;
         box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.3);
         color: $general-background-color; */
-        @include registration-button-mixin
+        @include registration-button-mixin;
+        transition-duration: $transition-duration-buttons;
     }
-}
-.registration-button button::after {
-    content: "";
-    /* musí zde být, aby byl následující obsah */
-    width: 11px;
-    /* velikost borderu horního před hoverem */
-    height: 11px;
-    position: absolute;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-.registration-button button::before {
-    content: "";
-    width: 11px;
-    height: 11px;
-    position: absolute;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-.registration-button button::after {
-    top: -1px;
-    /* umístění mini-borderu před hoverem vůči elementu */
-    left: -1px;
-    border-top: rgb(4, 4, 4) 2px solid;
-    border-left: rgb(4, 4, 4) 2px solid;
-    cursor: pointer;
-}
-
-.registration-button button::before {
-    bottom: -1px;
-    right: -1px;
-    border-bottom: rgb(4, 4, 4) 2px solid;
-    border-right: rgb(4, 4, 4) 2px solid;
-    cursor: pointer;
-}
-
-.registration-button button:hover::before {
-    width: 110%;
-    /* jak daleko co pojede */
-    height: 125%;
-    /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
-    cursor: pointer;
-}
-
-.registration-button button:hover::after {
-    width: 110%;
-    height: 125%;
-    /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
-    cursor: pointer;
-}
-
-.registration-button button:hover {
-    /* transform: scale(110%); */
-    box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.1);
+    button:hover {
+        scale: 110%;
+        transition-duration: $transition-duration-buttons;
+    }
 }
 
 @media only screen and (min-width: 1600px) and (min-height: 720px) {
@@ -166,11 +115,11 @@
                 }
                 button {
                     font-size: 130%;
-                    transition-duration:$transition-duration-buttons;
+                    transition-duration: $transition-duration-buttons;
                 }
                 button:hover {
                     scale: 110%;
-                    transition-duration: $transition-duration-buttons;                    
+                    transition-duration: $transition-duration-buttons;
                 }
             }
         }
@@ -229,13 +178,10 @@
             button {
                 font-size: 130%;
                 transition-duration: $transition-duration-buttons;
-
-                
             }
             button:hover {
                 scale: 110%;
                 transition-duration: $transition-duration-buttons;
-                
             }
         }
     }
