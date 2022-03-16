@@ -92,7 +92,7 @@
     .content-container {
         margin: 0;
         .welcome-banner-container {
-            background-image: url("index-welcome-beach.png");
+            background-image: url("index-welcome-beach.png"); /* musel jsem přesunout obrázek do stylů, aby zde byl viditelný i mimo můj pc, jinak by byl ve správné složce */
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
