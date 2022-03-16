@@ -70,9 +70,9 @@
         }
         .buttons-contaier {
             /* display: none; */
-            position: relative;
-            z-index: 8;
-
+            /* position: relative;
+            z-index: 8; */
+            display: none;
             .buttons {
                 
             }
@@ -89,7 +89,7 @@
             }
         }
         .buttons-contaier {
-            display: flex;
+            
             .buttons {
             }
         }
