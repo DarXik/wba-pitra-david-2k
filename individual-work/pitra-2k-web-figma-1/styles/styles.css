@@ -114,7 +114,6 @@ body::-webkit-scrollbar {
   /* display: none; */
   /* position: relative;
             z-index: 8; */
-  display: none;
 }
 
 @media only screen and (min-width: 1280px) and (min-height: 720px) and (orientation: landscape) {
@@ -361,6 +360,7 @@ body::-webkit-scrollbar {
   }
   .content-container .welcome-banner-container {
     background-image: url("index-welcome-beach.png");
+    /* musel jsem přesunout obrázek do stylů, aby zde byl viditelný i mimo můj pc, jinak by byl ve správné složce */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
