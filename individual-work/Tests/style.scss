@@ -3,32 +3,34 @@
     src: url(Monologue.ttf);
 }
 body {
-    background: #171717;
-    background-image: linear-gradient(90deg, #141313 3px, transparent 0), linear-gradient(#141313 3px, transparent 0);
+    /* background: #171717cd; */
+    /*     background-image: linear-gradient(90deg, #141313 3px, transparent 0), linear-gradient(#141313 3px, transparent 0);*/
     background-size: 300px 300px;
-}
-main {
-    display: flex;
-    justify-content: center;
-    
 }
 .container {
     background-color: white;
-    max-width: 70em;
-    transition-duration: .5s;
+    max-width: 50vw;
+    transition-duration: 0.5s;
     padding: 5em;
     border-radius: 25px;
-    margin-top: 5Em;
-    box-shadow: 0px 0px 150px 2px rgba(255, 255, 255, 1);
-    filter: blur(.8rem);
-    transition-duration: .5s;
+    margin-inline: auto;
+    margin-top: 5em;
+    /* margin: 5em; */
+    border: 5px black solid;
+    box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.382);
+
+    transition-duration: 0.5s;
     p {
-        font-family: myFirstFont;
-        font-size: 2rem;
-        filter: drop-shadow(20px 10px 10px #171736);
+        /*  font-family: myFirstFont; */
+        font-size: 1.5rem;
+        /*         filter: drop-shadow(20px 10px 10px #171736);
+ */
+    }
+    h1 {
+        /* font-family: myFirstFont; */
     }
 }
-.container:hover{
-    filter: blur(0);
-    transition-duration: .5s;
+.container:hover {
+    /* filter: blur(0); */
+    transition-duration: 0.5s;
 }
