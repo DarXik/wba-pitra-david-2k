@@ -27,13 +27,17 @@ body {
 
 .container p {
   /*  font-family: myFirstFont; */
-  font-size: 1.5rem;
+  font-size: 2rem;
   /*         filter: drop-shadow(20px 10px 10px #171736);
  */
+  font-family: myFirstFont;
 }
 
 .container h1 {
   /* font-family: myFirstFont; */
+  font-size: 3rem;
+  font-family: myFirstFont;
+  display: hidden;
 }
 
 .container:hover {
