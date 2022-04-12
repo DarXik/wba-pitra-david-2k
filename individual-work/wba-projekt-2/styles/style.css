@@ -77,31 +77,106 @@ select {
   }
 }
 
-* {
-  font-family: "Poppins", sans-serif;
+.navbar-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid blue;
 }
 
-body {
-  min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#7d6cfc), to(#c635ea));
-  background: linear-gradient(#7d6cfc, #c635ea);
+.navbar-main .logo-container {
+  border: 1px solid red;
 }
 
-.action {
-  position: fixed;
+.navbar-main .logo-container img {
+  height: 50px;
+}
+
+.navbar-main .button-container {
+  /*  display: flex;
+        justify-content: end; */
+  /* body {
+         min-height: 100vh;
+        background: linear-gradient(#7d6cfc, #c635ea);} */
+  border: 1px solid green;
+  /* .action.active span {
+    transform: rotate(135deg);
+}
+.action ul {
+    position: absolute;
+    bottom: 55px;
+    background: #fff;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.action.active ul {
+    bottom: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+.action ul li {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.action ul li:hover {
+    font-weight: 600;
+}
+.action ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.action ul li img {
+    margin-right: 15px;
+    opacity: 0.2;
+    transform: scale(0.7);
+}
+.action ul li:hover img {
+    opacity: 0.8;
+    transform: scale(1);
+}
+ */
+}
+
+.navbar-main .button-container .button1 li {
+  list-style: none;
+  text-align: center;
+}
+
+.navbar-main .button-container ul li a {
+  text-decoration: none;
+}
+
+.navbar-main .button-container .action {
+  display: none;
+  /* position: fixed; */
   bottom: 50px;
   left: 50px;
   width: 50px;
   height: 50px;
   background: #fff;
   border-radius: 50%;
+  border: 2px solid black;
   cursor: pointer;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
 }
 
-.action span {
-  position: relative;
+.navbar-main .button-container .action span {
+  /* position: relative; */
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -113,71 +188,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #000000;
   font-size: 2em;
+  color: #000000;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
 }
 
-.action.active span {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+html,
+body {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* font-family: 'Quicksand', sans-serif; */
 }
 
-.action ul {
-  position: absolute;
-  bottom: 55px;
-  background: #fff;
-  min-width: 250px;
-  padding: 20px;
-  border-radius: 20px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.action.active ul {
-  bottom: 65px;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.action ul li {
-  list-style: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 7px 0;
-}
-
-.action ul li:hover {
-  font-weight: 600;
-}
-
-.action ul li:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.action ul li img {
-  margin-right: 15px;
-  opacity: 0.2;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-}
-
-.action ul li:hover img {
-  opacity: 0.8;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+body {
+  /* background-image: url("leaf.jpg");*/
+  /*  background: #171717; */
+  /*   background-image: linear-gradient(90deg, #1413135a 1px, transparent 0), linear-gradient(#1413135a 1px, transparent 0);
+    background-size: 210px 210px; */
+  margin-inline: 100px;
 }
 /*# sourceMappingURL=style.css.map */
