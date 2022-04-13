@@ -1,63 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>document</title>
-  </head>
+</head>
 
-  <body>
-   
+<body>
+    <header>
+        <nav>
+            <div class="navbar-main">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="logo" />
+                </div>
+                <div class="button">
+                    <ul class="button-container">
+                        <li><a href="index.html">visit homepage</a></li>
+                        <li><a href="about.html">read about us</a></li>
+                    </ul>
+                    <div class="action" onclick="actionToggle();">
+                        <span>+</span>
+
+                        <!-- <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111765.svg" alt="" width="25px">read about</li> -->
+                        <!-- <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111432.svg" alt="" width="25px">Share on
+                                GitHub</li>
+                            <li><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384031.svg" alt="" width="25px">Share on
+                                Instagram</li>
+                            <li><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111341.svg" alt="" width="25px">Share on
+                                Codepen</li>
+                            <li><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384030.svg" alt="" width="25px">Share on
+                                Linkedin</li> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <main>
-      <section>
-        <div class="first-sub-section">
-          <div class="fss-heading-container">
-            <h1>Welcome here, pal</h1>
-          </div>
-          <div class="fss-image-container">
-            <img src="./images/timg.png" alt="image" />
-            <!-- <img src="./images/timg.png" alt="image" /> -->
-          </div>
-          <div class="fss-paragraph-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              quis rerum earum repellat quisquam consectetur ut amet, rem
-              tempora nulla exercitationem perferendis nesciunt, adipisci dicta
-              et dolores labore eius recusandae?
-            </p>
-          </div>
-        </div>
-      </section>
+        <section>
+            <div class="first-sub-section">
+                <div class="fss-heading-container">
+                    <h1>Welcome here, pal</h1>
+                </div>
+                <div class="fss-image-container">
+                    <img src="./images/timg.png" alt="image" />
+                    <img src="./images/timg.png" alt="image" />
+                </div>
+                <div class="fss-paragraph-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quis rerum earum repellat quisquam consectetur ut amet, rem tempora nulla exercitationem perferendis nesciunt, adipisci dicta et dolores labore eius recusandae?
+                    </p>
+                </div>
+            </div>
+            <div class="second-sub-section">
+                <div class="sss-content-organizer">
+                    <div class="sss-first-image-desc-container">
+                        <img src="./images/timg.png" alt="image" />
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum optio illum dolorem quia, unde incidunt, ratione esse voluptatibus officiis atque quae id quisquam dolor eveniet doloremque aperiam inventore cupiditate eaque?
+                        </p>
+                    </div>
+                    <div class="sss-second-image-desc-container">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum optio illum dolorem quia, unde incidunt, ratione esse voluptatibus officiis atque quae id quisquam dolor eveniet doloremque aperiam inventore cupiditate eaque?
+                        </p>
+                        <img src="./images/timg.png" alt="image" />
+                    </div>
+                </div>
+                <div class="sss-paragraph-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sunt asperiores amet illum inventore ut eos natus vel, similique ducimus minima doloremque neque. Esse necessitatibus consequuntur animi impedit, earum numquam!
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <div></div>
+        <div></div>
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./scripts/index.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
