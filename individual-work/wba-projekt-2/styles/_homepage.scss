@@ -1,0 +1,35 @@
+main {
+  section {
+    .first-sub-section {
+      display: flex;     
+      flex-direction: column;
+      justify-content: space-between;
+      .fss-heading-container {
+          text-align: center;
+          border: 1px solid green;
+        h1 {
+          
+        }
+      }
+      .fss-image-container {
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid red;
+        img {
+          max-width: 20em;
+          min-width: 5em;
+          margin: 2em;
+        }
+      }
+
+      .fss-paragraph-container {
+          border: 1px solid blue;
+          align-self: flex-end;
+        p {
+          padding: 4em 6em;
+          background-color: #f7f7f7;
+        }
+      }
+    }
+  }
+}
