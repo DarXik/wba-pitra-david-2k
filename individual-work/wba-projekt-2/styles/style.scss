@@ -5,7 +5,6 @@
 @import "homepage";
 @import "about";
 @import "footer";
-
 html,
 body {
     scroll-behavior: smooth;
@@ -22,7 +21,7 @@ body::-webkit-scrollbar {
 body {
     /* background-image: url("leaf.jpg");*/
     /*  background: #171717; */
-  /*   background-image: linear-gradient(90deg, #1413135a 1px, transparent 0), linear-gradient(#1413135a 1px, transparent 0);
+    /*   background-image: linear-gradient(90deg, #1413135a 1px, transparent 0), linear-gradient(#1413135a 1px, transparent 0);
     background-size: 210px 210px; */
     margin-inline: 8em;
 }

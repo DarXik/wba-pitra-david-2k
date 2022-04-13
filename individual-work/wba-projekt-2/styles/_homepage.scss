@@ -44,31 +44,38 @@ main {
                     flex-direction: row;
                     justify-content: center;
                     p {
+                        margin: 2em;
                         width: 100%;
                         max-width: 25em;
                         height: 100%;
+                        padding: max(3vw, 1em);
+                        font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem);
+                    }
+                    img {
+                        margin: 2em;
+                        width: 100%;
+                        max-width: 25em;
+                        height: auto;
                     }
                 }
-                img {
-                    width: 100%;
-                    max-width: 25em;
-                    height: auto;
-                }
-            }
-            .sss-second-image-desc-container {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                p {
-                    width: 100%;
-                    max-width: 25em;
-                    height: 100%;
-                    padding: max(3em, 1em);
-                }
-                img {
-                    width: 100%;
-                    max-width: 25em;
-                    height: auto;
+                .sss-second-image-desc-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    p {
+                        margin: 2em;
+                        width: 100%;
+                        max-width: 25em;
+                        height: 100%;
+                        padding: max(3vw, 1em);
+                        font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem);
+                    }
+                    img {
+                        margin: 2em;
+                        width: 100%;
+                        max-width: 25em;
+                        height: auto;
+                    }
                 }
             }
         }
@@ -83,7 +90,4 @@ main {
             }
         }
     }
-}
-
-
 }

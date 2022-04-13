@@ -224,7 +224,7 @@ main section .first-sub-section .fss-heading-container {
 }
 
 main section .first-sub-section .fss-heading-container h1 {
-  background-color: red;
+  background-color: green;
 }
 
 main section .first-sub-section .fss-image-container {
@@ -260,7 +260,7 @@ main section .second-sub-section {
 
 main section .second-sub-section .sss-content-organizer {
   height: 80%;
-  border: 1px solid red;
+  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,21 +284,21 @@ main section .second-sub-section .sss-content-organizer .sss-first-image-desc-co
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-inline: 10em;
 }
 
 main section .second-sub-section .sss-content-organizer .sss-first-image-desc-container p {
+  width: 100%;
+  max-width: 25em;
   height: 100%;
-  width: 25em;
 }
 
-main section .second-sub-section .sss-content-organizer .sss-first-image-desc-container img {
+main section .second-sub-section .sss-content-organizer img {
   width: 100%;
   max-width: 25em;
   height: auto;
 }
 
-main section .second-sub-section .sss-content-organizer .sss-second-image-desc-container {
+main section .second-sub-section .sss-second-image-desc-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,21 +309,22 @@ main section .second-sub-section .sss-content-organizer .sss-second-image-desc-c
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-inline: 10em;
 }
 
-main section .second-sub-section .sss-content-organizer .sss-second-image-desc-container p {
+main section .second-sub-section .sss-second-image-desc-container p {
+  width: 100%;
+  max-width: 25em;
   height: 100%;
-  width: 25em;
+  padding: 3em;
 }
 
-main section .second-sub-section .sss-content-organizer .sss-second-image-desc-container img {
+main section .second-sub-section .sss-second-image-desc-container img {
   width: 100%;
   max-width: 25em;
   height: auto;
 }
 
-main section .second-sub-section .sss-paragraph-container {
+main section .sss-paragraph-container {
   background-color: #f7f7f7;
   height: 20%;
   display: -webkit-box;
@@ -337,7 +338,7 @@ main section .second-sub-section .sss-paragraph-container {
           align-items: center;
 }
 
-main section .second-sub-section .sss-paragraph-container h2 {
+main section .sss-paragraph-container h2 {
   margin-inline: 3em;
 }
 
