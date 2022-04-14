@@ -77,6 +77,11 @@ select {
   }
 }
 
+@font-face {
+  src: url(PHand.ttf);
+  font-family: customFontOne;
+}
+
 header {
   height: 10vh;
 }
@@ -196,6 +201,10 @@ header nav .navbar-main .action span {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-family: "Poppins", sans-serif;
+}
+
+* {
+  font-family: customFontOne;
 }
 
 .first-sub-section {
@@ -396,7 +405,6 @@ header nav .navbar-main .action span {
 }
 
 .third-sub-section {
-  min-height: 100vh;
   margin: 5em;
 }
 
@@ -426,6 +434,31 @@ header nav .navbar-main .action span {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.third-sub-section .tss-image-desc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.third-sub-section .tss-image-desc-container .tss-desc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  height: 100%;
+}
+
+.third-sub-section .tss-image-desc-container img {
+  width: 100%;
+  max-width: 25em;
+  height: auto;
 }
 
 /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
