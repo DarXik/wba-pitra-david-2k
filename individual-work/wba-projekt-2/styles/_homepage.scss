@@ -1,93 +1,121 @@
-main {
-    section {
-        .first-sub-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 90vh;
-            .fss-heading-container {
-                text-align: center;
-                border: 1px solid green;
-                h1 {
-                    background-color: green;
-                }
-            }
-            .fss-image-container {
-                display: flex;
-                justify-content: space-evenly;
-                border: 1px solid red;
-                img {
-                    max-width: 20em;
-                    min-width: 5em;
-                    margin: 2em;
-                }
-            }
-            .fss-paragraph-container {
-                border: 1px solid blue;
-                align-self: flex-end;
-                p {
-                    padding: 4em 6em;
-                    background-color: #f7f7f7;
-                }
-            }
+.first-sub-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    .fss-heading-container {
+        text-align: center;
+        border: 1px solid green;
+        h1 {
+            background-color: green;
         }
-        .second-sub-section {
-            height: 100vh;
-            .sss-content-organizer {
-                height: 80%;
-                border: 1px solid green;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                .sss-first-image-desc-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    p {
-                        margin: 2em;
-                        width: 100%;
-                        max-width: 25em;
-                        height: 100%;
-                        padding: max(3vw, 1em);
-                        font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem);
-                    }
-                    img {
-                        margin: 2em;
-                        width: 100%;
-                        max-width: 25em;
-                        height: auto;
-                    }
-                }
-                .sss-second-image-desc-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    p {
-                        margin: 2em;
-                        width: 100%;
-                        max-width: 25em;
-                        height: 100%;
-                        padding: max(3vw, 1em);
-                        font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem);
-                    }
-                    img {
-                        margin: 2em;
-                        width: 100%;
-                        max-width: 25em;
-                        height: auto;
-                    }
-                }
-            }
+    }
+    .fss-image-container {
+        height: 50%;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 100%;
+            max-width: 25em;
+            height: auto;
         }
-        .sss-paragraph-container {
-            background-color: #e11414;
-            height: 20%;
+    }
+}
+
+.fss-paragraph-container {
+    border: 1px solid blue;
+    align-self: flex-end;
+    p {
+        padding: 4em 6em;
+        background-color: #f7f7f7;
+    }
+}
+
+
+}
+.second-sub-section {
+    height: 100vh;
+    .sss-content-organizer {
+        height: 80%;
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .sss-first-image-desc-container {
             display: flex;
+            flex-direction: row;
             justify-content: center;
-            align-items: center;
-            h2 {
-                margin-inline: 3em;
+            padding-right: 10em;
+            padding-bottom: 1em;
+            .sssf-desc-container {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 100%;
+                p {
+                    width: 100%;
+                    max-width: 25em;
+                    height: 100%;
+                    /* padding: 3em;*/
+                    padding-left: 1em;
+                    /* padding: max(3vw, 1em); */
+                    /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
+                }
+            }
+            img {
+                width: 100%;
+                max-width: 25em;
+                height: auto;
             }
         }
+        .sss-second-image-desc-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 1em;
+            padding-left: 10em;
+            .ssss-desc-container {
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                height: 100%;
+                p {
+                    width: 100%;
+                    max-width: 25em;
+                    height: 100%;
+                    /* padding: 3em;*/
+                    padding-right: .5em;
+                    padding-bottom: .5em;
+                    /* padding: max(3vw, 1em); */
+                    /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
+                }
+            }
+            img {
+                width: 100%;
+                max-width: 25em;
+                height: auto;
+            }
+        }
+    }
+    
+    .sss-paragraph-container {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid green;
+        background-color: #f7f7f7;
+        p {
+            margin: 3em;
+        }
+    }
+}
+.third-sub-section {
+    height: 100vh;
+    img {
+        width: 100%;
+        max-width: 25em;
+        height: auto;
     }
 }

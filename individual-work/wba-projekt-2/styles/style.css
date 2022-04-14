@@ -204,7 +204,7 @@ header nav .navbar-main .action span {
   font-family: "Poppins", sans-serif;
 }
 
-main section .first-sub-section {
+.first-sub-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,47 +218,43 @@ main section .first-sub-section {
   height: 90vh;
 }
 
-main section .first-sub-section .fss-heading-container {
+.first-sub-section .fss-heading-container {
   text-align: center;
   border: 1px solid green;
 }
 
-main section .first-sub-section .fss-heading-container h1 {
+.first-sub-section .fss-heading-container h1 {
   background-color: green;
 }
 
-main section .first-sub-section .fss-image-container {
+.first-sub-section .fss-image-container {
+  height: 50%;
+  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  border: 1px solid red;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-main section .first-sub-section .fss-image-container img {
-  max-width: 20em;
-  min-width: 5em;
-  margin: 2em;
-}
-
-main section .first-sub-section .fss-paragraph-container {
+.first-sub-section .fss-paragraph-container {
   border: 1px solid blue;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-main section .first-sub-section .fss-paragraph-container p {
+.first-sub-section .fss-paragraph-container p {
   padding: 4em 6em;
   background-color: #f7f7f7;
 }
 
-main section .second-sub-section {
+.second-sub-section {
   height: 100vh;
 }
 
-main section .second-sub-section .sss-content-organizer {
+.second-sub-section .sss-content-organizer {
   height: 80%;
   border: 1px solid green;
   display: -webkit-box;
@@ -273,7 +269,7 @@ main section .second-sub-section .sss-content-organizer {
           justify-content: center;
 }
 
-main section .second-sub-section .sss-content-organizer .sss-first-image-desc-container {
+.second-sub-section .sss-content-organizer .sss-first-image-desc-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,21 +280,41 @@ main section .second-sub-section .sss-content-organizer .sss-first-image-desc-co
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 10em;
+  padding-bottom: 1em;
 }
 
-main section .second-sub-section .sss-content-organizer .sss-first-image-desc-container p {
-  width: 100%;
-  max-width: 25em;
+.second-sub-section .sss-content-organizer .sss-first-image-desc-container .sssf-desc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
 }
 
-main section .second-sub-section .sss-content-organizer img {
+.second-sub-section .sss-content-organizer .sss-first-image-desc-container .sssf-desc-container p {
+  width: 100%;
+  max-width: 25em;
+  height: 100%;
+  /* padding: 3em;*/
+  padding-left: 1em;
+  /* padding: max(3vw, 1em); */
+  /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
+}
+
+.second-sub-section .sss-content-organizer .sss-first-image-desc-container img {
   width: 100%;
   max-width: 25em;
   height: auto;
 }
 
-main section .second-sub-section .sss-second-image-desc-container {
+.second-sub-section .sss-content-organizer .sss-second-image-desc-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,23 +325,42 @@ main section .second-sub-section .sss-second-image-desc-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 1em;
+  padding-left: 10em;
 }
 
-main section .second-sub-section .sss-second-image-desc-container p {
+.second-sub-section .sss-content-organizer .sss-second-image-desc-container .ssss-desc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.second-sub-section .sss-content-organizer .sss-second-image-desc-container .ssss-desc-container p {
   width: 100%;
   max-width: 25em;
   height: 100%;
-  padding: 3em;
+  /* padding: 3em;*/
+  padding-right: .5em;
+  padding-bottom: .5em;
+  /* padding: max(3vw, 1em); */
+  /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
 }
 
-main section .second-sub-section .sss-second-image-desc-container img {
+.second-sub-section .sss-content-organizer .sss-second-image-desc-container img {
   width: 100%;
   max-width: 25em;
   height: auto;
 }
 
-main section .sss-paragraph-container {
-  background-color: #f7f7f7;
+.second-sub-section .sss-paragraph-container {
   height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,10 +371,22 @@ main section .sss-paragraph-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid green;
+  background-color: #f7f7f7;
 }
 
-main section .sss-paragraph-container h2 {
-  margin-inline: 3em;
+.second-sub-section .sss-paragraph-container p {
+  margin: 3em;
+}
+
+.third-sub-section {
+  height: 100vh;
+}
+
+.third-sub-section img {
+  width: 100%;
+  max-width: 25em;
+  height: auto;
 }
 
 html,
