@@ -224,11 +224,12 @@ header nav .navbar-main .action span {
 }
 
 .first-sub-section .fss-heading-container h1 {
-  background-color: green;
+  background-color: #806200;
 }
 
 .first-sub-section .fss-image-container {
   height: 50%;
+  width: 100%;
   border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,15 +238,33 @@ header nav .navbar-main .action span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.first-sub-section .fss-paragraph-container {
+.first-sub-section .fss-image-container img {
+  padding: 3em;
+}
+
+.first-sub-section .fss-image-container .fss-image-container:nth-child(1) {
+  padding-bottom: 5em;
+  height: 5em;
+}
+
+.first-sub-section .fss-image-container .fss-image-container:nth-child(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 100%;
+}
+
+.fss-paragraph-container {
   border: 1px solid blue;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.first-sub-section .fss-paragraph-container p {
+.fss-paragraph-container p {
   padding: 4em 6em;
   background-color: #f7f7f7;
 }

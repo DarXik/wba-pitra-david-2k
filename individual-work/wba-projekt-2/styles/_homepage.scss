@@ -7,18 +7,26 @@
         text-align: center;
         border: 1px solid green;
         h1 {
-            background-color: green;
+            background-color: rgb(128, 98, 0);
         }
     }
     .fss-image-container {
         height: 50%;
+        width: 100%;
         border: 1px solid red;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         img {
-            width: 100%;
-            max-width: 25em;
-            height: auto;
+            padding: 3em;
+        }
+        .fss-image-container:nth-child(1) {
+            padding-bottom: 5em;
+            height: 5em;
+        }
+        .fss-image-container:nth-child(2) {
+            align-self: flex-end;
+            height: 100%;
         }
     }
 }
@@ -32,8 +40,6 @@
     }
 }
 
-
-}
 .second-sub-section {
     height: 100vh;
     .sss-content-organizer {
@@ -98,7 +104,6 @@
             }
         }
     }
-    
     .sss-paragraph-container {
         height: 20%;
         display: flex;
@@ -111,6 +116,7 @@
         }
     }
 }
+
 .third-sub-section {
     height: 100vh;
     img {
