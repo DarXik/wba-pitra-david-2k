@@ -6,9 +6,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid blue;
             .logo {
-                border: 1px solid red;
                 img {
                     height: 50px;
                 }
@@ -19,7 +17,6 @@ header {
                 /* body {
              min-height: 100vh;
             background: linear-gradient(#7d6cfc, #c635ea);} */
-                border: 1px solid green;
                 /* background-color: red; */
                 .button-container li {
                     float: left;
