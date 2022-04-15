@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 header {
-    height: 10vh;
+    height: 8vh;
     margin-bottom: 2vh;
     margin-inline: 8em;
     nav {
@@ -12,7 +12,7 @@ header {
             align-items: center;
             .logo {
                 img {
-                    height: 50px;
+                    height: 70px;
                 }
             }
             .button {
@@ -32,6 +32,8 @@ header {
                 .button-container li a {
                     text-decoration: none;
                     display: block;
+                    font-size: 120%;
+                    color: black;
                 }
             }
             .action {
