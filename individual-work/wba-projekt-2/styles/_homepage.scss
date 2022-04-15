@@ -2,6 +2,10 @@
             font-family: customFontOne;
         }
         
+        section {
+            margin-inline: 8em;
+        }
+        
         .first-sub-section {
             display: flex;
             flex-direction: column;
@@ -36,8 +40,9 @@
         }
         
         .fss-paragraph-container {
-            align-self: flex-end;
+            /* align-self: flex-end; */
             p {
+                text-align: center;
                 padding: 4em 6em;
                 background-color: #f7f7f7;
             }
@@ -124,20 +129,21 @@
         .third-sub-section {
             margin-top: 10em;
             .tss-image-container {
-                border: 1px solid blue;
                 margin-inline: 10em;
                 display: grid;
-                gap: 2em;
+                gap: 2.5em;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
-                justify-content: space-around;
                 img {
                     /* max-width: 25em;
                     height: auto; */
                 }
-                .tss-image-container:nth-child(1) {
-                    justify-self: center;
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
+                .tss-image-container:nth-child(1) {}
                 .tss-image-container:nth-child(2) {}
                 .tss-image-container:nth-child(3) {}
                 .tss-image-container:nth-child(4) {}
@@ -161,16 +167,13 @@
             }
             .tss-image-desc-container {
                 width: 100%;
-                border: 1px solid green;
                 margin-top: 10em;
                 display: flex;
                 justify-content: center;
                 .tss-sub-container {
                     display: inline-flex;
-                    border: 1px solid red;
                     padding: 10em;
                     .tss-desc-container {
-                        border: 1Px solid blue;
                         align-self: center;
                         p {
                             max-width: 20vw;
