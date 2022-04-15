@@ -90,11 +90,7 @@
                             /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
                         }
                     }
-                    img {
-                        width: 100%;
-                        max-width: 25em;
-                        height: auto;
-                    }
+                    img {}
                 }
                 .sss-second-image-desc-container {
                     display: flex;
