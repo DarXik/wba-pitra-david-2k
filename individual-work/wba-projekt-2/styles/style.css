@@ -84,6 +84,12 @@ select {
 
 header {
   height: 10vh;
+  margin-bottom: 2vh;
+}
+
+header nav {
+  /* position: fixed;
+        z-index: 999; */
 }
 
 header nav .navbar-main {
@@ -218,7 +224,7 @@ header nav .navbar-main .action span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 90vh;
+  height: 88vh;
 }
 
 .first-sub-section .fss-heading-container {
@@ -357,9 +363,9 @@ header nav .navbar-main .action span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -373,7 +379,7 @@ header nav .navbar-main .action span {
   height: 100%;
   /* padding: 3em;*/
   padding-right: 1em;
-  padding-bottom: -10em;
+  /* padding-bottom: -10em; */
   /* padding: max(3vw, 1em); */
   /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
 }
@@ -405,59 +411,86 @@ header nav .navbar-main .action span {
 }
 
 .third-sub-section {
-  margin: 5em;
+  margin-top: 10em;
+}
+
+.third-sub-section .tss-image-container {
+  border: 1px solid blue;
+  margin-inline: 10em;
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /* img {
+                    max-height: 100%;
+                    min-width: 100%;
+                    object-fit: cover;
+                    vertical-align: bottom;
+                }
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    gap: 1em;
+                }
+                li {
+                    height: 40vh;
+                    flex-grow: 1;
+                    display: inline-flex;
+                } */
 }
 
 .third-sub-section .tss-image-container img {
-  max-height: 100%;
-  min-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  vertical-align: bottom;
+  /* max-width: 25em;
+                    height: auto; */
 }
 
-.third-sub-section .tss-image-container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
-  gap: 1em;
-}
-
-.third-sub-section .tss-image-container li {
-  height: 40vh;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.third-sub-section .tss-image-container .tss-image-container:nth-child(1) {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .third-sub-section .tss-image-desc-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.third-sub-section .tss-image-desc-container .tss-desc-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  height: 100%;
-}
-
-.third-sub-section .tss-image-desc-container img {
   width: 100%;
-  max-width: 25em;
+  border: 1px solid green;
+  margin-top: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.third-sub-section .tss-image-desc-container .tss-sub-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid red;
+  padding: 10em;
+}
+
+.third-sub-section .tss-image-desc-container .tss-sub-container .tss-desc-container {
+  border: 1Px solid blue;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.third-sub-section .tss-image-desc-container .tss-sub-container .tss-desc-container p {
+  max-width: 20vw;
+  padding: 2em;
+  padding-left: 3em;
+}
+
+.third-sub-section .tss-image-desc-container .tss-sub-container img {
+  width: 100%;
+  max-width: 35em;
   height: auto;
 }
 
