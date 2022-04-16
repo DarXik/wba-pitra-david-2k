@@ -2,9 +2,11 @@
 @import "var";
 @import "mixin";
 @import "header";
-@import "homepage";
-@import "about";
 @import "footer";
+
+/* @import "homepage"; */
+
+@import "about";
 html,
 body {
     scroll-behavior: smooth;
