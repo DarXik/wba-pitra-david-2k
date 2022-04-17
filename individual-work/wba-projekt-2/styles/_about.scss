@@ -2,34 +2,80 @@
     margin-top: 3em;
     .about-heading-container {
         @include first-heading-container;
+        text-align: start;
+        position: relative;
+        transition-duration: 0.4s;
+        h1 {
+            padding: 1em;
+        }
+        h1::after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            transition: 0.4s;
+        }
+        h1::before {
+            content: "";
+            width: 11px;
+            height: 11px;
+            position: absolute;
+            transition: 0.4s;
+        }
+        h1::after {
+            top: 0px;
+            left: 0px;
+            border-left: 3px solid black;
+        }
+        h1:hover::before {
+            width: 100%;
+            height: 100%;
+        }
+        h1:hover::after {
+            width: 100%;
+            height: 100%;
+        }
+        h1:hover {
+            box-shadow: -50px 0px 35px 0px #a9a9a947;
+        }
     }
     .text-container {
         display: flex;
         flex-direction: column;
         margin-top: 3em;
+        h2 {
+            text-align: center;
+        }
         p {
-            margin: 2em;
-            padding: 2em;
-            width: 40vw;
+            padding-top: 2em;
         }
         [class^="box-"] {
-            margin-top: 1em;
+            margin-top: 4em;
         }
         .box-1 {
-            align-self: flex-start;
+            margin: 2em;
+            padding: 3em;
+            width: 45vw;
+            align-self: flex-end;
             margin-left: 5em;
-            box-shadow: 10px 10px 10px 2px #c6c6c6;
+            box-shadow: -20px 10px 20px 2px #8988882b;
         }
         .box-2 {
-            align-self: center;
+            margin: 2em;
+            margin-bottom: 4em;
+            padding: 3em;
+            width: 45vw;
+            align-self: flex-start;
             margin-right: 5em;
-            box-shadow: 10px 10px 10px 2px #c6c6c6;
+            box-shadow: 0px 20px 20px 2px #76757528;
         }
         .box-3 {
-            align-self: flex-end;
+            margin: 2em;
+            padding: 3em;
+            width: 45vw;
+            align-self: center;
             margin-top: 2em;
-            margin-right: 18em;
-            box-shadow: 10px 10px 10px 2px #c6c6c6;
+            box-shadow: 20px 10px 20px 2px #81818131;
         }
     }
 }
@@ -59,18 +105,7 @@
                 list-style: none;
                 margin-top: 1.3em;
             }
-            /* input[type=text] {
-    
-        }
-        input[type=text]:focus  */
-            /* label {
-                margin-bottom: .2em;
-                display: flex;
-                flex-direction: column;
-                font-weight: bold;
-            } */
             input {
-                /* font-style: italic; */
                 padding: 7px;
                 transition: all 0.30s ease-in-out;
                 outline: none;
@@ -100,14 +135,14 @@
             }
             .button span:after {
                 content: 'now';
-                position: absolute;
                 opacity: 0;
                 top: 0;
                 right: -20px;
                 transition: 0.4s;
+                position: absolute;
             }
             .button:hover span {
-                padding-right: 2.2em;
+                padding-right: 2.1em;
             }
             .button:hover span:after {
                 opacity: 4;
@@ -124,21 +159,12 @@
             border-bottom: 1px solid #767676;
             width: 100%;
         }
-        /* .input-subject-selector {
-            border: 1Px solid #ffffff00;
-            background-color: #ffffff00;
-            width: 100%;
-            optgroup {
-                color: white;
-            }
-        } */
         .input-message {
             border: 1Px solid #ffffff00;
             border-bottom: 1px solid #767676;
             height: 10em;
-            min-height: 6em;
+            min-height: 8em;
             width: 100%;
-            /* font-style: italic; */
             padding: 7px;
             transition: all 0.30s ease-in-out;
             outline: none;
@@ -149,7 +175,4 @@
             border-bottom: 1px solid $light-black-half-opacity-color;
         }
     }
-    /* .required {
-        color: red;
-    } */
 }
