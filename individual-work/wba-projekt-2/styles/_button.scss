@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 /* 
 body {
     min-height: 100vh;
     background: linear-gradient(#7d6cfc, #c635ea);
 } */
+
 .button-container {
     /*  display: flex;
     justify-content: end; */
 }
+
 .action {
     /* position: fixed; */
     bottom: 50px;
@@ -20,6 +23,7 @@ body {
     cursor: pointer;
     /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
 }
+
 .action span {
     /* position: relative; */
     width: 100%;
@@ -32,6 +36,8 @@ body {
     transition: 0.3s ease-in-out;
     font-family: "Poppins", sans-serif;
 }
+
+
 /* .action.active span {
     transform: rotate(135deg);
 }

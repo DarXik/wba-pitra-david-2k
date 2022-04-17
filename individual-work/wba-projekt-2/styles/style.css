@@ -152,7 +152,8 @@ header nav .navbar-main {
 }
 
 header nav .navbar-main .logo img {
-  height: 70px;
+  height: 50px;
+  margin: 10px;
 }
 
 header nav .navbar-main .button {
