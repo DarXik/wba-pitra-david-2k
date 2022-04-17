@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Box sizing rules */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 *,
@@ -265,33 +266,59 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /* height: 90vh; */
+}
+
+.first-section #helper {
+  display: -ms-grid;
+  display: grid;
+}
+
+.first-section #helper .first-section-heading-container,
+.first-section #helper .first-section-image-container {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .first-section .first-section-heading-container {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* h1:hover {
+                    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+                    transition-duration: .2s;
+                } */
 }
 
 .first-section .first-section-heading-container h1 {
+  color: white;
+  position: absolute;
+  z-index: 9;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: .5em;
+  background-color: transparent;
+  text-decoration: underline;
   font-size: 3rem;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
+  font-size: 4rem;
+  color: gold;
   /* box-shadow: rgba(0, 0, 0, 0.49) 0px 0px 0px 2px inset; */
-}
-
-.first-section .first-section-heading-container h1:hover {
-  -webkit-box-shadow: blue 0px 0px 0px 2px inset, white 10px -10px 0px -3px, #1fc11b 10px -10px, white 20px -20px 0px -3px, #ffd913 20px -20px, white 30px -30px 0px -3px, #ff9c55 30px -30px, white 40px -40px 0px -3px, #ff5555 40px -40px;
-          box-shadow: blue 0px 0px 0px 2px inset, white 10px -10px 0px -3px, #1fc11b 10px -10px, white 20px -20px 0px -3px, #ffd913 20px -20px, white 30px -30px 0px -3px, #ff9c55 30px -30px, white 40px -40px 0px -3px, #ff5555 40px -40px;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
 }
 
 .first-section .first-section-image-container {
@@ -308,13 +335,22 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .first-section .first-section-image-container img {
-  margin: 3em;
+  /* margin: 3em; */
   width: 100%;
-  max-width: 45em;
-  height: auto;
+  max-width: 85em;
+  height: 30em;
+  -webkit-filter: blur(5px) grayscale(1);
+          filter: blur(5px) grayscale(1);
+}
+
+.first-section .first-section-image-container img:hover {
+  -webkit-filter: blur(0) grayscale(0);
+          filter: blur(0) grayscale(0);
+  z-index: 10;
 }
 
 .first-section .first-section-image-container .first-section-image-container:nth-child(1) {
@@ -763,9 +799,8 @@ rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 .contact-section .contact-container .contact-input-container input:focus {
   -webkit-transition-duration: all 0.30s ease-in-out;
           transition-duration: all 0.30s ease-in-out;
-  -webkit-box-shadow: 0 0 8px rgba(95, 95, 95, 0.551);
-          box-shadow: 0 0 8px rgba(95, 95, 95, 0.551);
-  border-bottom: 1px solid rgba(95, 95, 95, 0.551);
+  border-bottom: 1px solid black;
+  color: transparent;
 }
 
 .contact-section .contact-container .contact-input-container .button {
@@ -774,7 +809,7 @@ rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
   padding: 6px 20px 0px 20px;
   border: none;
   background-color: #ffffff00;
-  border-bottom: 2px solid black;
+  border: 2px solid black;
   color: black;
   width: 8em;
   -webkit-transition: all 0.4s;
@@ -811,19 +846,19 @@ rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 
 .contact-section .contact-container .name-input {
   border: 1Px solid #ffffff00;
-  border-bottom: 1px solid #767676;
+  border-bottom: 1px solid #76767679;
   width: 49%;
 }
 
 .contact-section .contact-container .input-email {
   border: 1Px solid #ffffff00;
-  border-bottom: 1px solid #767676;
+  border-bottom: 1px solid #76767679;
   width: 100%;
 }
 
 .contact-section .contact-container .input-message {
   border: 1Px solid #ffffff00;
-  border-bottom: 1px solid #767676;
+  border-bottom: 1px solid #76767679;
   height: 10em;
   min-height: 8em;
   width: 100%;
@@ -836,9 +871,92 @@ rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 .contact-section .contact-container .input-message:focus {
   -webkit-transition-duration: all 0.30s ease-in-out;
           transition-duration: all 0.30s ease-in-out;
-  -webkit-box-shadow: 0 0 8px rgba(95, 95, 95, 0.551);
-          box-shadow: 0 0 8px rgba(95, 95, 95, 0.551);
-  border-bottom: 1px solid rgba(95, 95, 95, 0.551);
+  border-bottom: 1px solid black;
+  color: transparent;
+}
+
+.nav-bar-sub-main button {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 2%;
+  margin-right: 1.5vw;
+  padding-top: .5vh;
+  padding-right: .9vh;
+  padding-bottom: .5vh;
+  padding-left: .9vh;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #040404;
+  background-color: rgba(0, 0, 0, 0);
+  border: #040404;
+}
+
+.nav-bar-sub-main button::after {
+  content: "";
+  /* musí zde být, aby byl následující obsah */
+  width: 11px;
+  /* velikost borderu horního před hoverem */
+  height: 11px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.nav-bar-sub-main button::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.nav-bar-sub-main button::after {
+  top: -1px;
+  /* umístění mini-borderu před hoverem vůči elementu */
+  left: -1px;
+  border-top: #040404 2px solid;
+  border-left: #040404 2px solid;
+  cursor: pointer;
+}
+
+.nav-bar-sub-main button::before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: #040404 2px solid;
+  border-right: #040404 2px solid;
+  cursor: pointer;
+}
+
+.nav-bar-sub-main button:hover::before {
+  width: 110%;
+  /* jak daleko co pojede */
+  height: 125%;
+  /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
+  cursor: pointer;
+}
+
+.nav-bar-sub-main button:hover::after {
+  width: 110%;
+  height: 125%;
+  /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
+  cursor: pointer;
+}
+
+.nav-bar-sub-main button:hover {
+  /* transform: scale(110%); */
+  -webkit-box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.1);
 }
 
 html,

@@ -1,16 +1,61 @@
 var i = 0;
 var txt = 'Beginings';
-var speed = 150;
+var txt2 = 'Be welcomed, pal'
+var speed = 200;
+var speed2 = 200;
+var speedBack2 = 75;
 
-function typeWriter() {
+function TypeEffect() {
     if (i < txt.length) {
         document.getElementById("js1").innerHTML += txt.charAt(i);
         i++;
-        setTimeout(typeWriter, speed);
+        setTimeout(TypeEffect, speed);
     }
 }
 
-function actionToggle() {
+
+function TypeEffect2() {
+    if (i >= txt2.length) {
+        setTimeout(UnType, 2500);
+        return;
+    }
+
+    if (i < txt2.length) {
+        document.getElementById("js2").innerHTML += txt2.charAt(i);
+        i++;
+        setTimeout(TypeEffect2, speed2);
+    }
+}
+
+function UnType() {
+    if (i <= 0) {
+        setTimeout(TypeEffect2, 1000);
+        return;
+    }
+
+    if (i > 0) {
+        var newHeading = document.getElementById("js2").innerHTML.split('');
+        newHeading.pop();
+        i--;
+        document.getElementById("js2").innerHTML = newHeading.join('');
+        setTimeout(UnType, speedBack2);
+    }
+}
+
+/* function actionToggle() {
     const action = document.querySelector('.action');
     action.classList.toggle('active')
+} */
+
+
+/* function HidePlaceholder(a) {
+    document.getElementById(a).style.visibility = "hidden";
 }
+
+function ShowPlaceHolder(holder, input) {
+    const inputValue = document.getElementById(input).value;
+    const value = inputValue.trim();
+    if (value === "") {
+        document.getElementById(holder).style.visibility = "visible";
+    }
+} */
