@@ -3,5 +3,16 @@
     font-family: customFontOne;
 }
 
+@font-face {
+    src: url(Amatic.ttf);
+    font-family: customFontTwo;
+}
+
+@font-face {
+    src: url(PHand.ttf);
+    font-family: customFontThree;
+}
+
 $footer-color: #857f7fd6;
-$light-black-half-opacity-color: rgba(95, 95, 95, 0.551);
+$form-bottom-border-color: black;
+$form-transition-dur-setting: all 0.30s ease-in-out;

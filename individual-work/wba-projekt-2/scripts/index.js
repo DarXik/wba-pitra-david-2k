@@ -1,7 +1,7 @@
 var i = 0;
-var txt = 'Beginings';
+var txt = 'And there is something about us';
 var txt2 = 'Be welcomed, pal'
-var speed = 200;
+var speed = 110;
 var speed2 = 200;
 var speedBack2 = 75;
 

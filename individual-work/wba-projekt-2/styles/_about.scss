@@ -7,6 +7,11 @@
             transition-duration: 0.4s;
             h1 {
                 padding: 1em;
+                font-family: customFontTwo;
+                font-weight: bolder;
+                font-size: 4rem;
+                border-left: 3px solid black;
+                box-shadow: -50px 0px 35px 0px #a9a9a947;
             }
             h1::after {
                 content: "";
@@ -46,9 +51,22 @@
             h2 {
                 text-align: center;
                 width: 100%;
+                font-family: customFontThree;
+                font-weight: bold;
             }
             p {
                 padding-top: 2em;
+            }
+            ul {
+                margin-top: .7em;
+                list-style-type: none;
+            }
+            ul>li {
+                text-indent: 5px;
+            }
+            ul>li:before {
+                content: "-";
+                text-indent: 5px;
             }
             [class^="box-"] {
                 margin-top: 4em;
@@ -108,12 +126,12 @@
                 }
                 input {
                     padding: 7px;
-                    transition: all 0.30s ease-in-out;
+                    transition: $form-transition-dur-setting;
                     outline: none;
                 }
                 input:focus {
-                    transition-duration: all 0.30s ease-in-out;
-                    border-bottom: 1px solid black;
+                    transition-duration: $form-transition-dur-setting;
+                    border-bottom: 1px solid $form-bottom-border-color;
                     color: transparent;
                 }
                 .button {
@@ -122,8 +140,7 @@
                     padding: 6px 20px 0px 20px;
                     border: none;
                     background-color: #ffffff00;
-                    border: 2px solid black;
-                    color: black;
+                    border-bottom: 2px solid $form-bottom-border-color;
                     width: 8em;
                     transition: all 0.4s;
                     cursor: pointer;
@@ -151,107 +168,26 @@
                 }
             }
             .name-input {
-                border: 1Px solid #ffffff00;
-                border-bottom: 1px solid #76767679;
                 width: 49%;
+                @include form-border-correction;
             }
             .input-email {
-                border: 1Px solid #ffffff00;
-                border-bottom: 1px solid #76767679;
+                @include form-border-correction;
                 width: 100%;
             }
             .input-message {
-                border: 1Px solid #ffffff00;
-                border-bottom: 1px solid #76767679;
+                @include form-border-correction;
                 height: 10em;
                 min-height: 8em;
                 width: 100%;
                 padding: 7px;
-                transition: all 0.30s ease-in-out;
+                transition: $form-transition-dur-setting;
                 outline: none;
             }
             .input-message:focus {
-                transition-duration: all 0.30s ease-in-out;
-                border-bottom: 1px solid black;
+                transition-duration: $form-transition-dur-setting;
+                border-bottom: 1px solid $form-bottom-border-color;
                 color: transparent;
             }
         }
-    }
-    
-    .nav-bar-sub-main button {
-        text-decoration: none;
-        font-size: 1.3rem;
-        margin: 2%;
-        margin-right: 1.5vw;
-        padding-top: .5vh;
-        padding-right: .9vh;
-        padding-bottom: .5vh;
-        padding-left: .9vh;
-        width: auto;
-        height: auto;
-        cursor: pointer;
-        position: relative;
-        transition-duration: 0.4s;
-        text-align: center;
-        display: inline-flex;
-        color: rgb(4, 4, 4);
-        background-color: rgba(0, 0, 0, 0);
-        border: rgb(4, 4, 4);
-    }
-    
-    .nav-bar-sub-main button::after {
-        content: "";
-        /* musí zde být, aby byl následující obsah */
-        width: 11px;
-        /* velikost borderu horního před hoverem */
-        height: 11px;
-        position: absolute;
-        transition: 0.4s;
-        cursor: pointer;
-    }
-    
-    .nav-bar-sub-main button::before {
-        content: "";
-        width: 11px;
-        height: 11px;
-        position: absolute;
-        transition: 0.4s;
-        cursor: pointer;
-    }
-    
-    .nav-bar-sub-main button::after {
-        top: -1px;
-        /* umístění mini-borderu před hoverem vůči elementu */
-        left: -1px;
-        border-top: rgb(4, 4, 4) 2px solid;
-        border-left: rgb(4, 4, 4) 2px solid;
-        cursor: pointer;
-    }
-    
-    .nav-bar-sub-main button::before {
-        bottom: -1px;
-        right: -1px;
-        border-bottom: rgb(4, 4, 4) 2px solid;
-        border-right: rgb(4, 4, 4) 2px solid;
-        cursor: pointer;
-    }
-    
-    .nav-bar-sub-main button:hover::before {
-        width: 110%;
-        /* jak daleko co pojede */
-        height: 125%;
-        /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
-        cursor: pointer;
-    }
-    
-    .nav-bar-sub-main button:hover::after {
-        width: 110%;
-        height: 125%;
-        /* box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.253);  */
-        cursor: pointer;
-    }
-    
-    .nav-bar-sub-main button:hover {
-        /* transform: scale(110%); */
-        box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.1);
     }
