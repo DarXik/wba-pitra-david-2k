@@ -6,12 +6,12 @@
             margin-inline: 8em;
         }
         
-        .first-sub-section {
+        .first-section {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 90vh;
-            .fss-heading-container {
+            /* height: 90vh; */
+            .first-section-heading-container {
                 text-align: center;
                 margin-top: 2em;
                 h1 {
@@ -26,56 +26,65 @@
                     transition-duration: .2s;
                 }
             }
-            .fss-image-container {
+            .first-section-image-container {
                 height: 50%;
                 width: 100%;
+                margin-top: 3em;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 img {
-                    padding: 3em;
+                    margin: 3em;
+                    width: 100%;
+                    max-width: 45em;
+                    height: auto;
                 }
-                .fss-image-container:nth-child(1) {
+                .first-section-image-container:nth-child(1) {
                     padding-bottom: 5em;
                     height: 5em;
                 }
-                .fss-image-container:nth-child(2) {
+                .first-section-image-container:nth-child(2) {
                     align-self: flex-end;
                     height: 100%;
                 }
             }
         }
         
-        .fss-paragraph-container {
+        .first-section-paragraph-container {
             /* align-self: flex-end; */
+            margin-top: 5em;
             h2 {
-                text-align: center;
+                /* text-align: center; */
                 padding: 2em 4em;
+                padding-left: 2em;
                 /* background-color: #f7f7f7; */
                 font-size: 1.6rem;
                 transition-duration: .2s;
+                border-left: 3px solid black;
             }
             h2:hover {
-                transition-duration: .2s;
+                /* ;               
                 box-shadow: blue 0px -10px 0px 0px inset, rgb(255, 255, 255) 0px 5px 0px -30px, rgb(31, 193, 27) 0px 10px, rgb(255, 255, 255) 0px 15px 0px -30px, rgb(255, 217, 19) 0px 20px, rgb(255, 255, 255) 0px 25px 0px -30px, rgb(255, 156, 85) 0px 30px, rgb(255, 255, 255) 0px 35px 0px -30px, rgb(255, 85, 85) 0px 40px;
+ */
+                transition-duration: .2s;
             }
         }
         
-        .second-sub-section {
+        .second-section {
             /* height: max(100vh, 120vh); */
             height: 100vh;
-            .sss-content-organizer {
+            .second-section-content-organizer {
                 height: 80%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                .sss-first-image-desc-container {
+                .second-section-first-image-desc-container {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     padding-right: 14em;
                     padding-bottom: 1em;
-                    .sssf-desc-container {
+                    .second-section-first-desc-container {
                         display: flex;
                         justify-content: center;
                         flex-direction: column;
@@ -90,15 +99,19 @@
                             /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
                         }
                     }
-                    img {}
+                    img {
+                        width: 100%;
+                        max-width: 25em;
+                        height: auto;
+                    }
                 }
-                .sss-second-image-desc-container {
+                .second-section-second-image-desc-container {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     padding-top: 1em;
                     padding-left: 13em;
-                    .ssss-desc-container {
+                    .second-section-second-desc-container {
                         display: flex;
                         justify-content: center;
                         flex-direction: column;
@@ -121,7 +134,7 @@
                     }
                 }
             }
-            .sss-paragraph-container {
+            .second-section-paragraph-container {
                 height: 20%;
                 display: flex;
                 justify-content: center;
@@ -136,16 +149,17 @@
                     font-size: 1.2rem;
                 }
             }
-            .sss-paragraph-container:hover {
+            .second-section-paragraph-container/* :hover */
+            {
                 filter: opacity(100%);
                 transition-duration: .2s;
                 box-shadow: 0px 20px 20px 2px rgba(95, 95, 95, 0.229);
             }
         }
         
-        .third-sub-section {
+        .third-section {
             margin-top: 10em;
-            .tss-image-container {
+            .third-section-image-container {
                 margin-inline: 10em;
                 display: grid;
                 gap: 3em;
@@ -160,20 +174,20 @@
                     align-items: center;
                     justify-content: center;
                 }
-                .tss-image-container:nth-child(1) {}
-                .tss-image-container:nth-child(2) {}
-                .tss-image-container:nth-child(3) {}
-                .tss-image-container:nth-child(4) {}
+                .third-section-image-container:nth-child(1) {}
+                .third-section-image-container:nth-child(2) {}
+                .third-section-image-container:nth-child(3) {}
+                .third-section-image-container:nth-child(4) {}
             }
-            .tss-image-desc-container {
+            .third-section-image-desc-container {
                 width: 100%;
                 margin-top: 10em;
                 display: flex;
-                .tss-sub-container {
+                .third-section-image-desc-sub-container {
                     display: inline-flex;
                     /* padding-inline: max(10em, 2vw); */
                     justify-content: center;
-                    .tss-desc-container {
+                    .third-section-desc-container {
                         align-self: center;
                         p {
                             max-width: 20vw;
@@ -195,3 +209,13 @@
         }
         /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+        
+        #fixed-button {
+            position: fixed;
+            z-index: 999;
+            button {
+                padding: 1em;
+                border-radius: 50px;
+                background-color: red;
+            }
+        }
