@@ -660,6 +660,7 @@ rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 
 .about-section .text-container h2 {
   text-align: center;
+  width: 100%;
 }
 
 .about-section .text-container p {
