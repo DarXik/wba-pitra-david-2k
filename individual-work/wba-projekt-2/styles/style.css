@@ -342,6 +342,27 @@ main {
         } */
 }
 
+.contact-section input[type=text] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #BEBEBE;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+
+.contact-section input[type=text]:focus {
+  -webkit-transition-duration: all 0.30s ease-in-out;
+          transition-duration: all 0.30s ease-in-out;
+  -webkit-box-shadow: 0 0 8px #88D5E9;
+          box-shadow: 0 0 8px #88D5E9;
+  border: 1px solid #88D5E9;
+}
+
 .contact-section .contact-input-container {
   max-width: 30em;
   margin: 1em;
@@ -368,6 +389,8 @@ main {
 
 .contact-section .contact-input-container input {
   font-style: italic;
+  -webkit-transition-duration: all 0.30s ease-in-out;
+          transition-duration: all 0.30s ease-in-out;
 }
 
 .contact-section .contact-input-container button {
@@ -378,18 +401,11 @@ main {
   border: 1Px solid #ffffff00;
   border-bottom: 1px solid #767676;
   width: 49%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #BEBEBE;
-  padding: 7px;
-  margin: 0px;
   outline: none;
 }
 
 .contact-section .name-input:focus {
-  -webkit-box-shadow: 0 0 8px #88D5E9;
-          box-shadow: 0 0 8px #88D5E9;
-  border: 1px solid #88D5E9;
+  border-bottom: 2px solid red;
 }
 
 .contact-section .input-email {

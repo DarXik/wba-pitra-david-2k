@@ -36,6 +36,22 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    input[type=text] {
+        box-sizing: border-box;
+        border: 1px solid #BEBEBE;
+        padding: 7px;
+        margin: 0px;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+    }
+    input[type=text]:focus {
+        transition-duration: all 0.30s ease-in-out;
+        box-shadow: 0 0 8px #88D5E9;
+        border: 1px solid #88D5E9;
+    }
     .contact-input-container {
         max-width: 30em;
         margin: 1em;
@@ -53,6 +69,7 @@
         }
         input {
             font-style: italic;
+            transition-duration: all 0.30s ease-in-out;
         }
         button {
             margin-top: 1em;
@@ -95,16 +112,11 @@
         border: 1Px solid #ffffff00;
         border-bottom: 1px solid #767676;
         width: 49%;
-        box-sizing: border-box;
-        border: 1px solid #BEBEBE;
-        padding: 7px;
-        margin: 0px;
         outline: none;
     }
     .name-input:hover {}
     .name-input:focus {
-        box-shadow: 0 0 8px #88D5E9;
-        border: 1px solid #88D5E9;
+        border-bottom: 2px solid red;
     }
     .input-email {
         border: 1Px solid #ffffff00;
