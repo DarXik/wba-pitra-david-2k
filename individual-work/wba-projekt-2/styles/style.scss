@@ -23,13 +23,18 @@ body {
     /*  background: #171717; */
     /*   background-image: linear-gradient(90deg, #1413135a 1px, transparent 0), linear-gradient(#1413135a 1px, transparent 0);
     background-size: 210px 210px; */
+    font-family: customFontOne;
 }
 
-main {
-    img {
-        @include monochrome-image-setting;
-    }
-    img:hover {
-        @include hover-image-animation
+@media (min-width: 1920px) and (min-height:1080px) {
+    main {
+        img {
+            @include monochrome-image-setting;
+        }
+        img:hover {
+            @include hover-image-animation
+        }
     }
 }
+
+@media (max-width: 414px) and (max-height: 736px) {}
