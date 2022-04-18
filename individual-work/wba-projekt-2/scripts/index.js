@@ -1,7 +1,7 @@
 var i = 0;
 var txt = 'And there is something about us';
-var txt2 = 'Be welcomed, pal'
-var speed = 110;
+var txt2 = 'Be welcomed, pal.'
+var speed = 100;
 var speed2 = 200;
 var speedBack2 = 75;
 
@@ -16,7 +16,7 @@ function TypeEffect() {
 
 function TypeEffect2() {
     if (i >= txt2.length) {
-        setTimeout(UnType, 2500);
+        setTimeout(UnType, 3500);
         return;
     }
 

@@ -183,14 +183,6 @@ header nav .navbar-main .button .button-container li {
   text-align: center;
 }
 
-header nav .navbar-main .button .button-container li:nth-child(1) {
-  border-right: 1Px solid black;
-}
-
-header nav .navbar-main .button .button-container li:nth-child(2) {
-  border-left: 1Px solid black;
-}
-
 header nav .navbar-main .button .button-container li a {
   text-decoration: none;
   display: block;
@@ -360,8 +352,10 @@ main {
   width: 100%;
   max-width: 85em;
   height: 30em;
-  -webkit-filter: blur(2px) grayscale(1);
-          filter: blur(2px) grayscale(1);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-filter: blur(1px) grayscale(1);
+          filter: blur(1px) grayscale(1);
 }
 
 .first-section .first-section-image-container img:hover {
@@ -537,6 +531,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-inline: 4em;
 }
 
 .second-section .second-section-paragraph-container h3 {

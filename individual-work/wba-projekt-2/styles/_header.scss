@@ -31,12 +31,6 @@ header {
                     width: 150px;
                     text-align: center;
                 }
-                .button-container li:nth-child(1) {
-                    border-right: 1Px solid black;
-                }
-                .button-container li:nth-child(2) {
-                    border-left: 1Px solid black;
-                }
                 .button-container li a {
                     text-decoration: none;
                     display: block;
@@ -117,3 +111,21 @@ header {
         }
     }
 }
+
+@media (min-width: 1920px) and (min-height: 1080px) {}
+
+@media (min-width: 1366) and (min-height: 768px) {}
+
+@media (min-width: 1440) and (min-height: 900px) {}
+
+@media (min-width: 1280) and (min-height: 720px) {}
+
+@media (min-width: 360) and (min-height: 640px) {}
+
+@media (min-width: 375px) and (min-height: 812px) {}
+
+@media (min-width: 412px) and (min-height: 915px) {}
+
+@media (min-width: 768px) and (min-height: 1024px) {}
+
+@media (min-width: 601px) and (min-height: 962px) {}
