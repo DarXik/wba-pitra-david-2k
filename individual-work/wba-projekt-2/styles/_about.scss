@@ -1,3 +1,4 @@
+@media (min-width: 1920px) and (min-height:1080px) {
     .about-section {
         margin-top: 3em;
         .about-heading-container {
@@ -98,7 +99,6 @@
             }
         }
     }
-    
     .contact-section {
         margin-top: 10em;
         width: 100%;
@@ -191,3 +191,202 @@
             }
         }
     }
+}
+
+@media (max-width: 414px) and (max-height: 736px)
+/* mobile iPhone 8 plus */
+
+{
+    .about-section {
+        margin-top: 3em;
+        .about-heading-container {
+            @include first-heading-container;
+            text-align: start;
+            position: relative;
+            transition-duration: 0.4s;
+            h1 {
+                padding: 1em;
+                font-family: customFontTwo;
+                font-weight: bolder;
+                font-size: 4rem;
+                border-left: 3px solid black;
+                box-shadow: -50px 0px 35px 0px #a9a9a947;
+            }
+            h1::after {
+                content: "";
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                transition: 0.4s;
+            }
+            h1::before {
+                content: "";
+                width: 11px;
+                height: 11px;
+                position: absolute;
+                transition: 0.4s;
+            }
+            h1::after {
+                top: 0px;
+                left: 0px;
+                border-left: 3px solid black;
+            }
+            h1:hover::before {
+                width: 100%;
+                height: 100%;
+            }
+            h1:hover::after {
+                width: 100%;
+                height: 100%;
+            }
+            h1:hover {
+                box-shadow: -50px 0px 35px 0px #a9a9a947;
+            }
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3em;
+            h2 {
+                text-align: center;
+                width: 100%;
+                font-family: customFontThree;
+                font-weight: bold;
+            }
+            p {
+                padding-top: 2em;
+            }
+            ul {
+                margin-top: .7em;
+                list-style-type: none;
+            }
+            ul>li {
+                text-indent: 5px;
+            }
+            ul>li:before {
+                content: "-";
+                text-indent: 5px;
+            }
+            [class^="box-"] {
+                margin-top: 4em;
+            }
+            .box-1 {
+                margin: 2em;
+                padding: 3em;
+                width: 45vw;
+                align-self: flex-end;
+                margin-left: 5em;
+                box-shadow: -20px 10px 20px 2px #8988882b;
+            }
+            .box-2 {
+                margin: 2em;
+                margin-bottom: 4em;
+                padding: 3em;
+                width: 45vw;
+                align-self: flex-start;
+                margin-right: 5em;
+                box-shadow: 0px 20px 20px 2px #76757528;
+            }
+            .box-3 {
+                margin: 2em;
+                padding: 3em;
+                width: 45vw;
+                align-self: center;
+                margin-top: 2em;
+                box-shadow: 20px 10px 20px 2px #81818131;
+            }
+        }
+    }
+    .contact-section {
+        margin-top: 10em;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        .contact-container {
+            display: inline-flex;
+            flex-direction: column;
+            .form-heading {
+                margin-left: 2em;
+            }
+            .form-container {
+                display: flex;
+                justify-content: center;
+            }
+            .contact-input-container {
+                max-width: 30em;
+                margin: 1em;
+                padding: 1em;
+                li {
+                    display: block;
+                    list-style: none;
+                    margin-top: 1.3em;
+                }
+                input {
+                    padding: 7px;
+                    transition: $form-transition-dur-setting;
+                    outline: none;
+                }
+                input:focus {
+                    transition-duration: $form-transition-dur-setting;
+                    border-bottom: 1px solid $form-bottom-border-color;
+                    color: transparent;
+                }
+                .button {
+                    display: inline-block;
+                    margin-top: 1.5em;
+                    padding: 6px 20px 0px 20px;
+                    border: none;
+                    background-color: #ffffff00;
+                    border-bottom: 2px solid $form-bottom-border-color;
+                    width: 8em;
+                    transition: all 0.4s;
+                    cursor: pointer;
+                }
+                .button span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.4s;
+                }
+                .button span:after {
+                    content: 'now';
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.4s;
+                    position: absolute;
+                }
+                .button:hover span {
+                    padding-right: 2.1em;
+                }
+                .button:hover span:after {
+                    opacity: 4;
+                    right: 0;
+                }
+            }
+            .name-input {
+                width: 49%;
+                @include form-border-correction;
+            }
+            .input-email {
+                @include form-border-correction;
+                width: 100%;
+            }
+            .input-message {
+                @include form-border-correction;
+                height: 10em;
+                min-height: 8em;
+                width: 100%;
+                padding: 7px;
+                transition: $form-transition-dur-setting;
+                outline: none;
+            }
+            .input-message:focus {
+                transition-duration: $form-transition-dur-setting;
+                border-bottom: 1px solid $form-bottom-border-color;
+                color: transparent;
+            }
+        }
+    }
+}
