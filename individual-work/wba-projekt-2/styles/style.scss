@@ -26,13 +26,17 @@ body {
     font-family: customFontOne;
 }
 
-@media (min-width: 1920px) and (min-height:1080px) {
-    main {
-        img {
-            @include monochrome-image-setting;
-        }
-        img:hover {
-            @include hover-image-animation
-        }
+
+/* @media (min-width: 1920px) and (min-height:1080px) { */
+
+main {
+    img {
+        @include monochrome-image-setting;
+    }
+    img:hover {
+        @include hover-image-animation
     }
 }
+
+
+/* } */
