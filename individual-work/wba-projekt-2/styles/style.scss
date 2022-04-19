@@ -26,9 +26,6 @@ body {
     font-family: customFontOne;
 }
 
-
-/* @media (min-width: 1920px) and (min-height:1080px) { */
-
 main {
     img {
         @include monochrome-image-setting;
@@ -38,5 +35,14 @@ main {
     }
 }
 
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
 
-/* } */
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}

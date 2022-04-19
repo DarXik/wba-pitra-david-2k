@@ -36,7 +36,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="index">
         <section>
             <div class="first-section">
                 <div id="helper">
@@ -55,7 +55,7 @@
             </div>
             <div class="second-section">
                 <div class="second-section-content-organizer">
-                    <div class="second-section-first-image-desc-container">
+                    <div class="second-section-first-image-desc-container reveal action">
                         <img src="./images/20.JPG" alt="image" />
                         <div class="second-section-first-desc-container">
                             <div>
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="second-section-second-image-desc-container">
+                    <div class="second-section-second-image-desc-container reveal action">
                         <div class="second-section-second-desc-container">
                             <div>
                                 <h4>Lorem ipsum</h4>
@@ -78,7 +78,7 @@
                         <img src="./images/3.JPG" alt="image" />
                     </div>
                 </div>
-                <div class="second-section-paragraph-container">
+                <div class="second-section-paragraph-container reveal action">
                     <h3>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sunt asperiores amet illum inventore ut eos natus vel, similique ducimus minima doloremque neque. Esse necessitatibus consequuntur animi impedit, earum numquam! Lorem ipsum dolor sit amet
                         necessitatibus consequuntur animi impedit, earum numquam!
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="third-section">
-                <div class="third-section-image-container">
+                <div class="third-section-image-container reveal action">
                     <div>
                         <img src="./images/6.JPG" alt="image" />
                     </div>
@@ -106,7 +106,7 @@
 
                 <div class="third-section-image-desc-container">
 
-                    <div class="third-section-image-desc-sub-container">
+                    <div class="third-section-image-desc-sub-container reveal action">
                         <img src="./images/21.JPG" alt="image" />
                         <div class="third-section-desc-container">
                             <div>
@@ -137,17 +137,27 @@
 
         </div>
     </footer>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./scripts/index.js"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <script>
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
 </body>
 
 </html>
