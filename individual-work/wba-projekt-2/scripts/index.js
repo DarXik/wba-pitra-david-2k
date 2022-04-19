@@ -67,7 +67,7 @@ function ShowPlaceHolder(holder, input) {
 
 
 var typeText = document.querySelector(".typeText")
-var textToBeTyped = "a software engineer"
+var textToBeTyped = "And there is something about us"
 var index = 0,
     isAdding = true
 
@@ -89,16 +89,17 @@ function playAnim() {
                 // increment index by 1
                 index++
             }
-        } else {
-            // removing text
-            if (index === 0) {
-                // no more text to remove
-                isAdding = true
-            } else {
-                // decrement index by 1
-                index--
-            }
         }
+        /* else {
+                   // removing text
+                   if (index === 0) {
+                       // no more text to remove
+                       isAdding = true
+                   } else {
+                       // decrement index by 1
+                       index--
+                   }
+               } */
         // call itself
         playAnim()
     }, 120)
