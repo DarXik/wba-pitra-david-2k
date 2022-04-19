@@ -1117,7 +1117,7 @@ main {
 .about-section .text-container .box-3 {
   margin: 2em;
   padding: 3em;
-  width: 45vw;
+  width: 50vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1131,17 +1131,19 @@ main {
   /* margin: 20px; */
   color: #202020;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  word-spacing: 5px;
 }
 
 .about-section .text-container .box-3 h2 span {
   /* display: block; */
   margin: 11px 0 17px 0;
-  font-size: 80px;
-  line-height: 80px;
+  /* font-size: 80px; */
+  font-size: 2.5rem;
+  /*                 line-height: 80px;
+ */
   color: #f1ebe5;
   text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;
-  letter-spacing: -4px;
+  word-spacing: 5px;
 }
 
 .contact-section {
