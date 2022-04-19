@@ -5,14 +5,14 @@ var speed = 100;
 var speed2 = 200;
 var speedBack2 = 75;
 
-function TypeEffect() {
+/* function TypeEffect() {
     if (i < txt.length) {
         document.getElementById("js1").innerHTML += txt.charAt(i);
         i++;
         setTimeout(TypeEffect, speed);
     }
 }
-
+ */
 
 function TypeEffect2() {
     if (i >= txt2.length) {
