@@ -94,7 +94,14 @@ select {
 @media (min-width: 1600px) and (min-height: 900px) {
   header {
     height: 8vh;
-    margin-bottom: 2vh;
+    margin-bottom: 4em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+  }
+  header nav {
     margin-inline: 8em;
   }
   header nav .navbar-main {
@@ -106,7 +113,6 @@ select {
             justify-content: space-between;
     -ms-flex-line-pack: center;
         align-content: center;
-    border-bottom: .5px solid black;
   }
   header nav .navbar-main .logo img {
     height: 50px;
@@ -114,6 +120,10 @@ select {
   }
   header nav .navbar-main .logo #respon-img-mini {
     display: none;
+  }
+  header nav .navbar-main .button {
+    margin: 10px;
+    margin-right: 15px;
   }
   header nav .navbar-main .button .button-container li {
     position: relative;
@@ -131,12 +141,14 @@ select {
   header nav .navbar-main .button .button-container a {
     text-decoration: none;
     color: black;
+    /* margin-top: 5px;
+                        margin: 2px; */
   }
   header nav .navbar-main .button .button-container a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
-    height: 1px;
+    height: 2px;
     left: 50%;
     position: absolute;
     background: black;
@@ -447,7 +459,7 @@ rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
   }
   #index .first-section-paragraph-container {
     /* align-self: flex-end; */
-    margin-top: 5em;
+    margin-top: 5.5em;
   }
   #index .first-section-paragraph-container h2 {
     /* text-align: center; */

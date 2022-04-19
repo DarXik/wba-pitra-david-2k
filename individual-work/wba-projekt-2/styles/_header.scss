@@ -1,14 +1,17 @@
 @media (min-width: 1600px) and (min-height: 900px) {
     header {
         height: 8vh;
-        margin-bottom: 2vh;
-        margin-inline: 8em;
+        margin-bottom: 4em;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 999;
         nav {
+            margin-inline: 8em;
             .navbar-main {
                 display: flex;
                 justify-content: space-between;
                 align-content: center;
-                border-bottom: .5px solid black;
                 .logo {
                     img {
                         height: 50px;
@@ -19,6 +22,8 @@
                     }
                 }
                 .button {
+                    margin: 10px;
+                    margin-right: 15px;
                     .button-container li {
                         position: relative;
                         float: left;
@@ -33,12 +38,14 @@
                     .button-container a {
                         text-decoration: none;
                         color: black;
+                        /* margin-top: 5px;
+                        margin: 2px; */
                     }
                     .button-container a:after {
                         background: none repeat scroll 0 0 transparent;
                         bottom: 0;
                         content: "";
-                        height: 1px;
+                        height: 2px;
                         left: 50%;
                         position: absolute;
                         background: black;
