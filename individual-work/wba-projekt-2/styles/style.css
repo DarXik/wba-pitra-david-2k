@@ -77,17 +77,17 @@ select {
 }
 
 @font-face {
-  src: url(Bhaijaan.ttf);
+  src: url(../fonts/Bhaijaan.ttf);
   font-family: customFontOne;
 }
 
 @font-face {
-  src: url(Amatic.ttf);
+  src: url(../fonts/Amatic.ttf);
   font-family: customFontTwo;
 }
 
 @font-face {
-  src: url(PHand.ttf);
+  src: url(../fonts/Paytone.ttf);
   font-family: customFontThree;
 }
 
@@ -1124,6 +1124,24 @@ main {
   margin-top: 2em;
   -webkit-box-shadow: 20px 10px 20px 2px #81818131;
           box-shadow: 20px 10px 20px 2px #81818131;
+  background-color: #ece5da;
+}
+
+.about-section .text-container .box-3 h2 {
+  /* margin: 20px; */
+  color: #202020;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.about-section .text-container .box-3 h2 span {
+  /* display: block; */
+  margin: 11px 0 17px 0;
+  font-size: 80px;
+  line-height: 80px;
+  color: #f1ebe5;
+  text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;
+  letter-spacing: -4px;
 }
 
 .contact-section {

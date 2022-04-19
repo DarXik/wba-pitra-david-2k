@@ -99,6 +99,22 @@ main {
             align-self: center;
             margin-top: 2em;
             box-shadow: 20px 10px 20px 2px #81818131;
+            background-color: #ece5da;
+            h2 {
+                /* margin: 20px; */
+                color: #202020;
+                text-transform: uppercase;
+                letter-spacing: -2px;
+            }
+            h2 span {
+                /* display: block; */
+                margin: 11px 0 17px 0;
+                font-size: 80px;
+                line-height: 80px;
+                color: #f1ebe5;
+                text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;
+                letter-spacing: -4px;
+            }
         }
     }
 }
