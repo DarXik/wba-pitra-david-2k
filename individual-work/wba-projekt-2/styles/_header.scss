@@ -4,42 +4,51 @@
         margin-bottom: 2vh;
         margin-inline: 8em;
         nav {
-            /* position: fixed;
-            z-index: 999; */
             .navbar-main {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
-                border-bottom: 1px solid black;
+                align-content: center;
+                border-bottom: .5px solid black;
                 .logo {
                     img {
                         height: 50px;
                         margin: 10px;
                     }
+                    #respon-img-mini {
+                        display: none;
+                    }
                 }
-                #respon-img-mini {
-                    display: none;
-                }
-            }
-            .button {
-                /*  display: flex;
-                justify-content: end; */
-                /* body {
-                 min-height: 100vh;
-                background: linear-gradient(#7d6cfc, #c635ea);} */
-                /* background-color: red; */
-                .button-container li {
-                    float: left;
-                    list-style: none;
-                    line-height: 20px;
-                    width: 150px;
-                    text-align: center;
-                }
-                .button-container li a {
-                    text-decoration: none;
-                    display: block;
-                    font-size: 120%;
-                    color: black;
+                .button {
+                    .button-container li {
+                        position: relative;
+                        float: left;
+                        list-style: none;
+                        width: fit-content;
+                        text-align: center;
+                        background-color: transparent;
+                        /* border: none; */
+                        font-size: 120%;
+                        margin-left: .7em;
+                    }
+                    .button-container a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    .button-container a:after {
+                        background: none repeat scroll 0 0 transparent;
+                        bottom: 0;
+                        content: "";
+                        height: 1px;
+                        left: 50%;
+                        position: absolute;
+                        background: black;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        width: 0;
+                    }
+                    .button-container a:hover:after {
+                        width: 100%;
+                        left: 0;
+                    }
                 }
             }
         }
