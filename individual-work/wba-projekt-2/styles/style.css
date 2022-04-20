@@ -188,13 +188,8 @@ select {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    background-color: white;
     z-index: 999;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   header nav {
     margin-inline: 1em;
