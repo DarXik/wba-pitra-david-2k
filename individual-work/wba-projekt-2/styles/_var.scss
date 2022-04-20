@@ -22,3 +22,40 @@ $font-amatic: customFontTwo;
 $footer-color: #857f7fa6;
 $form-bottom-border-color: black;
 $form-transition-dur-setting: all 0.30s ease-in-out;
+
+/* breakpoints desktop */
+
+$width-desktop-bp: 2560px;
+$height-desktop-bp: 1440px;
+
+/* breakpoints iphone8 */
+
+$width-iphone8-bp: 414px;
+$height-iphone8-bp: 737px;
+
+/* breakpoints  general*/
+
+$width-general-bp: 360px;
+$height-general-bp: 640px;
+
+/* breakpoints ipad */
+
+$width-tablet-bp: 768px;
+$height-tablet-bp: 962px;
+
+/* @media (min-width: 1366) and (min-height: 768px) {}
+
+                    
+                    @media (min-width: 1440) and (min-height: 900px) {}
+                    
+                    @media (min-width: 1280) and (min-height: 720px) {}
+                    
+                    @media (min-width: 360) and (min-height: 640px) {}
+                    
+                    @media (min-width: 375px) and (min-height: 812px) {}
+                    
+                    @media (min-width: 768px) and (min-height: 1024px) {}
+                    
+                    @media (min-width: 601px) and (min-height: 962px) {}                   
+                                
+ */
