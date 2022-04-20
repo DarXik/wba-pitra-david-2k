@@ -1017,7 +1017,7 @@ select {
     margin-bottom: 6em;
     padding: 3em;
     width: 55vw;
-    height: 40vh;
+    min-height: 40vh;
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-left: 5em;
@@ -1031,7 +1031,7 @@ select {
     margin-bottom: 6em;
     padding: 3em;
     width: 55vw;
-    height: 40vh;
+    min-height: 40vh;
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-right: 5em;
