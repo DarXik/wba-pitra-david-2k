@@ -96,27 +96,18 @@ select {
   font-family: customFontFour;
 }
 
+/*  */
 /* breakpoints desktop */
-/* breakpoints iphone8 */
+/* breakpoints hd */
 /* breakpoints  general*/
+/* breakpoints iphone8 */
 /* breakpoints ipad */
-/* @media (min-width: 1366) and (min-height: 768px) {}
-
-                    
-                    @media (min-width: 1440) and (min-height: 900px) {}
-                    
-                    @media (min-width: 1280) and (min-height: 720px) {}
-                    
-                    @media (min-width: 360) and (min-height: 640px) {}
-                    
-                    @media (min-width: 375px) and (min-height: 812px) {}
-                    
-                    @media (min-width: 768px) and (min-height: 1024px) {}
-                    
-                    @media (min-width: 601px) and (min-height: 962px) {}                   
-                                
- */
-@media only screen and (max-width: 2560px) and (max-heigh: 1440px) {
+/* 
+@media (min-width: 1366) and (min-height: 768px) {}
+@media (min-width: 1440) and (min-height: 900px) {}  
+@media (min-width: 601px) and (min-height: 962px) {} 
+*/
+@media only screen and (min-width: 1920px) and (min-heigh: 1080px) {
   header {
     background-color: red;
     height: 8vh;
@@ -192,7 +183,7 @@ select {
 }
 
 /* mobile iPhone 8 plus */
-@media (max-width: 414px) and (max-height: 737px) {
+@media only screen and (min-width: 414px) and (min-height: 737px) {
   header {
     margin-bottom: 1em;
     height: 8vh;
@@ -272,7 +263,7 @@ select {
 }
 
 /* general */
-@media only screen and (max-width: 2560px) and (max-heigh: 1440px) {
+@media only screen and (max-width: 1920px) and (max-heigh: 1080px) {
   .footer-main {
     margin-inline: 20vw;
     margin-top: 10em;
@@ -332,7 +323,7 @@ select {
 }
 
 /* general */
-@media only screen and (max-width: 2560px) and (max-heigh: 1440px) {
+@media only screen and (min-width: 1920px) and (min-heigh: 1080px) {
   #index {
     margin-inline: 8em;
   }
@@ -639,7 +630,7 @@ select {
 }
 
 /* mobile iPhone 8 plus */
-@media (max-width: 414px) and (max-height: 737px) {
+@media only screen and (min-width: 414px) and (min-height: 737px) {
   #index {
     margin-inline: 1em;
   }
@@ -941,7 +932,7 @@ select {
 
 /* general */
 /* desktop */
-@media only screen and (max-width: 2560px) and (min-heigh: 1440px) {
+@media only screen and (max-width: 1920px) and (min-heigh: 1080px) {
   #about {
     margin-inline: 8em;
   }

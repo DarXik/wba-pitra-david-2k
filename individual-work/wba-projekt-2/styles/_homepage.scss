@@ -1,4 +1,4 @@
-@media only screen and (max-width: $width-desktop-bp) and (max-heigh: $height-desktop-bp) {
+@media only screen and (min-width: $width-desktop-bp) and (min-heigh: $height-desktop-bp) {
     #index {
         margin-inline: 8em;
         .first-section {
@@ -212,7 +212,7 @@
 
 /* mobile iPhone 8 plus */
 
-@media (max-width: $width-iphone8-bp) and (max-height: $height-iphone8-bp) {
+@media only screen and (min-width: $width-iphone8-bp) and (min-height: $height-iphone8-bp) {
     #index {
         margin-inline: 1em;
         .first-section {
