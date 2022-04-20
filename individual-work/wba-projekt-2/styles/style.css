@@ -983,9 +983,282 @@ header nav .navbar-main .button .button-container a .button-container a:hover:af
   }
 }
 
-@media (max-width: 1920px) and (max-height: 1080px) {
+#about {
+  margin-inline: 1em;
+}
+
+#about .about-section {
+  margin-top: 3em;
+}
+
+#about .about-section .about-heading-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: start;
+  position: relative;
+  margin-bottom: 5em;
+  /* .typeText::after {
+                    content: "|";
+                    animation: blink 1s infinite;
+                }
+                @keyframes blink {
+                    0%,
+                    100% {
+                        opacity: 1;
+                    }
+                    50% {
+                        opacity: 0;
+                    }
+                } */
+}
+
+#about .about-section .about-heading-container #heading {
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px #b7b7b8;
+  color: white;
+  font-size: 5rem;
+  letter-spacing: -0.05em;
+  font-family: customFontThree;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  word-spacing: 5px;
+}
+
+#about .about-section .about-heading-container #heading:hover {
+  text-shadow: -16px 6px 15px #ced0d3;
+}
+
+#about .about-section .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3em;
+}
+
+#about .about-section .text-container h2 {
+  text-align: center;
+  width: 100%;
+  font-family: customFontFour;
+  font-weight: bold;
+}
+
+#about .about-section .text-container p {
+  padding-top: 2em;
+}
+
+#about .about-section .text-container ul {
+  margin-top: .7em;
+  list-style-type: none;
+}
+
+#about .about-section .text-container ul > li {
+  text-indent: 5px;
+}
+
+#about .about-section .text-container ul > li:before {
+  content: "-";
+  text-indent: 5px;
+}
+
+#about .about-section .text-container [class^="box-"] {
+  margin-top: 4em;
+}
+
+#about .about-section .text-container h2 {
+  color: #202020;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  font-family: customFontTwo;
+}
+
+#about .about-section .text-container .box-1 {
+  margin: 2em;
+  margin-bottom: 6em;
+  padding: 3em;
+  width: 55vw;
+  min-height: 40vh;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 5em;
+  -webkit-box-shadow: -20px 10px 20px 2px #8988882b;
+          box-shadow: -20px 10px 20px 2px #8988882b;
+  border-radius: 5px;
+}
+
+#about .about-section .text-container .box-2 {
+  margin: 2em;
+  margin-top: 5em;
+  margin-bottom: 6em;
+  padding: 3em;
+  width: 55vw;
+  min-height: 40vh;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 5em;
+  -webkit-box-shadow: 0px 20px 20px 2px #76757528;
+          box-shadow: 0px 20px 20px 2px #76757528;
+  border-radius: 5px;
+}
+
+#about .about-section .text-container .box-3 {
+  margin: 2em;
+  padding: 3em;
+  width: 55vw;
+  min-height: 50vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 2em;
+  -webkit-box-shadow: 20px 10px 20px 2px #81818131;
+          box-shadow: 20px 10px 20px 2px #81818131;
+  border-radius: 5px;
+}
+
+#about .contact-section {
+  margin-top: 10em;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .contact-section .contact-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about .contact-section .contact-container .form-heading {
+  margin-left: 2em;
+}
+
+#about .contact-section .contact-container .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about .contact-section .contact-container .contact-input-container {
+  max-width: 30em;
+  margin: 1em;
+  padding: 1em;
+}
+
+#about .contact-section .contact-container .contact-input-container li {
+  display: block;
+  list-style: none;
+  margin-top: 1.3em;
+}
+
+#about .contact-section .contact-container .contact-input-container input {
+  padding: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+#about .contact-section .contact-container .contact-input-container input:focus {
+  -webkit-transition-duration: all 0.3s ease-in-out;
+          transition-duration: all 0.3s ease-in-out;
+  border-bottom: 1px solid black;
+  color: transparent;
+}
+
+#about .contact-section .contact-container .contact-input-container .button {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 6px 20px 0px 20px;
+  border: none;
+  background-color: #ffffff00;
+  border-bottom: 2px solid black;
+  width: 8em;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+#about .contact-section .contact-container .contact-input-container .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#about .contact-section .contact-container .contact-input-container .button span:after {
+  content: 'now';
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+}
+
+#about .contact-section .contact-container .contact-input-container .button:hover span {
+  padding-right: 2.1em;
+}
+
+#about .contact-section .contact-container .contact-input-container .button:hover span:after {
+  opacity: 4;
+  right: 0;
+}
+
+#about .contact-section .contact-container .name-input {
+  width: 49%;
+  border: 1Px solid #ffffff00;
+  border-bottom: 1px solid #76767679;
+}
+
+#about .contact-section .contact-container .input-email {
+  border: 1Px solid #ffffff00;
+  border-bottom: 1px solid #76767679;
+  width: 100%;
+}
+
+#about .contact-section .contact-container .input-message {
+  border: 1Px solid #ffffff00;
+  border-bottom: 1px solid #76767679;
+  height: 10em;
+  min-height: 8em;
+  width: 100%;
+  padding: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+#about .contact-section .contact-container .input-message:focus {
+  -webkit-transition-duration: all 0.3s ease-in-out;
+          transition-duration: all 0.3s ease-in-out;
+  border-bottom: 1px solid black;
+  color: transparent;
+}
+
+@media (max-width: 415px) and (max-height: 737px) {
   #about {
-    margin-inline: 8em;
+    margin-inline: 1em;
   }
   .about-section {
     margin-top: 3em;
@@ -998,25 +1271,25 @@ header nav .navbar-main .button .button-container a .button-container a:hover:af
     position: relative;
     margin-bottom: 5em;
     /* .typeText::after {
-                content: "|";
-                animation: blink 1s infinite;
-            }
-            @keyframes blink {
-                0%,
-                100% {
-                    opacity: 1;
+                    content: "|";
+                    animation: blink 1s infinite;
                 }
-                50% {
-                    opacity: 0;
-                }
-            } */
+                @keyframes blink {
+                    0%,
+                    100% {
+                        opacity: 1;
+                    }
+                    50% {
+                        opacity: 0;
+                    }
+                } */
   }
   .about-section .about-heading-container #heading {
     position: relative;
     text-transform: uppercase;
     text-shadow: -15px 5px 20px #b7b7b8;
     color: white;
-    font-size: 5rem;
+    font-size: 2rem;
     letter-spacing: -0.05em;
     font-family: customFontThree;
     -webkit-user-select: none;
@@ -1111,219 +1384,6 @@ header nav .navbar-main .button .button-container a .button-container a:hover:af
   }
   .contact-section {
     margin-top: 10em;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contact-section .contact-container {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact-section .contact-container .form-heading {
-    margin-left: 2em;
-  }
-  .contact-section .contact-container .form-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contact-section .contact-container .contact-input-container {
-    max-width: 30em;
-    margin: 1em;
-    padding: 1em;
-  }
-  .contact-section .contact-container .contact-input-container li {
-    display: block;
-    list-style: none;
-    margin-top: 1.3em;
-  }
-  .contact-section .contact-container .contact-input-container input {
-    padding: 7px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    outline: none;
-  }
-  .contact-section .contact-container .contact-input-container input:focus {
-    -webkit-transition-duration: all 0.3s ease-in-out;
-            transition-duration: all 0.3s ease-in-out;
-    border-bottom: 1px solid black;
-    color: transparent;
-  }
-  .contact-section .contact-container .contact-input-container .button {
-    display: inline-block;
-    margin-top: 1.5em;
-    padding: 6px 20px 0px 20px;
-    border: none;
-    background-color: #ffffff00;
-    border-bottom: 2px solid black;
-    width: 8em;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    cursor: pointer;
-  }
-  .contact-section .contact-container .contact-input-container .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  .contact-section .contact-container .contact-input-container .button span:after {
-    content: 'now';
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    position: absolute;
-  }
-  .contact-section .contact-container .contact-input-container .button:hover span {
-    padding-right: 2.1em;
-  }
-  .contact-section .contact-container .contact-input-container .button:hover span:after {
-    opacity: 4;
-    right: 0;
-  }
-  .contact-section .contact-container .name-input {
-    width: 49%;
-    border: 1Px solid #ffffff00;
-    border-bottom: 1px solid #76767679;
-  }
-  .contact-section .contact-container .input-email {
-    border: 1Px solid #ffffff00;
-    border-bottom: 1px solid #76767679;
-    width: 100%;
-  }
-  .contact-section .contact-container .input-message {
-    border: 1Px solid #ffffff00;
-    border-bottom: 1px solid #76767679;
-    height: 10em;
-    min-height: 8em;
-    width: 100%;
-    padding: 7px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    outline: none;
-  }
-  .contact-section .contact-container .input-message:focus {
-    -webkit-transition-duration: all 0.3s ease-in-out;
-            transition-duration: all 0.3s ease-in-out;
-    border-bottom: 1px solid black;
-    color: transparent;
-  }
-}
-
-@media (max-width: 414px) and (max-height: 736px) {
-  .about-section {
-    margin-top: 3em;
-  }
-  .about-section .about-heading-container {
-    text-align: center;
-    margin-top: 2em;
-    text-align: start;
-    position: relative;
-    -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-  }
-  .about-section .about-heading-container h1 {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    padding: .5em;
-    font-size: 3rem;
-    -webkit-transition-duration: .2s;
-            transition-duration: .2s;
-  }
-  .about-section .about-heading-container h1 {
-    padding: 1em;
-    font-family: customFontTwo;
-    font-weight: bolder;
-    font-size: 2.5rem;
-    border-left: 3px solid black;
-    -webkit-box-shadow: -50px 0px 35px 0px #a9a9a947;
-            box-shadow: -50px 0px 35px 0px #a9a9a947;
-  }
-  .about-section .text-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 3em;
-  }
-  .about-section .text-container h2 {
-    text-align: center;
-    width: 100%;
-    font-family: customFontThree;
-    font-weight: bold;
-  }
-  .about-section .text-container p {
-    padding-top: 2em;
-  }
-  .about-section .text-container ul {
-    margin-top: .7em;
-    list-style-type: none;
-  }
-  .about-section .text-container ul > li {
-    text-indent: 5px;
-  }
-  .about-section .text-container ul > li:before {
-    content: "-";
-    text-indent: 5px;
-  }
-  .about-section .text-container [class^="box-"] {
-    margin-top: 4em;
-  }
-  .about-section .text-container .box-1 {
-    padding: 2em;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -webkit-box-shadow: -20px 10px 20px 2px #8988882b;
-            box-shadow: -20px 10px 20px 2px #8988882b;
-  }
-  .about-section .text-container .box-2 {
-    padding: 2em;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -webkit-box-shadow: -20px 10px 20px 2px #8988882b;
-            box-shadow: -20px 10px 20px 2px #8988882b;
-  }
-  .about-section .text-container .box-3 {
-    padding: 2em;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -webkit-box-shadow: -20px 10px 20px 2px #8988882b;
-            box-shadow: -20px 10px 20px 2px #8988882b;
-  }
-  .contact-section {
-    margin-top: 6em;
     width: 100%;
     height: 100%;
     display: -webkit-box;
