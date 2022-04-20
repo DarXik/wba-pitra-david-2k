@@ -172,19 +172,15 @@
             gap: 3em;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            img {
-                /* max-width: 25em;
-                        height: auto; */
-            }
             div {
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-            .third-section-image-container:nth-child(1) {}
+            /* .third-section-image-container:nth-child(1) {}
             .third-section-image-container:nth-child(2) {}
             .third-section-image-container:nth-child(3) {}
-            .third-section-image-container:nth-child(4) {}
+            .third-section-image-container:nth-child(4) {} */
         }
         .third-section-image-desc-container {
             width: 100%;
