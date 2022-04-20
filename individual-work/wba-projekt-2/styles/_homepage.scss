@@ -1,4 +1,10 @@
-@media only screen and (min-width: $width-desktop-bp) and (min-heigh: $height-desktop-bp) {
+@media only screen and (min-width: $width-desktop-bp)
+/* and (min-height: $height-desktop-bp)  */
+
+
+/* and (max-height: $height-iphone8-bp) */
+
+{
     #index {
         margin-inline: 8em;
         .first-section {
@@ -209,10 +215,7 @@
     }
 }
 
-
-/* mobile iPhone 8 plus */
-
-@media only screen and (min-width: $width-iphone8-bp) and (min-height: $height-iphone8-bp) {
+@media only screen and (max-width: $width-iphone8-bp) {
     #index {
         margin-inline: 1em;
         .first-section {
@@ -389,6 +392,7 @@
                     align-content: center;
                     .third-section-desc-container {
                         align-self: center;
+                        margin-bottom: 1.3em;
                         p,
                         h4 {
                             padding: 1em;
@@ -410,8 +414,5 @@
         }
     }
 }
-
-
-/* general */
 
 @media (max-width: $width-general-bp) and (max-height: $height-general-bp) {}
