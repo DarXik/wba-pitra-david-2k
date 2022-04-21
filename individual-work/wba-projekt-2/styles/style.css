@@ -107,7 +107,7 @@ select {
 @media (min-width: 1440) and (min-height: 900px) {}  
 @media (min-width: 601px) and (min-height: 962px) {} 
 */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1280px) {
   header {
     height: 4.5em;
     margin-bottom: 4em;
@@ -411,7 +411,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1280px) {
   .footer-main {
     margin-inline: 20vw;
     margin-top: 10em;
@@ -527,7 +527,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1280px) {
   #index {
     margin-inline: 8em;
   }
@@ -1436,7 +1436,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1280px) {
   #about {
     margin-inline: 8em;
   }
