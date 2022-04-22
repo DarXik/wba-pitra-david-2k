@@ -40,3 +40,13 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@mixin about-page-box-general-bp() {
+    margin: 1em;
+    margin-bottom: 4em;
+    padding: 2em;
+    width: fit-content;
+    align-self: center;
+    box-shadow: 0px 10px 20px 2px #81818131;
+    border-radius: 5px;
+}
