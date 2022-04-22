@@ -196,7 +196,7 @@
     }
 }
 
-@media (max-width: $width-general-bp) {
+@media only screen and (max-width: $width-general-bp) {
     header {
         height: 5em;
         display: flex;
@@ -226,6 +226,69 @@
                         text-align: center;
                         background-color: transparent;
                         font-size: 100%;
+                        margin-left: .7em;
+                    }
+                    .button-container a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: black;
+                        .button-container a:after {
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            height: 2px;
+                            left: 50%;
+                            position: absolute;
+                            background: black;
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+                        .button-container a:hover:after {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $width-legacy-bp) {
+    header {
+        height: 4.5em;
+        margin-bottom: 4em;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 999;
+        nav {
+            margin-inline: 8em;
+            .navbar-main {
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                .logo {
+                    img {
+                        height: 50px;
+                        margin: 10px;
+                    }
+                    #respon-img-mini {
+                        display: none;
+                    }
+                }
+                .button {
+                    margin: 10px;
+                    display: flex;
+                    align-items: center;
+                    .button-container li {
+                        position: relative;
+                        float: left;
+                        list-style: none;
+                        width: fit-content;
+                        text-align: center;
+                        background-color: transparent;
+                        font-size: clamp(90%, 120%, 125%);
                         margin-left: .7em;
                     }
                     .button-container a {
