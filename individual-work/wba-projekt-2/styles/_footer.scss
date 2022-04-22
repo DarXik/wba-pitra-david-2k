@@ -1,4 +1,4 @@
-@media only screen and (min-width: $width-desktop-bp) {
+@media only screen and (min-width: $width-desktop-bp) and (max-width: 8490px) {
     .footer-main {
         margin-inline: max(2vw, 20vw);
         margin-top: 10em;
@@ -24,7 +24,7 @@
     }
 }
 
-@media only screen and (max-width: $width-tablet-bp) {
+@media only screen and (min-width: $width-tablet-bp) and (max-width: 1279px) {
     .footer-main {
         margin-inline: 12vw;
         margin-top: 5em;
@@ -50,7 +50,7 @@
     }
 }
 
-@media only screen and (max-width: $width-iphone8-bp) {
+@media only screen and (min-width: $width-iphone8-bp) and (max-width: 767px) {
     .footer-main {
         margin-inline: 12vw;
         margin-top: 5em;
@@ -76,7 +76,7 @@
     }
 }
 
-@media only screen and(max-width: $width-general-bp) {
+@media only screen and (min-width: $width-general-bp) and (max-width: 513px) {
     .footer-main {
         margin-inline: 12vw;
         margin-top: 3em;
@@ -102,7 +102,8 @@
     }
 }
 
-@media only screen and (max-width: $width-legacy-bp) {
+
+/* @media only screen and (max-width: $width-legacy-bp) {
     .footer-main {
         margin-inline: max(2vw, 20vw);
         margin-top: 6em;
@@ -126,4 +127,4 @@
             }
         }
     }
-}
+} */

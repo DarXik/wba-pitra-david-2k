@@ -24,3 +24,19 @@
     border: 1Px solid #ffffff00;
     border-bottom: 1px solid #76767679;
 }
+
+@mixin about-page-box ($height-box-about, $width-box-about, $self-position) {
+    margin: 2em;
+    margin-bottom: 6em;
+    padding: 3em;
+    width: $width-box-about;
+    min-height: $height-box-about;
+    align-self: $self-position;
+    border-radius: 5px;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,4 +1,4 @@
-@media only screen and (min-width: $width-desktop-bp) {
+@media only screen and (min-width: $width-desktop-bp) and (max-width: 8490px) {
     header {
         height: 4.5em;
         margin-bottom: 4em;
@@ -61,7 +61,7 @@
     }
 }
 
-@media only screen and (max-width: $width-tablet-bp) {
+@media only screen and (min-width: $width-tablet-bp) and (max-width: 1279px) {
     header {
         margin-bottom: 1em;
         height: 8vh;
@@ -127,19 +127,18 @@
     }
 }
 
-@media only screen and (max-width: $width-iphone8-bp) {
+@media only screen and (min-width: $width-iphone8-bp) and (max-width: 767px) {
     header {
         margin-bottom: 1em;
         height: 8vh;
         position: sticky;
         top: 0;
-        background-color: rgb(186, 0, 0);
         z-index: 999;
         display: flex;
         align-items: center;
         justify-content: center;
         nav {
-            margin-inline: 1em;
+            margin-inline: .6em;
             .navbar-main {
                 display: flex;
                 justify-content: space-between;
@@ -167,7 +166,7 @@
                         width: fit-content;
                         text-align: center;
                         background-color: transparent;
-                        font-size: 100%;
+                        font-size: 90%;
                         margin-left: .7em;
                     }
                     .button-container a {
@@ -196,7 +195,7 @@
     }
 }
 
-@media only screen and (max-width: $width-general-bp) {
+@media only screen and (min-width: $width-general-bp) and (max-width: 513px) {
     header {
         height: 5em;
         display: flex;
@@ -225,7 +224,7 @@
                         width: fit-content;
                         text-align: center;
                         background-color: transparent;
-                        font-size: 100%;
+                        font-size: 80%;
                         margin-left: .7em;
                     }
                     .button-container a {
@@ -254,7 +253,8 @@
     }
 }
 
-@media only screen and (max-width: $width-legacy-bp) {
+
+/* @media only screen and (max-width: $width-legacy-bp) {
     header {
         height: 4.5em;
         margin-bottom: 4em;
@@ -315,4 +315,4 @@
             }
         }
     }
-}
+} */
