@@ -101,7 +101,7 @@ select {
 /* breakpoints iphone8 */
 /* breakpoints ipad */
 /* legacy */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1280px) {
   header {
     height: 4.5em;
     margin-bottom: 4em;
@@ -261,7 +261,7 @@ select {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #ba0000;
     z-index: 999;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -405,7 +405,7 @@ select {
   }
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   header {
     height: 4.5em;
     margin-bottom: 4em;
@@ -479,7 +479,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1280px) {
   .footer-main {
     margin-inline: 20vw;
     margin-top: 10em;
@@ -595,7 +595,7 @@ select {
   }
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   .footer-main {
     margin-inline: 20vw;
     margin-top: 6em;
@@ -624,7 +624,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1280px) {
   #index {
     margin-inline: 8em;
   }
@@ -899,7 +899,6 @@ select {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    /* padding-inline: max(10em, 2vw); */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -921,10 +920,6 @@ select {
     font-weight: bold;
   }
   #index .third-section .third-section-image-desc-container .third-section-image-desc-sub-container img {
-    /* width: 100%;
-                                    max-width: 35em;
-                                    height: auto;
-                                    max-height: 35em; */
     max-width: 30%;
     height: auto;
   }
@@ -2138,7 +2133,7 @@ select {
   }
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   #index {
     margin-inline: 3em;
   }
@@ -2440,7 +2435,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1280px) {
   #about {
     margin-inline: 8em;
   }
@@ -3190,7 +3185,7 @@ select {
   }
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   #about {
     margin-inline: 3em;
   }

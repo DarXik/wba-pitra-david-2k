@@ -179,7 +179,6 @@
                 display: flex;
                 .third-section-image-desc-sub-container {
                     display: inline-flex;
-                    /* padding-inline: max(10em, 2vw); */
                     justify-content: center;
                     .third-section-desc-container {
                         align-self: center;
@@ -196,10 +195,6 @@
                         }
                     }
                     img {
-                        /* width: 100%;
-                                    max-width: 35em;
-                                    height: auto;
-                                    max-height: 35em; */
                         max-width: 30%;
                         height: auto;
                     }
