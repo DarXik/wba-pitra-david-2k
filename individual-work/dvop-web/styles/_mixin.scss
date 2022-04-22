@@ -64,3 +64,180 @@
     /* padding: max(3vw, 1em); */
     /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
 }
+
+@mixin p-and-a-footer-setting ($margin-top-footer) {
+    p {
+        color: $footer-color;
+        font-size: clamp(.8vw, 1em);
+        margin-top: $margin-top-footer;
+        a {
+            color: $footer-color;
+            text-decoration: underline;
+            font-size: clamp(.8vw, 1em);
+        }
+    }
+}
+
+@mixin homepage-heading-h1($homepage-h1-font-size) {
+    font-family: customFontFour;
+    color: white;
+    position: absolute;
+    z-index: 9;
+    display: inline-flex;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: $homepage-h1-font-size;
+    user-select: none;
+}
+
+@mixin helper-mixin {
+    display: grid;
+    .first-section-heading-container,
+    .first-section-image-container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+@mixin section-paragraph-container ($section-paragraph-h3-margin) {
+    min-height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 20px -10px rgba(95, 95, 95, 0.329);
+    h3 {
+        margin: 4em;
+        margin-inline: $section-paragraph-h3-margin;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+@mixin header-mixin ($header-margin-bottom) {
+    height: 4.5em;
+    margin-bottom: $header-margin-bottom;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+@mixin button-header-hover {
+    .button-container li {
+        position: relative;
+        float: left;
+        list-style: none;
+        width: fit-content;
+        text-align: center;
+        background-color: transparent;
+        font-size: clamp(90%, 120%, 125%);
+        margin-left: .7em;
+    }
+    .button-container a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        .button-container a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: black;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+        .button-container a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+@mixin contact-input-message {
+    @include form-border-correction;
+    height: 10em;
+    min-height: 8em;
+    width: 100%;
+    padding: 7px;
+    transition: $form-transition-dur-setting;
+    outline: none;
+}
+
+@mixin contact-input-button-mixin {
+    display: inline-block;
+    margin-top: 1.5em;
+    padding: 6px 20px 0px 20px;
+    border: none;
+    background-color: #ffffff00;
+    border-bottom: 2px solid $form-bottom-border-color;
+    width: 8em;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+@mixin about-heading-mixin($word-spacing-heading) {
+    text-transform: uppercase;
+    text-shadow: -10px 5px 20px #7d7d7d;
+    color: white;
+    font-size: clamp(2rem, 3rem, 5rem);
+    letter-spacing: -0.05em;
+    font-family: customFontThree;
+    user-select: none;
+    word-spacing: $word-spacing-heading;
+}
+
+@mixin first-section-image-hover {
+    img:hover {
+        filter: blur(0) grayscale(0);
+        z-index: 10;
+    }
+}
+
+@mixin contact-button-hover {
+    content: 'now';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+    position: absolute;
+}
+
+@mixin text-container-input-settings {
+    p {
+        padding-top: 2em;
+    }
+    ul {
+        margin-top: .7em;
+        list-style-type: none;
+    }
+    ul>li {
+        text-indent: 5px;
+    }
+    ul>li:before {
+        content: "-";
+        text-indent: 5px;
+    }
+    [class^="box-"] {
+        margin-top: 4em;
+    }
+}
+
+@mixin contact-input-elements-setting {
+    li {
+        display: block;
+        list-style: none;
+        margin-top: 1.3em;
+    }
+    input {
+        padding: 7px;
+        transition: $form-transition-dur-setting;
+        outline: none;
+    }
+    input:focus {
+        transition-duration: $form-transition-dur-setting;
+        border-bottom: 1px solid $form-bottom-border-color;
+        color: transparent;
+    }
+}

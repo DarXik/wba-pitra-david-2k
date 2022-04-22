@@ -1,16 +1,11 @@
 @media only screen and (min-width: $width-desktop-bp) and (max-width: $max-width-desktop-bp) {
     #index {
-        margin-inline: 8em;
+        margin-inline: $desktop-margin-inline;
         .first-section {
             display: flex;
             flex-direction: column;
             #helper {
-                display: grid;
-                .first-section-heading-container,
-                .first-section-image-container {
-                    grid-column: 1;
-                    grid-row: 1;
-                }
+                @include helper-mixin;
             }
             .first-section-heading-container {
                 margin-top: 2em;
@@ -18,16 +13,7 @@
                 width: 100%;
                 align-items: center;
                 h1 {
-                    font-family: customFontFour;
-                    color: white;
-                    position: absolute;
-                    z-index: 9;
-                    display: inline-flex;
-                    background-color: transparent;
-                    font-weight: bolder;
-                    font-size: 6rem;
-                    transition-duration: .2s;
-                    user-select: none;
+                    @include homepage-heading-h1(6rem);
                 }
             }
             .first-section-image-container {
@@ -43,18 +29,7 @@
                     transition-duration: .5s;
                     filter: blur(1px) grayscale(1);
                 }
-                img:hover {
-                    filter: blur(0) grayscale(0);
-                    z-index: 10;
-                }
-                .first-section-image-container:nth-child(1) {
-                    padding-bottom: 5em;
-                    height: 5em;
-                }
-                .first-section-image-container:nth-child(2) {
-                    align-self: flex-end;
-                    height: 100%;
-                }
+                @include first-section-image-hover;
             }
         }
         .first-section-paragraph-container {
@@ -63,11 +38,7 @@
                 padding: 2em 4em;
                 padding-left: 1em;
                 font-size: 1.6rem;
-                transition-duration: .2s;
                 border-left: 3px solid black;
-            }
-            h2:hover {
-                transition-duration: .2s;
             }
         }
         .second-section {
@@ -123,18 +94,8 @@
                 }
             }
             .second-section-paragraph-container {
-                min-height: 20%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 margin-inline: 4em;
-                box-shadow: 0px 20px 20px -10px rgba(95, 95, 95, 0.329);
-                h3 {
-                    margin: 4em;
-                    margin-inline: 6em;
-                    text-align: center;
-                    font-size: 1.2rem;
-                }
+                @include section-paragraph-container(6em);
             }
         }
         .third-section {
@@ -186,18 +147,13 @@
 
 @media only screen and (min-width: $width-tablet-bp) and (max-width: $max-width-tablet-bp) {
     #index {
-        margin-inline: 4em;
+        margin-inline: $tablet-margin-inline;
         .first-section {
             display: flex;
             flex-direction: column;
             margin-bottom: 3em;
             #helper {
-                display: grid;
-                .first-section-heading-container,
-                .first-section-image-container {
-                    grid-column: 1;
-                    grid-row: 1;
-                }
+                @include helper-mixin;
             }
             .first-section-heading-container {
                 margin-top: 2em;
@@ -205,16 +161,7 @@
                 width: 100%;
                 align-items: center;
                 h1 {
-                    font-family: customFontFour;
-                    color: white;
-                    position: absolute;
-                    z-index: 9;
-                    display: inline-flex;
-                    background-color: transparent;
-                    font-weight: bolder;
-                    font-size: 4rem;
-                    transition-duration: .2s;
-                    user-select: none;
+                    @include homepage-heading-h1(4rem);
                 }
             }
             .first-section-image-container {
@@ -231,18 +178,7 @@
                     transition-duration: .5s;
                     filter: blur(1px) grayscale(1);
                 }
-                img:hover {
-                    filter: blur(0) grayscale(0);
-                    z-index: 10;
-                }
-                .first-section-image-container:nth-child(1) {
-                    padding-bottom: 5em;
-                    height: 5em;
-                }
-                .first-section-image-container:nth-child(2) {
-                    align-self: flex-end;
-                    height: 100%;
-                }
+                @include first-section-image-hover;
             }
         }
         .first-section-paragraph-container {
@@ -251,11 +187,7 @@
                 padding: 2em 2em;
                 padding-left: 1em;
                 font-size: 1.2rem;
-                transition-duration: .2s;
                 border-left: 3px solid black;
-            }
-            h2:hover {
-                transition-duration: .2s;
             }
         }
         .second-section {
@@ -313,17 +245,7 @@
                 }
             }
             .second-section-paragraph-container {
-                min-height: 20%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 0px 20px 20px -10px rgba(95, 95, 95, 0.329);
-                h3 {
-                    margin: 4em;
-                    margin-inline: 1em;
-                    text-align: center;
-                    font-size: 1.2rem;
-                }
+                @include section-paragraph-container(1em);
             }
         }
         .third-section {
@@ -376,18 +298,13 @@
 
 @media only screen and (min-width: $width-iphone8-bp) and (max-width: $max-width-iphone8-bp) {
     #index {
-        margin-inline: 1em;
+        margin-inline: $mobile-dev-margin-inline;
         .first-section {
             display: flex;
             flex-direction: column;
             margin-bottom: 3em;
             #helper {
-                display: grid;
-                .first-section-heading-container,
-                .first-section-image-container {
-                    grid-column: 1;
-                    grid-row: 1;
-                }
+                @include helper-mixin;
             }
             .first-section-heading-container {
                 margin-top: 2em;
@@ -395,16 +312,7 @@
                 width: 100%;
                 align-items: center;
                 h1 {
-                    font-family: customFontFour;
-                    color: white;
-                    position: absolute;
-                    z-index: 9;
-                    display: inline-flex;
-                    background-color: transparent;
-                    font-weight: bolder;
-                    font-size: 3.5rem;
-                    transition-duration: .2s;
-                    user-select: none;
+                    @include homepage-heading-h1(3.5rem);
                 }
             }
             .first-section-image-container {
@@ -421,18 +329,7 @@
                     transition-duration: .5s;
                     filter: blur(1px) grayscale(1);
                 }
-                img:hover {
-                    filter: blur(0) grayscale(0);
-                    z-index: 10;
-                }
-                .first-section-image-container:nth-child(1) {
-                    padding-bottom: 5em;
-                    height: 5em;
-                }
-                .first-section-image-container:nth-child(2) {
-                    align-self: flex-end;
-                    height: 100%;
-                }
+                @include first-section-image-hover;
             }
         }
         .first-section-paragraph-container {
@@ -441,11 +338,7 @@
                 padding: 2em 2em;
                 padding-left: 1em;
                 font-size: 1.2rem;
-                transition-duration: .2s;
                 border-left: 3px solid black;
-            }
-            h2:hover {
-                transition-duration: .2s;
             }
         }
         .second-section {
@@ -499,17 +392,7 @@
                 }
             }
             .second-section-paragraph-container {
-                min-height: 20%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 0px 20px 20px -10px rgba(95, 95, 95, 0.329);
-                h3 {
-                    margin: 4em;
-                    margin-inline: 1em;
-                    text-align: center;
-                    font-size: 1.2rem;
-                }
+                @include section-paragraph-container(1em);
             }
         }
         .third-section {
@@ -562,18 +445,13 @@
 
 @media only screen and (min-width: $width-general-bp) and (max-width: $max-width-general-bp) {
     #index {
-        margin-inline: 1em;
+        margin-inline: $mobile-dev-margin-inline;
         .first-section {
             display: flex;
             flex-direction: column;
             margin-bottom: 3em;
             #helper {
-                display: grid;
-                .first-section-heading-container,
-                .first-section-image-container {
-                    grid-column: 1;
-                    grid-row: 1;
-                }
+                @include helper-mixin;
             }
             .first-section-heading-container {
                 margin-top: 2em;
@@ -581,16 +459,7 @@
                 width: 100%;
                 align-items: center;
                 h1 {
-                    font-family: customFontFour;
-                    color: white;
-                    position: absolute;
-                    z-index: 9;
-                    display: inline-flex;
-                    background-color: transparent;
-                    font-weight: bolder;
-                    font-size: 2rem;
-                    transition-duration: .2s;
-                    user-select: none;
+                    @include homepage-heading-h1(2rem);
                 }
             }
             .first-section-image-container {
@@ -606,18 +475,7 @@
                     transition-duration: .5s;
                     filter: blur(1px) grayscale(1);
                 }
-                img:hover {
-                    filter: blur(0) grayscale(0);
-                    z-index: 10;
-                }
-                .first-section-image-container:nth-child(1) {
-                    padding-bottom: 5em;
-                    height: 5em;
-                }
-                .first-section-image-container:nth-child(2) {
-                    align-self: flex-end;
-                    height: 100%;
-                }
+                @include first-section-image-hover;
             }
         }
         .first-section-paragraph-container {
@@ -626,11 +484,7 @@
                 padding: 2em 2em;
                 padding-left: 1em;
                 font-size: 1rem;
-                transition-duration: .2s;
                 border-left: 3px solid black;
-            }
-            h2:hover {
-                transition-duration: .2s;
             }
         }
         .second-section {
@@ -684,17 +538,7 @@
                 }
             }
             .second-section-paragraph-container {
-                min-height: 20%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 0px 20px 20px -10px rgba(95, 95, 95, 0.329);
-                h3 {
-                    margin: 4em;
-                    margin-inline: 1em;
-                    text-align: center;
-                    font-size: 1.2rem;
-                }
+                @include section-paragraph-container(1em);
             }
         }
         .third-section {
