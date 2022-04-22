@@ -138,6 +138,7 @@ select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    letter-spacing: -1px;
   }
   header nav .navbar-main .button .button-container li {
     position: relative;
@@ -217,6 +218,7 @@ select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    letter-spacing: -1px;
   }
   header nav .navbar-main .button .button-container li {
     position: relative;
@@ -296,6 +298,7 @@ select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    letter-spacing: -1px;
   }
   header nav .navbar-main .button .button-container li {
     position: relative;
@@ -359,6 +362,7 @@ select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    letter-spacing: -1px;
   }
   header nav .navbar-main .button .button-container li {
     position: relative;
@@ -399,12 +403,15 @@ select {
         -ms-flex-align: center;
             align-items: center;
   }
+  .footer-main .footer-text-container {
+    text-align: center;
+  }
   .footer-main .footer-text-container:nth-child(1) p {
     color: #857f7fa6;
     margin-top: .3em;
     font-size: clamp(0.8vw, 1em);
   }
-  .footer-main .footer-text-container:nth-child(1) p span {
+  .footer-main .footer-text-container:nth-child(1) p a {
     color: #857f7fa6;
     text-decoration: underline;
     font-size: clamp(0.8vw, 1em);
@@ -431,12 +438,15 @@ select {
         -ms-flex-align: center;
             align-items: center;
   }
+  .footer-main .footer-text-container {
+    text-align: center;
+  }
   .footer-main .footer-text-container:nth-child(1) p {
     color: #857f7fa6;
     font-size: clamp(0.8vw, 1em);
     margin-top: .1em;
   }
-  .footer-main .footer-text-container:nth-child(1) p span {
+  .footer-main .footer-text-container:nth-child(1) p a {
     color: #857f7fa6;
     text-decoration: underline;
     font-size: clamp(0.8vw, 1em);
@@ -463,12 +473,15 @@ select {
         -ms-flex-align: center;
             align-items: center;
   }
+  .footer-main .footer-text-container {
+    text-align: center;
+  }
   .footer-main .footer-text-container:nth-child(1) p {
     color: #857f7fa6;
     font-size: clamp(0.8vw, 1em);
     margin-top: .1em;
   }
-  .footer-main .footer-text-container:nth-child(1) p span {
+  .footer-main .footer-text-container:nth-child(1) p a {
     color: #857f7fa6;
     text-decoration: underline;
     font-size: clamp(0.8vw, 1em);
@@ -495,12 +508,15 @@ select {
         -ms-flex-align: center;
             align-items: center;
   }
+  .footer-main .footer-text-container {
+    text-align: center;
+  }
   .footer-main .footer-text-container:nth-child(1) p {
     color: #857f7fa6;
     font-size: clamp(0.8vw, 1em);
     margin-top: .1em;
   }
-  .footer-main .footer-text-container:nth-child(1) p span {
+  .footer-main .footer-text-container:nth-child(1) p a {
     color: #857f7fa6;
     text-decoration: underline;
     font-size: clamp(0.8vw, 1em);
