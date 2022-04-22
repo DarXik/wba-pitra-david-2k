@@ -41,7 +41,13 @@
     justify-content: center;
 }
 
-@mixin about-page-box-general-bp() {
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin about-page-box-general-bp {
     margin: 1em;
     margin-bottom: 4em;
     padding: 2em;

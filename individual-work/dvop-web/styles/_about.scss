@@ -1,4 +1,4 @@
-@media only screen and (min-width: $width-desktop-bp) and (max-width: 8490px) {
+@media only screen and (min-width: $width-desktop-bp) and (max-width: $max-width-desktop-bp) {
     #about {
         margin-inline: 8em;
         .about-section {
@@ -173,7 +173,7 @@
     }
 }
 
-@media only screen and (min-width: $width-tablet-bp) and (max-width: 1279px) {
+@media only screen and (min-width: $width-tablet-bp) and (max-width: $max-width-tablet-bp) {
     #about {
         margin-inline: 4em;
     }
@@ -336,7 +336,7 @@
     }
 }
 
-@media only screen and (min-width: $width-iphone8-bp) and (max-width: 767px) {
+@media only screen and (min-width: $width-iphone8-bp) and (max-width: $max-width-iphone8-bp) {
     #about {
         margin-inline: 1em;
     }
@@ -389,19 +389,13 @@
                 margin-top: 4em;
             }
             .box-1 {
-                @include about-page-box(40vh, fit-content, flex-end);
-                box-shadow: -20px 10px 20px 2px #8988882b;
-                margin-left: 5em;
+                @include about-page-box-general-bp;
             }
             .box-2 {
-                @include about-page-box(40vh, fit-content, flex-start);
-                box-shadow: 0px 20px 20px 2px #76757528;
-                margin-top: 5em;
+                @include about-page-box-general-bp;
             }
             .box-3 {
-                @include about-page-box(55vh, fit-content, center);
-                box-shadow: 20px 10px 20px 2px #81818131;
-                margin-top: 2em;
+                @include about-page-box-general-bp;
             }
         }
         .contact-section {
@@ -499,7 +493,7 @@
     }
 }
 
-@media only screen and (min-width: $width-general-bp) and (max-width: 513px) {
+@media only screen and (min-width: $width-general-bp) and (max-width: $max-width-general-bp) {
     #about {
         margin-inline: 1em;
     }

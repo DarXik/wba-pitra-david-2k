@@ -1,13 +1,12 @@
-@media only screen and (min-width: $width-desktop-bp) and (max-width: 8490px) {
+@media only screen and (min-width: $width-desktop-bp) and (max-width: $max-width-desktop-bp) {
     .footer-main {
         margin-inline: max(2vw, 20vw);
         margin-top: 10em;
         padding: 1em;
         border-top: 2px solid $footer-color;
+        @include flex-column-center;
+        align-items: center;
         .footer-text-container {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
             &:nth-child(1) {
                 p {
                     color: $footer-color;
@@ -24,16 +23,15 @@
     }
 }
 
-@media only screen and (min-width: $width-tablet-bp) and (max-width: 1279px) {
+@media only screen and (min-width: $width-tablet-bp) and (max-width: $max-width-tablet-bp) {
     .footer-main {
         margin-inline: 12vw;
         margin-top: 5em;
         padding: .1em;
         border-top: 2px solid $footer-color;
+        @include flex-column-center;
+        align-items: center;
         .footer-text-container {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
             &:nth-child(1) {
                 p {
                     color: $footer-color;
@@ -50,16 +48,15 @@
     }
 }
 
-@media only screen and (min-width: $width-iphone8-bp) and (max-width: 767px) {
+@media only screen and (min-width: $width-iphone8-bp) and (max-width: $max-width-iphone8-bp) {
     .footer-main {
         margin-inline: 12vw;
         margin-top: 5em;
         padding: .1em;
         border-top: 2px solid $footer-color;
+        @include flex-column-center;
+        align-items: center;
         .footer-text-container {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
             &:nth-child(1) {
                 p {
                     color: $footer-color;
@@ -76,16 +73,15 @@
     }
 }
 
-@media only screen and (min-width: $width-general-bp) and (max-width: 513px) {
+@media only screen and (min-width: $width-general-bp) and (max-width: $max-width-general-bp) {
     .footer-main {
         margin-inline: 12vw;
         margin-top: 3em;
         padding: .1em;
         border-top: 2px solid $footer-color;
+        @include flex-column-center;
+        align-items: center;
         .footer-text-container {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
             &:nth-child(1) {
                 p {
                     color: $footer-color;
@@ -101,30 +97,3 @@
         }
     }
 }
-
-
-/* @media only screen and (max-width: $width-legacy-bp) {
-    .footer-main {
-        margin-inline: max(2vw, 20vw);
-        margin-top: 6em;
-        padding: 1em;
-        border-top: 2px solid $footer-color;
-        .footer-text-container {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            &:nth-child(1) {
-                p {
-                    color: $footer-color;
-                    margin-top: .3em;
-                    font-size: clamp(.8vw, 1em);
-                    span {
-                        color: $footer-color;
-                        text-decoration: underline;
-                        font-size: clamp(.8vw, 1em);
-                    }
-                }
-            }
-        }
-    }
-} */

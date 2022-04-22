@@ -1,18 +1,10 @@
 var i = 0;
-var txt = 'And there is something about us';
 var txt2 = 'Be welcomed, pal.'
 var speed = 100;
 var speed2 = 200;
 var speedBack2 = 75;
 
-/* function TypeEffect() {
-    if (i < txt.length) {
-        document.getElementById("js1").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(TypeEffect, speed);
-    }
-}
- */
+
 
 function TypeEffect2() {
     if (i >= txt2.length) {
@@ -42,6 +34,8 @@ function UnType() {
     }
 }
 
+
+
 /* function actionToggle() {
     const action = document.querySelector('.action');
     action.classList.toggle('active')
@@ -63,43 +57,3 @@ function ShowPlaceHolder(holder, input) {
         document.getElementById(holder).style.visibility = "visible";
     }
 } */
-
-
-
-/* var typeText = document.querySelector(".typeText")
-var textToBeTyped = "And there is something about us"
-var index = 0,
-    isAdding = true
-
-function playAnim() {
-    setTimeout(function() {
-       
-        typeText.innerText = textToBeTyped.slice(0, index)
-        if (isAdding) {
-            if (index > textToBeTyped.length) {
-                isAdding = false
-                    
-                setTimeout(function() {
-                    playAnim()
-                }, 2000)
-                return
-            } else {
-                index++
-            }
-        }
-         else {
-                  
-                   if (index === 0) {
-                       
-                       isAdding = true
-                   } else {
-                       
-                       index--
-                   }
-               } 
-        
-        playAnim()
-    }, 120)
-}
-
-playAnim() */

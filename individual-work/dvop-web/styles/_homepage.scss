@@ -1,4 +1,4 @@
-@media only screen and (min-width: $width-desktop-bp) and (max-width: 8490px) {
+@media only screen and (min-width: $width-desktop-bp) and (max-width: $max-width-desktop-bp) {
     #index {
         margin-inline: 8em;
         .first-section {
@@ -14,9 +14,7 @@
             }
             .first-section-heading-container {
                 margin-top: 2em;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
+                @include flex-column-center;
                 width: 100%;
                 align-items: center;
                 h1 {
@@ -121,8 +119,6 @@
                             width: 40vw;
                             max-width: 25em;
                             height: 100%;
-                            /* padding: 3em;*/
-                            /* padding-bottom: -10em; */
                             /* padding: max(3vw, 1em); */
                             /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
                         }
@@ -200,7 +196,7 @@
     }
 }
 
-@media only screen and (min-width: $width-tablet-bp) and (max-width: 1279px) {
+@media only screen and (min-width: $width-tablet-bp) and (max-width: $max-width-tablet-bp) {
     #index {
         margin-inline: 4em;
         .first-section {
@@ -392,7 +388,7 @@
     }
 }
 
-@media only screen and (min-width: $width-iphone8-bp) and (max-width: 767px) {
+@media only screen and (min-width: $width-iphone8-bp) and (max-width: $max-width-iphone8-bp) {
     #index {
         margin-inline: 1em;
         .first-section {
@@ -584,7 +580,7 @@
     }
 }
 
-@media only screen and (min-width: $width-general-bp) and (max-width: 450px) {
+@media only screen and (min-width: $width-general-bp) and (max-width: $max-width-general-bp) {
     #index {
         margin-inline: 1em;
         .first-section {
@@ -774,197 +770,3 @@
         }
     }
 }
-
-
-/* @media only screen and (max-width: $width-legacy-bp) {
-    #index {
-        margin-inline: 3em;
-        .first-section {
-            display: flex;
-            flex-direction: column;
-            #helper {
-                display: grid;
-                .first-section-heading-container,
-                .first-section-image-container {
-                    grid-column: 1;
-                    grid-row: 1;
-                }
-            }
-            .first-section-heading-container {
-                margin-top: 2em;
-                @include flex-column-center;
-                width: 100%;
-                align-items: center;
-                h1 {
-                    font-family: customFontFour;
-                    color: white;
-                    position: absolute;
-                    z-index: 9;
-                    display: inline-flex;
-                    background-color: transparent;
-                    font-weight: bolder;
-                    font-size: 6rem;
-                    transition-duration: .2s;
-                    user-select: none;
-                }
-            }
-            .first-section-image-container {
-                height: 50%;
-                width: 100%;
-                margin-top: 3em;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                position: relative;
-                img {
-                    width: 100%;
-                    max-width: 85em;
-                    height: 30em;
-                    transition-duration: .5s;
-                    filter: blur(1px) grayscale(1);
-                }
-                img:hover {
-                    filter: blur(0) grayscale(0);
-                    z-index: 10;
-                }
-                .first-section-image-container:nth-child(1) {
-                    padding-bottom: 5em;
-                    height: 5em;
-                }
-                .first-section-image-container:nth-child(2) {
-                    align-self: flex-end;
-                    height: 100%;
-                }
-            }
-        }
-        .first-section-paragraph-container {
-            margin-top: 5.5em;
-            h2 {
-                padding: 2em 4em;
-                padding-left: 1em;
-                font-size: 1.6rem;
-                transition-duration: .2s;
-                border-left: 3px solid black;
-            }
-            h2:hover {
-                transition-duration: .2s;
-            }
-        }
-        .second-section {
-            height: 100vh;
-            .second-section-content-organizer {
-                height: 80%;
-                @include flex-column-center;
-                .second-section-first-image-desc-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    padding-right: 1em;
-                    padding-bottom: 1em;
-                    .second-section-first-desc-container {
-                        @include flex-column-center;
-                        height: 100%;
-                        padding-left: 2em;
-                        p {
-                            width: 100%;
-                            max-width: 25em;
-                            height: 100%;
-                        }
-                        h4 {
-                            padding-bottom: .3em;
-                            font-weight: bold;
-                            justify-self: flex-start;
-                        }
-                    }
-                    img {
-                        width: 100%;
-                        max-width: 25em;
-                        height: auto;
-                    }
-                }
-                .second-section-second-image-desc-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    padding-top: 1em;
-                    padding-left: 1em;
-                    .second-section-second-desc-container {
-                        @include flex-column-center;
-                        height: 100%;
-                        padding-right: 4em;
-                        p {
-                            width: 40vw;
-                            max-width: 25em;
-                            height: 100%;
-                        }
-                        h4 {
-                            padding-bottom: .3em;
-                            font-weight: bold;
-                        }
-                    }
-                    img {
-                        width: 100%;
-                        max-width: 25em;
-                        height: auto;
-                    }
-                }
-            }
-            .second-section-paragraph-container {
-                min-height: 20%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-inline: 4em;
-                box-shadow: 0px 20px 20px -10px rgba(95, 95, 95, 0.329);
-                h3 {
-                    margin: 4em;
-                    margin-inline: 6em;
-                    text-align: center;
-                    font-size: 1.2rem;
-                }
-            }
-        }
-        .third-section {
-            margin-top: 7em;
-            .third-section-image-container {
-                margin-inline: 4em;
-                display: grid;
-                gap: 1em;
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: repeat(6, 1fr);
-                div {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-            .third-section-image-desc-container {
-                width: 100%;
-                margin-top: 10em;
-                display: block;
-                .third-section-image-desc-sub-container {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    align-items: center;
-                    .third-section-desc-container {
-                        align-self: center;
-                        p,
-                        h4 {
-                            padding: 2em;
-                            padding-left: 3em;
-                            font-size: 130%;
-                        }
-                        h4 {
-                            padding-bottom: 0;
-                            font-weight: bold;
-                        }
-                    }
-                    img {
-                        max-width: 40%;
-                        height: auto;
-                    }
-                }
-            }
-        }
-    }
-} */

@@ -26,19 +26,19 @@ $form-transition-dur-setting: all 0.30s ease-in-out;
 /* breakpoints desktop */
 
 $width-desktop-bp: 1280px;
-
-/* breakpoints  general*/
-
-$width-general-bp: 300px;
-
-/* breakpoints iphone8 */
-
-$width-iphone8-bp: 451px;
+$max-width-desktop-bp: 8490px;
 
 /* breakpoints ipad */
 
 $width-tablet-bp: 768px;
+$max-width-tablet-bp: 1279px;
 
-/* legacy */
+/* breakpoints iphone8 */
 
-$width-legacy-bp: 1279px;
+$width-iphone8-bp: 451px;
+$max-width-iphone8-bp: 767px;
+
+/* breakpoints  general*/
+
+$width-general-bp: 280px;
+$max-width-general-bp: 450px;
