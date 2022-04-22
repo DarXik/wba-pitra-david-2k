@@ -685,6 +685,8 @@ select {
     width: 100%;
     max-width: 25em;
     height: 100%;
+    /* padding: max(3vw, 1em); */
+    /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
   }
   #index .second-section .second-section-content-organizer .second-section-first-image-desc-container .second-section-first-desc-container h4 {
     padding-bottom: .3em;
@@ -725,7 +727,7 @@ select {
     padding-right: 4em;
   }
   #index .second-section .second-section-content-organizer .second-section-second-image-desc-container .second-section-second-desc-container p {
-    width: 40vw;
+    width: 100%;
     max-width: 25em;
     height: 100%;
     /* padding: max(3vw, 1em); */
@@ -1288,6 +1290,8 @@ select {
     width: 100%;
     max-width: 25em;
     height: 100%;
+    /* padding: max(3vw, 1em); */
+    /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
   }
   #index .second-section .second-section-content-organizer .second-section-first-image-desc-container .second-section-first-desc-container h4 {
     margin-top: 1em;
@@ -1332,6 +1336,8 @@ select {
     width: 100%;
     max-width: 25em;
     height: 100%;
+    /* padding: max(3vw, 1em); */
+    /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
   }
   #index .second-section .second-section-content-organizer .second-section-second-image-desc-container .second-section-second-desc-container h4 {
     margin-top: 1em;
@@ -1590,6 +1596,8 @@ select {
     width: 100%;
     max-width: 25em;
     height: 100%;
+    /* padding: max(3vw, 1em); */
+    /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
   }
   #index .second-section .second-section-content-organizer .second-section-first-image-desc-container .second-section-first-desc-container h4 {
     margin-top: 1em;
@@ -1634,6 +1642,8 @@ select {
     width: 100%;
     max-width: 25em;
     height: 100%;
+    /* padding: max(3vw, 1em); */
+    /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
   }
   #index .second-section .second-section-content-organizer .second-section-second-image-desc-container .second-section-second-desc-container h4 {
     margin-top: 1em;
@@ -1746,19 +1756,6 @@ select {
     text-align: start;
     position: relative;
     margin-bottom: 5em;
-    /* .typeText::after {
-                        content: "|";
-                        animation: blink 1s infinite;
-                    }
-                    @keyframes blink {
-                        0%,
-                        100% {
-                            opacity: 1;
-                        }
-                        50% {
-                            opacity: 0;
-                        }
-                    } */
   }
   #about .about-section .about-heading-container #heading {
     position: relative;

@@ -34,9 +34,7 @@
                 height: 50%;
                 width: 100%;
                 margin-top: 3em;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                @include flex-row-center;
                 position: relative;
                 img {
                     width: 100%;
@@ -79,9 +77,7 @@
                 display: flex;
                 @include flex-column-center;
                 .second-section-first-image-desc-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
+                    @include flex-row-center;
                     padding-right: 14em;
                     padding-bottom: 1em;
                     .second-section-first-desc-container {
@@ -89,9 +85,7 @@
                         height: 100%;
                         padding-left: 2em;
                         p {
-                            width: 100%;
-                            max-width: 25em;
-                            height: 100%;
+                            @include homepage-image-desc-p;
                         }
                         h4 {
                             padding-bottom: .3em;
@@ -106,9 +100,7 @@
                     }
                 }
                 .second-section-second-image-desc-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
+                    @include flex-row-center;
                     padding-top: 1em;
                     padding-left: 13em;
                     .second-section-second-desc-container {
@@ -116,11 +108,7 @@
                         height: 100%;
                         padding-right: 4em;
                         p {
-                            width: 40vw;
-                            max-width: 25em;
-                            height: 100%;
-                            /* padding: max(3vw, 1em); */
-                            /* font-size: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem); */
+                            @include homepage-image-desc-p;
                         }
                         h4 {
                             padding-bottom: .3em;
@@ -233,9 +221,7 @@
                 height: 50%;
                 width: 100%;
                 margin-top: 3em;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                @include flex-row-center;
                 position: relative;
                 img {
                     width: 100%;
@@ -425,9 +411,7 @@
                 height: 50%;
                 width: 100%;
                 margin-top: 3em;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                @include flex-row-center;
                 position: relative;
                 img {
                     margin-inline: 1em;
@@ -476,9 +460,7 @@
                         height: 100%;
                         margin-inline: 1em;
                         p {
-                            width: 100%;
-                            max-width: 25em;
-                            height: 100%;
+                            @include homepage-image-desc-p;
                         }
                         h4 {
                             margin-top: 1em;
@@ -502,9 +484,7 @@
                         height: 100%;
                         margin-inline: 1em;
                         p {
-                            width: 100%;
-                            max-width: 25em;
-                            height: 100%;
+                            @include homepage-image-desc-p;
                         }
                         h4 {
                             margin-top: 1em;
@@ -617,9 +597,7 @@
                 height: 50%;
                 width: 100%;
                 margin-top: 3em;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                @include flex-row-center;
                 position: relative;
                 img {
                     width: 100%;
@@ -667,9 +645,7 @@
                         height: 100%;
                         margin-inline: 1em;
                         p {
-                            width: 100%;
-                            max-width: 25em;
-                            height: 100%;
+                            @include homepage-image-desc-p;
                         }
                         h4 {
                             margin-top: 1em;
@@ -693,9 +669,7 @@
                         height: 100%;
                         margin-inline: 1em;
                         p {
-                            width: 100%;
-                            max-width: 25em;
-                            height: 100%;
+                            @include homepage-image-desc-p;
                         }
                         h4 {
                             margin-top: 1em;
