@@ -1,0 +1,67 @@
+@media only screen and (min-width: $width-desktop-bp) and (max-width: $max-width-desktop-bp) {
+    .footer-main {
+        margin-inline: max(2vw, 20vw);
+        margin-top: 10em;
+        padding: 1em;
+        border-top: 2px solid $footer-color;
+        @include flex-column-center;
+        align-items: center;
+        .footer-text-container {
+            text-align: center;
+            &:nth-child(1) {
+                @include p-and-a-footer-setting(.3em);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $width-tablet-bp) and (max-width: $max-width-tablet-bp) {
+    .footer-main {
+        margin-inline: 12vw;
+        margin-top: 5em;
+        padding: .1em;
+        border-top: 2px solid $footer-color;
+        @include flex-column-center;
+        align-items: center;
+        .footer-text-container {
+            text-align: center;
+            &:nth-child(1) {
+                @include p-and-a-footer-setting(.1em);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $width-iphone8-bp) and (max-width: $max-width-iphone8-bp) {
+    .footer-main {
+        margin-inline: 12vw;
+        margin-top: 5em;
+        padding: .1em;
+        border-top: 2px solid $footer-color;
+        @include flex-column-center;
+        align-items: center;
+        .footer-text-container {
+            text-align: center;
+            &:nth-child(1) {
+                @include p-and-a-footer-setting(.1em);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $width-general-bp) and (max-width: $max-width-general-bp) {
+    .footer-main {
+        margin-inline: 12vw;
+        margin-top: 3em;
+        padding: .1em;
+        border-top: 2px solid $footer-color;
+        @include flex-column-center;
+        align-items: center;
+        .footer-text-container {
+            text-align: center;
+            &:nth-child(1) {
+                @include p-and-a-footer-setting(.1em);
+            }
+        }
+    }
+}

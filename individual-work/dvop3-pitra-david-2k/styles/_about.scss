@@ -1,0 +1,408 @@
+@media only screen and (min-width: $width-desktop-bp) and (max-width: $max-width-desktop-bp) {
+    #about {
+        margin-inline: $desktop-margin-inline;
+        .about-section {
+            margin-top: 3em;
+            .about-heading-container {
+                display: inline-flex;
+                text-align: start;
+                margin-bottom: 5em;
+                #heading {
+                    @include about-heading-mixin(5px);
+                    font-size: clamp(2rem, 4.5rem, 5rem);
+                }
+            }
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                margin-top: 3em;
+                h2 {
+                    text-align: center;
+                    width: 100%;
+                    font-family: customFontFour;
+                    font-weight: bold;
+                }
+                @include text-container-input-settings;
+                .box-1 {
+                    @include about-page-box(40vh, 55vw, flex-end);
+                    box-shadow: -20px 10px 20px 2px #8988882b;
+                    margin-left: 5em;
+                }
+                .box-2 {
+                    @include about-page-box(40vh, 55vw, flex-start);
+                    box-shadow: 0px 20px 20px 2px #76757528;
+                    margin-top: 5em;
+                }
+                .box-3 {
+                    @include about-page-box(55vh, 55vw, center);
+                    box-shadow: 20px 10px 20px 2px #81818131;
+                    margin-top: 2em;
+                }
+            }
+        }
+        .contact-section {
+            margin-top: 10em;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            .contact-container {
+                display: inline-flex;
+                flex-direction: column;
+                .form-heading {
+                    margin-left: 2em;
+                }
+                .form-container {
+                    display: flex;
+                    justify-content: center;
+                }
+                .contact-input-container {
+                    max-width: 30em;
+                    margin: 1em;
+                    padding: 1em;
+                    @include contact-input-elements-setting;
+                    .button {
+                        @include contact-input-button-mixin;
+                    }
+                    .button span {
+                        cursor: pointer;
+                        display: inline-block;
+                        position: relative;
+                        transition: 0.4s;
+                    }
+                    .button span:after {
+                        @include contact-button-hover;
+                    }
+                    .button:hover span {
+                        padding-right: 2.04em;
+                    }
+                    .button:hover span:after {
+                        opacity: 4;
+                        right: 0;
+                    }
+                }
+                .name-input {
+                    width: 49%;
+                    @include form-border-correction;
+                }
+                .input-email {
+                    @include form-border-correction;
+                    width: 100%;
+                }
+                .input-message {
+                    @include contact-input-message;
+                }
+                .input-message:focus {
+                    transition-duration: $form-transition-dur-setting;
+                    border-bottom: 1px solid $form-bottom-border-color;
+                    color: transparent;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $width-tablet-bp) and (max-width: $max-width-tablet-bp) {
+    #about {
+        margin-inline: $tablet-margin-inline;
+    }
+    .about-section {
+        margin-top: 2em;
+        .about-heading-container {
+            margin-inline: 1em;
+            display: inline-flex;
+            text-align: start;
+            margin-bottom: 1em;
+            #heading {
+                @include about-heading-mixin(5px);
+            }
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3em;
+            h2 {
+                text-align: center;
+                width: 100%;
+                font-family: customFontFour;
+                font-weight: bold;
+            }
+            @include text-container-input-settings;
+            .box-1 {
+                @include about-page-box(40vh, fit-content, flex-end);
+                box-shadow: -20px 10px 20px 2px #8988882b;
+                margin-left: 5em;
+            }
+            .box-2 {
+                @include about-page-box(40vh, fit-content, flex-start);
+                box-shadow: 0px 20px 20px 2px #76757528;
+                margin-top: 5em;
+            }
+            .box-3 {
+                @include about-page-box(55vh, fit-content, center);
+                box-shadow: 20px 10px 20px 2px #81818131;
+                margin-top: 2em;
+            }
+        }
+    }
+    .contact-section {
+        margin-top: 10em;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        .contact-container {
+            display: inline-flex;
+            flex-direction: column;
+            .form-heading {
+                margin-left: 2em;
+            }
+            .form-container {
+                display: flex;
+                justify-content: center;
+            }
+            .contact-input-container {
+                max-width: 30em;
+                margin: 1em;
+                padding: 1em;
+                @include contact-input-elements-setting;
+                .button {
+                    @include contact-input-button-mixin;
+                }
+                .button span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.4s;
+                }
+                .button span:after {
+                    @include contact-button-hover;
+                }
+                .button:hover span {
+                    padding-right: 2.1em;
+                }
+                .button:hover span:after {
+                    opacity: 4;
+                    right: 0;
+                }
+            }
+            .name-input {
+                width: 49%;
+                @include form-border-correction;
+            }
+            .input-email {
+                @include form-border-correction;
+                width: 100%;
+            }
+            .input-message {
+                @include contact-input-message;
+            }
+            .input-message:focus {
+                transition-duration: $form-transition-dur-setting;
+                border-bottom: 1px solid $form-bottom-border-color;
+                color: transparent;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $width-iphone8-bp) and (max-width: $max-width-iphone8-bp) {
+    #about {
+        margin-inline: $mobile-dev-margin-inline;
+    }
+    .about-section {
+        margin-top: 2em;
+        .about-heading-container {
+            margin-inline: 1em;
+            display: inline-flex;
+            text-align: start;
+            margin-bottom: 1em;
+            #heading {
+                @include about-heading-mixin(5px);
+            }
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3em;
+            h2 {
+                text-align: center;
+                width: 100%;
+                font-family: customFontFour;
+                font-weight: bold;
+            }
+            @include text-container-input-settings;
+            .box-1 {
+                @include about-page-box-general-bp;
+            }
+            .box-2 {
+                @include about-page-box-general-bp;
+            }
+            .box-3 {
+                @include about-page-box-general-bp;
+            }
+        }
+        .contact-section {
+            margin-top: 10em;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            .contact-container {
+                display: inline-flex;
+                flex-direction: column;
+                .form-heading {
+                    margin-left: 2em;
+                }
+                .form-container {
+                    display: flex;
+                    justify-content: center;
+                }
+                .contact-input-container {
+                    max-width: 30em;
+                    margin: 1em;
+                    padding: 1em;
+                    @include contact-input-elements-setting;
+                    .button {
+                        @include contact-input-button-mixin;
+                    }
+                    .button span {
+                        cursor: pointer;
+                        display: inline-block;
+                        position: relative;
+                        transition: 0.4s;
+                    }
+                    .button span:after {
+                        @include contact-button-hover;
+                    }
+                    .button:hover span {
+                        padding-right: 2.1em;
+                    }
+                    .button:hover span:after {
+                        opacity: 4;
+                        right: 0;
+                    }
+                }
+                .name-input {
+                    width: 49%;
+                    @include form-border-correction;
+                }
+                .input-email {
+                    @include form-border-correction;
+                    width: 100%;
+                }
+                .input-message {
+                    @include contact-input-message;
+                }
+                .input-message:focus {
+                    transition-duration: $form-transition-dur-setting;
+                    border-bottom: 1px solid $form-bottom-border-color;
+                    color: transparent;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $width-general-bp) and (max-width: $max-width-general-bp) {
+    #about {
+        margin-inline: $mobile-dev-margin-inline;
+    }
+    .about-section {
+        margin-top: 2em;
+        .about-heading-container {
+            margin-inline: 1em;
+            display: inline-flex;
+            text-align: start;
+            margin-bottom: 1em;
+            #heading {
+                @include about-heading-mixin(4px);
+            }
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3em;
+            h2 {
+                text-align: center;
+                width: 100%;
+                font-family: customFontFour;
+                font-weight: bold;
+            }
+            @include text-container-input-settings;
+            .box-1 {
+                @include about-page-box-general-bp;
+                min-height: 40vh;
+            }
+            .box-2 {
+                @include about-page-box-general-bp;
+                margin-top: 5em;
+                min-height: 40vh;
+            }
+            .box-3 {
+                @include about-page-box-general-bp;
+                margin-top: 2em;
+                min-height: 50vh;
+            }
+        }
+    }
+    .contact-section {
+        margin-top: 4em;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        .contact-container {
+            display: inline-flex;
+            flex-direction: column;
+            .form-heading {
+                margin-left: 2em;
+            }
+            .form-container {
+                display: flex;
+                justify-content: center;
+            }
+            .contact-input-container {
+                max-width: 30em;
+                margin: 1em;
+                padding: 1em;
+                @include contact-input-elements-setting;
+                .button {
+                    @include contact-input-button-mixin;
+                }
+                .button span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.4s;
+                }
+                .button span:after {
+                    @include contact-button-hover;
+                }
+                .button:hover span {
+                    padding-right: 2.1em;
+                }
+                .button:hover span:after {
+                    opacity: 4;
+                    right: 0;
+                }
+            }
+            .name-input {
+                width: 49%;
+                @include form-border-correction;
+            }
+            .input-email {
+                @include form-border-correction;
+                width: 100%;
+            }
+            .input-message {
+                @include contact-input-message;
+            }
+            .input-message:focus {
+                transition-duration: $form-transition-dur-setting;
+                border-bottom: 1px solid $form-bottom-border-color;
+                color: transparent;
+            }
+        }
+    }
+}
