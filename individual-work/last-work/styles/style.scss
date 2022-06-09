@@ -1,0 +1,81 @@
+@import "reset";
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+nav {
+    .welcome-section {
+        margin-bottom: 5em;
+        .welcome-photo {
+            img {
+                width: 100vw;
+                position: relative;
+                z-index: 1;
+                /* jeden div s background image a h1 u sebe */
+            }
+        }
+        .welcome-heading {
+            margin-left: 8em;
+            h1 {
+                position: absolute;
+                z-index: 9;
+                text-transform: uppercase;
+                font-size: 5rem;
+                font-weight: bold;
+                color: rgb(34, 34, 152);
+            }
+        }
+    }
+}
+
+main {
+    .main-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-inline: 10em;
+        margin-bottom: 4em;
+        h2 {
+            margin: 1.2em;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .main-cell {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            .news-container {
+                width: 20em;
+                height: 30em;
+                word-wrap: break-word;
+                padding: 1.3em;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 171, 221, 0.2) 0.01%, rgba(255, 255, 255, 0.2) 100%), rgba(109, 189, 208, 0.23);
+                opacity: 0.75;
+                margin: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                p {
+                    font-size: 90%;
+                }
+                .photo-news {
+                    /* display: flex;
+                    flex-direction: column;
+                    justify-content: center; */
+                    img {
+                        padding: .2em;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-content: center;
+                        justify-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
