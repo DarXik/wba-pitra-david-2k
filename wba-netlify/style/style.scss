@@ -1,0 +1,15 @@
+$body-bg: rgb(187, 133, 133);
+$primary: rgb(179, 179, 239);
+@import "../boostrap/scss/functions";
+@import "../boostrap/scss/variables";
+$custom-theme-colors: ( "khaki": #f8a217);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$custom-spacer-map:( "large": 40px, );
+$spacers: map-merge($spacers, $custom-spacer-map);
+@import "../boostrap/scss/bootstrap.scss";
+.test {
+    background-color: $body-bg;
+    p {
+        color: $primary;
+    }
+}
